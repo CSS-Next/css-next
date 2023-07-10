@@ -1,0 +1,71 @@
+Attendees: Amit Sheen, Adam Argyle, Una Kravets, Mike Aparicio, Quentin Albert
+
+* Amit - Grid in CSS3 - whole concept of CSS3 and CSS4 is that its outside of the versioning
+    * Quentin - do people think grid is in CSS3
+    * Una - CSS3 is specifically versioned with level 3 specs, a lot of history, grid is not a level 3 spec from CSS3 era, also many folks don’t use grid still and think of it as stable as other features in CSS3
+    * Adam - people still think CSS3 is new, thats why its on resumes and people think grid is in it. Simultaneously module level 3 and colloquial level 3
+    * Una - shouldn’t add features to bloat CSS3 bc its already defined and specific
+    * Mike - working with  a lot of devs who don’t spend a ton of time on it, had CSS3 and that drove a lot of education but haven’t had much progress on that since
+        * Haven’t really heard people call it CSS3 in several years
+        * +1 need to establish a context of what is available in CSS today
+        * People are struggling to keep up with it
+        * Reminds of gaming consoles - what do you call the next thing
+    * Amit - makes sense, but not we’ll have another thing to educate about (re-teach CSS3)
+* [https://github.com/orgs/CSS-Next/projects/1/views/2](https://github.com/orgs/CSS-Next/projects/1/views/2)
+    * Dedupe and convert into web app for the research
+    * **Amit volunteered to build it**
+    * Quentin - folks need to know what the feature is
+        * Option for “don’t know this feature”
+        * Can pull from state of css examples - 
+            * Check wish Sasha if thats ok
+* CSS4 - should this be taught in curriculums?
+    * Quentin - with workshops - bracket things into “upcoming/future”
+        * Should focus on CSS4 and tell people its especially CSS4
+        * A lot of companies in Germany don’t want CSS workshops because they think CSS3 is the latest and it hasn’t evolved since then/needs to be re-taught
+        * Big gap – here because I think this is the most important part to tell people about all this new stuff
+            * Tried to teach a workshop on the new CSS and folks didnt even know basic things like aspect-ratio
+* Despite card sort, we need to define CSS4 and that might change the definitions
+    * Quentin - I would put cascade layers in CSS5 not CSS4
+    * If we’re asking folks to rate features into CSS3,4,5 - we need to first define what each bucket is
+        * Do we give an initial definition and refine it further later on
+        * We should bring initial definition
+    * Mike - maybe we don’t ask people what they think RE: CSS3 - i don’t recall when we came up with CSS3 those things weren’t all “production-ready” yet
+        * CSS4 is all the cool stuff we can use today in browsers
+        * CSS5 is horizon, can i use this or not?
+    * Quentin - I would suggest we don’t ask if its css3, 4, or 5 but ask where they can use it on a timeframe (now, future) so its not related to CSS versions and more on perceive if its usable in production – decouple from this versioning system we haven’t figured out yet
+    * Una - like the idea of timeline buckets instead of numbers,
+        * CQ – is this ready for “now” – technically browser support is wide/baseline
+    * Mike - need to draw a line which is separate from what are we teaching
+    * Adam - still trying to figure out how this gets marketed
+        * i'm not confident browser support at "some date" should impact this marketing effort to help educators and engineers articulate their status of CSS knowledge
+        * How do we make it simple phrase that encapsulates all of these things
+        * I think CSS4 is going to flop and confuse people, putting CSS4 on my resume not that impressive
+        * Why was ES6 the last big JS version?
+            * Una - possibly bc after that they went annual version, less impactful
+        * How do we power educators to say they teach modern CSS?
+    * Mike - can we take back “CSS” and just use CSS on resumes? People put CSS on their resumes but not know what a pseudo element is
+        * I do internal talks and all of the CSS stuff I think people should be familiar with blows peoples minds
+    * Una - i think “CSS” is the state we are now and folks aren’t keeping up. They don’t know the delta between what they know and don’t know (i.e 3 to 4)
+    * Amit - I’m okay with CSS4 and 5, I feel like thats correct - and something people can understand
+        * Absolutely agree about the gathering of elements into one name
+    * Quentin - If we use “CSS” people who last learned CSS 10 years ago would be on the same page as folks who are using the latest today. Need a name we can iterare on for generations/levels/etc.
+        * We dont want to bring out a new version every year - thats a big problem ecmascript has. People aren’t as interested. We should keep it on the level of every 5-6 years
+* Question for the research survey:
+    * 1. Show feature name and maybe an example (i.e. such as in state of css)
+    * 2. Options for sorting:
+        * A. I can use/have used this already
+        * B. I could use this soon
+        * C. It’s unclear when I could use this
+        * D. I don’t know this feature
+* Stable is a word with a lot of connotations
+* When writing survey text, be sure to include in production
+* Adam: how does this empower people by doing research?
+    * If you learn this new term is aligns with this set of features
+    * Why is having people bucket this helping them empower themselves
+    * Una - we can just make a hard rule about dates - i.e. before 2017, after 2017 - but this also is tricky (i.e. houdini) for spec publish dates. Research gets us more opinions to help this wavy in-between or at least understand what people perceive
+* Mike - what are the educational materials? 
+    * Amit - people are still teaching tables
+* Quentin - what do we do with features that have multiple subsets? I.e. container queries vs. style queries. Grid vs. subgrid
+* Naming is hard - should probably be more precisely versioned and not vague
+    * We need a new logo - it was catchy and stuck and outlived its intended thing
+    * CSS4 as a sword (analogy to shield)
