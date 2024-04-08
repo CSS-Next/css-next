@@ -93,35 +93,7 @@ that were discussed
 </details>
 
 
-<details>
-  <summary>Typography</summary>
 
-| Property                             | Notes |
-|--------------------------------------|-------|
-| local()                              |       |
-| font-family (@font-palette-values)   |       |
-| font-optical-sizing                  |       |
-| font-palette                         |       |
-| font-synthesis                       |       |
-| font-synthesis-small-caps            |       |
-| font-synthesis-style                 |       |
-| font-synthesis-weight                |       |
-| font-variant                         |       |
-| font-variant (@font-face)            |       |
-| font-variant-alternates              |       |
-| font-variant-caps                    |       |
-| font-variant-east-asian              |       |
-| font-variant-emoji                   |       |
-| font-variant-ligatures               |       |
-| font-variant-numeric                 |       |
-| font-variant-position                |       |
-| font-variation-settings              |       |
-| font-variation-settings (@font-face) |       |
-| line-gap-override (@font-face)       |       |
-| @ornaments                           |       |
-| ornaments()                          |       |
-
-</details>
 
 <details>
   <summary>Functions</summary>
@@ -167,6 +139,36 @@ that were discussed
 | grid-template-areas   |       |
 | grid-template-columns |       |
 | grid-template-rows    |       |
+
+</details>
+
+<details>
+  <summary>Typography</summary>
+
+| Property                             | Notes |
+|--------------------------------------|-------|
+| local()                              |       |
+| font-family (@font-palette-values)   |       |
+| font-optical-sizing                  |       |
+| font-palette                         |       |
+| font-synthesis                       |       |
+| font-synthesis-small-caps            |       |
+| font-synthesis-style                 |       |
+| font-synthesis-weight                |       |
+| font-variant                         |       |
+| font-variant (@font-face)            |       |
+| font-variant-alternates              |       |
+| font-variant-caps                    |       |
+| font-variant-east-asian              |       |
+| font-variant-emoji                   |       |
+| font-variant-ligatures               |       |
+| font-variant-numeric                 |       |
+| font-variant-position                |       |
+| font-variation-settings              |       |
+| font-variation-settings (@font-face) |       |
+| line-gap-override (@font-face)       |       |
+| @ornaments                           |       |
+| ornaments()                          |       |
 
 </details>
 
@@ -258,25 +260,6 @@ that were discussed
 | Subgrid  |       |
 
 </details>
-
-<details>
-  <summary>Typography</summary>
-
-| Property                      | Notes |
-|-------------------------------|-------|
-| ascent-override (@font-face)  |       |
-| descent-override (@font-face) |       |
-| font-size-adjust              |       |
-| font-synthesis-position       |       |
-| hyphenate-character           |       |
-| hyphenate-limit-chars         |       |
-| initial-letter                |       |
-| initial-letter-align          |       |
-| Text-box trim                 |       |
-| text-wrap                     |       |
-
-</details>
-
 
 
 <details>
@@ -410,6 +393,24 @@ that were discussed
 | scale               |       |
 | transition-behavior |       |
 | translate           |       |
+
+</details>
+
+<details>
+  <summary>Typography</summary>
+
+| Property                      | Notes |
+|-------------------------------|-------|
+| ascent-override (@font-face)  |       |
+| descent-override (@font-face) |       |
+| font-size-adjust              |       |
+| font-synthesis-position       |       |
+| hyphenate-character           |       |
+| hyphenate-limit-chars         |       |
+| initial-letter                |       |
+| initial-letter-align          |       |
+| Text-box trim                 |       |
+| text-wrap                     |       |
 
 </details>
 
