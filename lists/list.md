@@ -279,7 +279,7 @@
 </details>
 
 <details>
-  <summary>Flex - Properties</summary>
+  <summary>Font - Properties</summary>
 
 | Property           | Description |
 |--------------------|-------------|
