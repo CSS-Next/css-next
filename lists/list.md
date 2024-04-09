@@ -10,44 +10,44 @@ that were discussed
 <details>
   <summary>Align</summary>
 
-| Property      | Notes |
-|---------------|-------|
-| align-content |       |
-| align-items   |       |
-| align-self    |       |
-| order         |       |
-| place-content |       |
-| place-items   |       |
-| place-self    |       |
-| row-gap       |       |
+| Property                                                                        | Notes |
+|---------------------------------------------------------------------------------|-------|
+| [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content) |       |
+| [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)     |       |
+| [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)       |       |
+| [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order)                 |       |
+| [place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content) |       |
+| [place-items](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)     |       |
+| [place-self](https://developer.mozilla.org/en-US/docs/Web/CSS/place-self)       |       |
+| [row-gap](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)                                                                     |       |
 
 </details>
 
 <details>
   <summary>Animating on a path</summary>
 
-| Property | Notes |
-|----------|-------|
-| offset   |       |
+| Property                                                          | Notes |
+|-------------------------------------------------------------------|-------|
+| [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset) |       |
 
 </details>
 
 <details>
   <summary>At-rules</summary>
 
-| Property            | Notes |
-|---------------------|-------|
-| @media range-syntax |       |
-| @supports           |       |
+| Property                                                                | Notes |
+|-------------------------------------------------------------------------|-------|
+| @media range-syntax                                                     |       |
+| [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) |       |
 
 </details>
 
 <details>
   <summary>Blend Modes</summary>
 
-| Property  | Notes |
-|-----------|-------|
-| isolation |       |
+| Property                                                                | Notes |
+|-------------------------------------------------------------------------|-------|
+| [isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation) |       |
 
 </details>
 
@@ -55,40 +55,40 @@ that were discussed
 <details>
   <summary>Contain</summary>
 
-| Property | Notes |
-|----------|-------|
-| contain  |       |
+| Property                                                            | Notes |
+|---------------------------------------------------------------------|-------|
+| [contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) |       |
 
 </details>
 
 <details>
   <summary>Counter</summary>
 
-| Property                  | Notes |
-|---------------------------|-------|
-| @counter-style            |       |
-| counter-set               |       |
-| fallback (@counter-style) |       |
-| suffix (@counter-style)   |       |
-| symbols (@counter-style)  |       |
-| symbols()                 |       |
-| system (@counter-style)   |       |
+| Property                                                                                              | Notes |
+|-------------------------------------------------------------------------------------------------------|-------|
+| [@counter-style](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style)                     |       |
+| [counter-set](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set)                           |       |
+| [fallback (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/fallback) |       |
+| [suffix (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/suffix)     |       |
+| [symbols (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/symbols)   |       |
+| [symbols()](https://developer.mozilla.org/en-US/docs/Web/CSS/symbols)                                 |       |
+| [system (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system)     |       |
 
 </details>
 
 <details>
   <summary>Flex</summary>
 
-| Property       | Notes |
-|----------------|-------|
-| flex           |       |
-| flex_value#fr  |       |
-| flex-basis     |       |
-| flex-direction |       |
-| flex-flow      |       |
-| flex-grow      |       |
-| flex-shrink    |       |
-| flex-wrap      |       |
+| Property                                                                          | Notes |
+|-----------------------------------------------------------------------------------|-------|
+| [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)                     |       |
+| flex_value#fr                                                                     |       |
+| [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)         |       |
+| [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) |       |
+| [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow)           |       |
+| [flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)           |       |
+| [flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)       |       |
+| [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)           |       |
 
 </details>
 
@@ -98,77 +98,77 @@ that were discussed
 <details>
   <summary>Functions</summary>
 
-| Property      | Notes |
-|---------------|-------|
-| clamp()       |       |
-| env()         |       |
-| fit-content   |       |
-| fit-content() |       |
-| max()         |       |
-| min()         |       |
-| var(), --*    |       |
+| Property                                                                               | Notes |
+|----------------------------------------------------------------------------------------|-------|
+| [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)                      |       |
+| [env()](https://developer.mozilla.org/en-US/docs/Web/CSS/env)                          |       |
+| [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)            |       |
+| [fit-content()](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content_function) |       |
+| [max()](https://developer.mozilla.org/en-US/docs/Web/CSS/max)                          |       |
+| [min()](https://developer.mozilla.org/en-US/docs/Web/CSS/min)                          |       |
+| [var(), --*](https://developer.mozilla.org/en-US/docs/Web/CSS/var)                     |       |
 
 </details>
 
 <details>
   <summary>Gradient</summary>
 
-| Property         | Notes |
-|------------------|-------|
-| conic-gradient() |       |
+| Property             | Notes |
+|----------------------|-------|
+| [conic-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient) |       |
 
 </details>
 
 <details>
   <summary>Grid</summary>
 
-| Property              | Notes |
-|-----------------------|-------|
-| grid                  |       |
-| grid-area             |       |
-| grid-auto-columns     |       |
-| grid-auto-flow        |       |
-| grid-auto-rows        |       |
-| grid-column           |       |
-| grid-column-end       |       |
-| grid-column-start     |       |
-| grid-row              |       |
-| grid-row-end          |       |
-| grid-row-start        |       |
-| grid-template         |       |
-| grid-template-areas   |       |
-| grid-template-columns |       |
-| grid-template-rows    |       |
+| Property                                                                                        | Notes |
+|-------------------------------------------------------------------------------------------------|-------|
+| [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)                                   |       |
+| [grid-area](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area)                         |       |
+| [grid-auto-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns)         |       |
+| [grid-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow)               |       |
+| [grid-auto-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows)               |       |
+| [grid-column](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)                     |       |
+| [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)             |       |
+| [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)         |       |
+| [grid-row](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)                           |       |
+| [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)                   |       |
+| [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)               |       |
+| [grid-template](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template)                 |       |
+| [grid-template-areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)     |       |
+| [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) |       |
+| [grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)       |       |
 
 </details>
 
 <details>
   <summary>Typography</summary>
 
-| Property                             | Notes |
-|--------------------------------------|-------|
-| local()                              |       |
-| font-family (@font-palette-values)   |       |
-| font-optical-sizing                  |       |
-| font-palette                         |       |
-| font-synthesis                       |       |
-| font-synthesis-small-caps            |       |
-| font-synthesis-style                 |       |
-| font-synthesis-weight                |       |
-| font-variant                         |       |
-| font-variant (@font-face)            |       |
-| font-variant-alternates              |       |
-| font-variant-caps                    |       |
-| font-variant-east-asian              |       |
-| font-variant-emoji                   |       |
-| font-variant-ligatures               |       |
-| font-variant-numeric                 |       |
-| font-variant-position                |       |
-| font-variation-settings              |       |
-| font-variation-settings (@font-face) |       |
-| line-gap-override (@font-face)       |       |
-| @ornaments                           |       |
-| ornaments()                          |       |
+| Property                                                                                                    | Notes |
+|-------------------------------------------------------------------------------------------------------------|-------|
+| [local()](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)                                      |       |
+| [font-family (@font-palette-values)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values) |       |
+| [font-optical-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing)                 |       |
+| [font-palette](https://developer.mozilla.org/en-US/docs/Web/CSS/font-palette)                               |       |
+| [font-synthesis](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis)                           |       |
+| [font-synthesis-small-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-small-caps)     |       |
+| [font-synthesis-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-style)               |       |
+| [font-synthesis-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-weight)             |       |
+| [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)                               |       |
+| [font-variant (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)                    |       |
+| [font-variant-alternates](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates)         |       |
+| [font-variant-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)                     |       |
+| [font-variant-east-asian](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-east-asian)         |       |
+| [font-variant-emoji](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-emoji)                   |       |
+| [font-variant-ligatures](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures)           |       |
+| [font-variant-numeric](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)               |       |
+| [font-variant-position](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-position)             |       |
+| [font-variation-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings)         |       |
+| [font-variation-settings (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)         |       |
+| [line-gap-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)               |       |
+| @ornaments                                                                                                  |       |
+| ornaments()                                                                                                 |       |
 
 </details>
 
