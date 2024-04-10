@@ -1,4 +1,4 @@
-# List of CSS4, CSS5 and future
+# List of CSS4, CSS5 and Future
 
 This list is still a draft and should be handled as a work in progress.
 This list is based on
@@ -455,19 +455,19 @@ that were discussed
 <details>
   <summary>Colors & theming</summary>
 
-| Property                                                                                                                                        | Notes |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                                   |       |
-| [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                                   |       |
-| [color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix)                                                           |       |
-| ["color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65"](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)     |       |
-| [color(from ...) - relative color syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)                                   |       |
-| [Hue interpolation (gradients ""in"" syntax, ""hue longer"" syntax)](https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method) |       |
-| [hwb()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb)                                                                       |       |
-| [oklab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab)                                                                   |       |
-| [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)                                                                   |       |
-| [lab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab)                                                                       |       |
-| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                       |       |
+| Property                                                                                                                                     | Notes |
+|----------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                                |       |
+| [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                                |       |
+| [color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix)                                                        |       |
+| [color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)    |       |
+| [color(from ...) - relative color syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)                                |       |
+| [Hue interpolation (gradients "in" syntax, "hue longer" syntax)](https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method)  |       |
+| [hwb()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb)                                                                    |       |
+| [oklab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab)                                                                |       |
+| [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)                                                                |       |
+| [lab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab)                                                                    |       |
+| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                    |       |
 
 </details>
 
