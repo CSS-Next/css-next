@@ -14,8 +14,8 @@ Categorization is based on when new properties were introduced in a spec. This i
 
 
 * **CSS3:** This category includes CSS properties and features introduced prior to the proposal to further categorize. It serves as a historical reference point for CSS advancements up to a certain point.
-* **CSS4:** Properties and features introduced in a spec between 2014 - 2018.
-* **CSS5:** Properties and features introduced in a spec between 2019 - 2022.
+* **CSS4:** Properties and features introduced in a spec between 2013 - 2018.
+* **CSS5:** Properties and features introduced in a spec between 2019 - 2024.
 * **Future/Next**: This category encompasses properties and features that are currently in development or proposed for future versions of CSS beyond CSS5. It serves as a preview of upcoming CSS that are currently known.
 
 ### Implementation:
