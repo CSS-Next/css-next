@@ -1,8 +1,6 @@
 *Note that this is a draft / template and just a suggestion by one person for the moment, this is by no means a final RFc*
 
 # Rfc
-
-## Abstract
 The term "CSS3" has been widely used to encompass various additions and enhancements to Cascading Style Sheets (CSS) since around 2010. However, as CSS continues to evolve with new features and specifications, the blanket term "CSS3" has become insufficient and misleading. This RFC proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, CSS5, and Future/Next, to better organize and facilitate understanding of the evolving CSS landscape. This categorization aims to improve adoption and ease of teaching, while not having a direct impact towards the CSS Working Group (CSSWG) operations and specifications.
 
 ## Reason
