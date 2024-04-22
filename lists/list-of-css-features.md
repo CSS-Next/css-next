@@ -28,21 +28,26 @@ that were discussed
 </details>
 
 <details>
-  <summary>Animating on a path</summary>
+  <summary>Animation</summary>
 
-| Property                                                          | Notes |
-|-------------------------------------------------------------------|-------|
-| [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset) |       |
+| Property                                                                        | Notes |
+|---------------------------------------------------------------------------------|-------|
+| [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset)               |       |
+| [ray()](https://developer.mozilla.org/en-US/docs/Web/CSS/ray)                   |       |
+| [transform-box](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box) |       |
+| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)     |       |
 
 </details>
 
 <details>
   <summary>At-rules</summary>
 
-| Property                                                                | Notes |
-|-------------------------------------------------------------------------|-------|
-| @media range-syntax                                                     |       |
-| [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) |       |
+| Property                                                                                    | Notes |
+|---------------------------------------------------------------------------------------------|-------|
+| [@forced-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)     |       |
+| @media range-syntax                                                                         |       |
+| [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)                     |       |
+| [forced-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust) |       |
 
 </details>
 
@@ -162,13 +167,13 @@ that were discussed
 <details>
   <summary>Image / Video</summary>
 
-| Property                                                                                  | Notes |
-|-------------------------------------------------------------------------------------------|-------|
-| [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)             |       |
-| [cross-fade()](https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade)               |       |
-| [image-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientatio)    |       |
-| [image-resolution](https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution)     |       |
-| [image-set()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)           |       |
+| Property                                                                               | Notes |
+|----------------------------------------------------------------------------------------|-------|
+| [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)          |       |
+| [cross-fade()](https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade)            |       |
+| [image-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientatio) |       |
+| [image-resolution](https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution)  |       |
+| [image-set()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)        |       |
 
 </details>
 
@@ -229,6 +234,21 @@ that were discussed
 | [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start)             |       |
 | [writing-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)                             |       |
 
+</details>
+
+<details>
+  <summary>Misc</summary>
+
+| Property                                                                      | Notes |
+|-------------------------------------------------------------------------------|-------|
+| [all](https://developer.mozilla.org/en-US/docs/Web/CSS/all)                   |       |
+| caret                                                                         |       |
+| [caret-color](https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color)   |       |
+| caret-shape                                                                   |       |
+| [touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action) |       |
+| [unset](https://developer.mozilla.org/en-US/docs/Web/CSS/unset)               |       |
+| [user-select](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select)   |       |
+| [revert](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)             |       |
 
 </details>
 
@@ -279,8 +299,8 @@ that were discussed
 <details>
   <summary>Relative units</summary>
 
-| Property        | Notes |
-|-----------------|-------|
+| Property                                                                                                       | Notes |
+|----------------------------------------------------------------------------------------------------------------|-------|
 | [length#vb](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
 | [length#vh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
 | [length#vi](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
@@ -295,6 +315,7 @@ that were discussed
 
 | Property                                                                                                    | Notes |
 |-------------------------------------------------------------------------------------------------------------|-------|
+| [overflow-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor)                         |       |
 | [overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)                 |       |
 | [overscroll-behavior-x](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-x)             |       |
 | [overscroll-behavior-y](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-y)             |       |
@@ -325,7 +346,6 @@ that were discussed
 | [scroll-snap-stop](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-stop)                       |       |
 | [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type)                       |       |
 
-
 </details>
 
 
@@ -342,6 +362,7 @@ that were discussed
 | @styleset                                                                                                                 |       |
 | @stylistic                                                                                                                |       |
 | @swash                                                                                                                    |       |
+| [-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)                                 |       |
 | annotation()                                                                                                              |       |
 | [base-palette (@font-palette-values)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/base-palette) |       |
 | character-variant()                                                                                                       |       |
@@ -385,27 +406,6 @@ that were discussed
 | [text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)                           |       |
 | [text-underline-position](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position)                       |       |
 | ornaments()                                                                                                               |       |
-</details>
-
-<details>
-  <summary>To sort</summary>
-
-| Property                                                                                       | Notes |
-|------------------------------------------------------------------------------------------------|-------|
-| [all](https://developer.mozilla.org/en-US/docs/Web/CSS/all)                                    |       |
-| caret                                                                                          |       |
-| [caret-color](https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color)                    |       |
-| caret-shape                                                                                    |       |
-| [forced-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust)    |       |
-| [overflow-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor)            |       |
-| [touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)                  |       |
-| [unset](https://developer.mozilla.org/en-US/docs/Web/CSS/unset)                                |       |
-| [user-select](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select)                    |       |
-| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)                    |       |
-| [-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)      |       |
-| [ray()](https://developer.mozilla.org/en-US/docs/Web/CSS/ray)                                  |       |
-| [revert](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)                              |       |
-| [transform-box](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box)                |       |
 
 </details>
 
@@ -455,19 +455,19 @@ that were discussed
 <details>
   <summary>Colors & theming</summary>
 
-| Property                                                                                                                                     | Notes |
-|----------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                                |       |
-| [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                                |       |
-| [color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix)                                                        |       |
-| [color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)    |       |
-| [color(from ...) - relative color syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)                                |       |
-| [Hue interpolation (gradients "in" syntax, "hue longer" syntax)](https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method)  |       |
-| [hwb()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb)                                                                    |       |
-| [oklab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab)                                                                |       |
-| [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)                                                                |       |
-| [lab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab)                                                                    |       |
-| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                    |       |
+| Property                                                                                                                                    | Notes |
+|---------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                               |       |
+| [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                               |       |
+| [color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix)                                                       |       |
+| [color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)   |       |
+| [color(from ...) - relative color syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)                               |       |
+| [Hue interpolation (gradients "in" syntax, "hue longer" syntax)](https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method) |       |
+| [hwb()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb)                                                                   |       |
+| [oklab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab)                                                               |       |
+| [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)                                                               |       |
+| [lab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab)                                                                   |       |
+| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                   |       |
 
 </details>
 
@@ -554,11 +554,12 @@ that were discussed
 <details>
   <summary>Pseudo-elements</summary>
 
-| Property                                                                                                      | Notes |
-|---------------------------------------------------------------------------------------------------------------|-------|
-| [::grammar-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error)                           |       |
-| [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)                                         |       |
-| [::spelling-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error)                         |       |
+| Property                                                                              | Notes |
+|---------------------------------------------------------------------------------------|-------|
+| [::grammar-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error)   |       |
+| [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)                 |       |
+| [::spelling-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error) |       |
+
 </details>
 
 <details>
@@ -583,7 +584,7 @@ that were discussed
 | [overflow-clip-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin) |       |
 | [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)           |       |
 | [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)         |       |
-| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)                                                                           |       |
+| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)           |       |
 
 </details>
 
@@ -611,13 +612,13 @@ that were discussed
 <details>
   <summary>Transition & Transforms</summary>
 
-| Property                                                                                      | Notes |
-|-----------------------------------------------------------------------------------------------|-------|
-| [overlay](https://developer.mozilla.org/en-US/docs/Web/CSS/overlay)                           |       |
-| [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate)                             |       |
-| [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale)                               |       |
-| [transition-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior)   |       |
-| [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate)                                                                                 |       |
+| Property                                                                                    | Notes |
+|---------------------------------------------------------------------------------------------|-------|
+| [overlay](https://developer.mozilla.org/en-US/docs/Web/CSS/overlay)                         |       |
+| [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate)                           |       |
+| [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale)                             |       |
+| [transition-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior) |       |
+| [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate)                     |       |
 
 </details>
 
@@ -635,133 +636,7 @@ that were discussed
 | [initial-letter](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter)                             |       |
 | [initial-letter-align](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align)                 |       |
 | Text-box trim                                                                                                 |       |
-| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                                                                                 |       |
-
-</details>
-
-## Future
-
-<details>
-  <summary>Align</summary>
-
-| Property                                                                      | Notes |
-|-------------------------------------------------------------------------------|-------|
-| [align-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks) |       |
-| [justify-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks)                                                            |       |
-
-</details>
-
-<details>
-  <summary>Anchoring</summary>
-
-| Property | Notes |
-|----------|-------|
-| anchor() |       |
-
-</details>
-
-
-<details>
-  <summary>Aural CSS</summary>
-
-| Property                                                                                               | Notes |
-|--------------------------------------------------------------------------------------------------------|-------|
-| [speak-as (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as)  |       |
-
-</details>
-
-<details>
-  <summary>Color</summary>
-
-| Property                                                                                         | Notes |
-|--------------------------------------------------------------------------------------------------|-------|
-| [contrast-color()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast)  |       |
-
-</details>
-
-<details>
-<summary>Container Queries</summary>
-
-| Property                                                                                              | Notes |
-|-------------------------------------------------------------------------------------------------------|-------|
-| [Style queries](https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries)  |       |
-
-</details>
-
-<details>
-  <summary>Functions</summary>
-
-| Property                                                                | Notes |
-|-------------------------------------------------------------------------|-------|
-| [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/element)   |       |
-| [image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image) |       |
-
-</details>
-
-<details>
-  <summary>Grid</summary>
-
-| Property                                                                                 | Notes |
-|------------------------------------------------------------------------------------------|-------|
-| [masonry-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow)  |       |
-
-</details>
-
-<details>
-  <summary>Pseudo-classes</summary>
-
-| Property                                                                           | Notes |
-|------------------------------------------------------------------------------------|-------|
-| [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within)  |       |
-
-</details>
-
-<details>
-  <summary>Pseudo-elements</summary>
-
-| Property                                                                          | Notes |
-|-----------------------------------------------------------------------------------|-------|
-| [::target-text](https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text)   |       |
-
-</details>
-<details>
-  <summary>Scroll</summary>
-
-| Property      | Notes |
-|---------------|-------|
-| target-text() |       |
-
-</details>
-
-<details>
-  <summary>Text Fragmentation</summary>
-
-| Property                                                             | Notes |
-|----------------------------------------------------------------------|-------|
-| [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans)  |       |
-
-</details>
-
-<details>
-  <summary>Typography</summary>
-
-| Property                                                                                      | Notes                         |
-|-----------------------------------------------------------------------------------------------|-------------------------------|
-| [line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)             | Currently -webkit-line-clamp  |
-| [line-height-step](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step)         |                               |
-| [margin-trim](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim)                   |                               |
-| [text-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust)         |                               |
-| [white-space-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse) |                               |
-| white-space-trim                                                                              |                               |
-
-</details>
-
-<details>
-  <summary>Units</summary>
-
-| Property                                                                    | Notes |
-|-----------------------------------------------------------------------------|-------|
-| [frequency#Hz](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency)  |       |
+| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       |       |
 
 </details>
 
@@ -779,6 +654,132 @@ that were discussed
 | view-transition-class                                                                                         |       |
 | [view-transition-name](https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name)                 |       |
 | view-transition-type                                                                                          |       |
+
+</details>
+
+## Future
+
+<details>
+  <summary>Align</summary>
+
+| Property                                                                          | Notes |
+|-----------------------------------------------------------------------------------|-------|
+| [align-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks)     |       |
+| [justify-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks) |       |
+
+</details>
+
+<details>
+  <summary>Anchoring</summary>
+
+| Property | Notes |
+|----------|-------|
+| anchor() |       |
+
+</details>
+
+
+<details>
+  <summary>Aural CSS</summary>
+
+| Property                                                                                              | Notes |
+|-------------------------------------------------------------------------------------------------------|-------|
+| [speak-as (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as) |       |
+
+</details>
+
+<details>
+  <summary>Color</summary>
+
+| Property                                                                                        | Notes |
+|-------------------------------------------------------------------------------------------------|-------|
+| [contrast-color()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast) |       |
+
+</details>
+
+<details>
+<summary>Container Queries</summary>
+
+| Property                                                                                             | Notes |
+|------------------------------------------------------------------------------------------------------|-------|
+| [Style queries](https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries) |       |
+
+</details>
+
+<details>
+  <summary>Functions</summary>
+
+| Property                                                                | Notes |
+|-------------------------------------------------------------------------|-------|
+| [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/element)   |       |
+| [image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image) |       |
+
+</details>
+
+<details>
+  <summary>Grid</summary>
+
+| Property                                                                                | Notes |
+|-----------------------------------------------------------------------------------------|-------|
+| [masonry-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow) |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-classes</summary>
+
+| Property                                                                          | Notes |
+|-----------------------------------------------------------------------------------|-------|
+| [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within) |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-elements</summary>
+
+| Property                                                                        | Notes |
+|---------------------------------------------------------------------------------|-------|
+| [::target-text](https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text) |       |
+
+</details>
+<details>
+  <summary>Scroll</summary>
+
+| Property      | Notes |
+|---------------|-------|
+| target-text() |       |
+
+</details>
+
+<details>
+  <summary>Text Fragmentation</summary>
+
+| Property                                                            | Notes |
+|---------------------------------------------------------------------|-------|
+| [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans) |       |
+
+</details>
+
+<details>
+  <summary>Typography</summary>
+
+| Property                                                                                      | Notes                        |
+|-----------------------------------------------------------------------------------------------|------------------------------|
+| [line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)             | Currently -webkit-line-clamp |
+| [line-height-step](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step)         |                              |
+| [margin-trim](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim)                   |                              |
+| [text-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust)         |                              |
+| [white-space-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse) |                              |
+| white-space-trim                                                                              |                              |
+
+</details>
+
+<details>
+  <summary>Units</summary>
+
+| Property                                                                   | Notes |
+|----------------------------------------------------------------------------|-------|
+| [frequency#Hz](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency) |       |
 
 </details>
 
