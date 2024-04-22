@@ -1,7 +1,7 @@
 *Note that this is a draft / template and just a suggestion by one person for the moment, this is by no means a final RFc*
 
 # Rfc
-The term "CSS3" has been widely used to encompass various additions and enhancements to Cascading Style Sheets (CSS) since around 2010. However, as CSS continues to evolve with new features and specifications, the blanket term "CSS3" has become insufficient and misleading. This RFC proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, CSS5, and Future/Next, to better organize and facilitate understanding of the evolving CSS landscape. This categorization aims to improve adoption and ease of teaching, while not having a direct impact towards the CSS Working Group (CSSWG) operations and specifications.
+The term "CSS3" has been widely used to encompass various additions and enhancements to Cascading Style Sheets (CSS) since around 2010. However, as CSS continues to evolve with new features and specifications, the blanket term "CSS3" has become insufficient and misleading. This RFC proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, to better organize and facilitate understanding of the evolving CSS landscape. This categorization aims to improve adoption and ease of teaching, while not having a direct impact towards the CSS Working Group (CSSWG) operations or the [Baseline initiative](https://web.dev/baseline). 
 
 ## Reason
 
@@ -10,10 +10,10 @@ The term "CSS3" has been used to refer to all additions and enhancements to CSS 
 ## Proposal
 
 ### Categorization
-Categorization is based on when new properties were introduced in a spec. This is to be browser(vendor) independent.
+Categorization is based on when new properties were introduced in a specification. This is browser independent and implementation independent, though these factors are lightly taken into account.
 
 
-* **CSS3:** This category includes CSS properties and features introduced prior to the proposal to further categorize. It serves as a historical reference point for CSS advancements up to a certain point.
+* **CSS3:** This category was established before this community group began articulating levels and was defined by the CSSWG, and was designed to be open ended. It serves as a historical reference point for CSS advancements up to a certain point.
 * **CSS4:** Properties and features introduced in a spec between 2013 - 2018.
 * **CSS5:** Properties and features introduced in a spec between 2019 - 2024.
 * **Future/Next**: This category encompasses properties and features that are currently in development or proposed for future versions of CSS beyond CSS5. It serves as a preview of upcoming CSS that are currently known.
