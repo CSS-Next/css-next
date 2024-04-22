@@ -542,8 +542,8 @@ that were discussed
 
 | Property                                                                                                  | Notes |
 |-----------------------------------------------------------------------------------------------------------|-------|
-| [:has](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)                                             |       |
-| [:is](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)                                               |       |
+| [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)                                           |       |
+| [:is()](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)                                             |       |
 | [:nth-child(An+B [of S]?)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#using_of_selector) |       |
 | [:picture-in-picture](https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture)               |       |
 | [:popover-open](https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open)                           |       |
