@@ -30,12 +30,13 @@ that were discussed
 <details>
   <summary>Animation</summary>
 
-| Property                                                                        | Notes |
-|---------------------------------------------------------------------------------|-------|
-| [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset)               |       |
-| [ray()](https://developer.mozilla.org/en-US/docs/Web/CSS/ray)                   |       |
-| [transform-box](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box) |       |
-| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)     |       |
+| Property                                                                        | Notes       |
+|---------------------------------------------------------------------------------|-------------|
+| Animate grid tracks                                                             | CSS feature |
+| [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset)               |             |
+| [ray()](https://developer.mozilla.org/en-US/docs/Web/CSS/ray)                   |             |
+| [transform-box](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box) |             |
+| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)     |             |
 
 </details>
 
@@ -180,59 +181,61 @@ that were discussed
 <details>
   <summary>Logical Properties</summary>
 
-| Property                                                                                                  | Notes |
-|-----------------------------------------------------------------------------------------------------------|-------|
-| [block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)                                 |       |
-| [border-block](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block)                             |       |
-| [border-block-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-color)                 |       |
-| [border-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end)                     |       |
-| [border-block-end-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-color)         |       |
-| [border-block-end-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-style)         |       |
-| [border-block-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-width)         |       |
-| [border-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start)                 |       |
-| [border-block-start-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-color)     |       |
-| [border-block-start-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-style)     |       |
-| [border-block-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-width)     |       |
-| [border-block-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-style)                 |       |
-| [border-block-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-width)                 |       |
-| [border-end-end-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-end-radius)           |       |
-| [border-end-start-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-start-radius)       |       |
-| [border-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline)                           |       |
-| [border-inline-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-color)               |       |
-| [border-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end)                   |       |
-| [border-inline-end-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-color)       |       |
-| [border-inline-end-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-style)       |       |
-| [border-inline-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width)       |       |
-| [border-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start)               |       |
-| [border-inline-start-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-color)   |       |
-| [border-inline-start-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-style)   |       |
-| [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width)   |       |
-| [border-inline-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-style)               |       |
-| [border-inline-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-width)               |       |
-| [border-start-end-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-end-radius)       |       |
-| [border-start-start-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-start-radius)   |       |
-| [inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size)                               |       |
-| [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block)                             |       |
-| [margin-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-end)                     |       |
-| [margin-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start)                 |       |
-| [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline)                           |       |
-| [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end)                   |       |
-| [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start)               |       |
-| [max-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/max-block-size)                         |       |
-| [max-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/max-inline-size)                       |       |
-| [min-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/min-block-size)                         |       |
-| [min-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/min-inline-size)                       |       |
-| [overflow-block](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block)                         |       |
-| [overflow-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-inline)                       |       |
-| [overscroll-behavior-block](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block)   |       |
-| [overscroll-behavior-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-inline) |       |
-| [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block)                           |       |
-| [padding-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-end)                   |       |
-| [padding-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-start)               |       |
-| [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline)                         |       |
-| [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end)                 |       |
-| [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start)             |       |
-| [writing-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)                             |       |
+| Property                                                                                                  | Notes       |
+|-----------------------------------------------------------------------------------------------------------|-------------|
+| [block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)                                 |             |
+| [border-block](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block)                             |             |
+| [border-block-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-color)                 |             |
+| [border-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end)                     |             |
+| [border-block-end-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-color)         |             |
+| [border-block-end-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-style)         |             |
+| [border-block-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-width)         |             |
+| [border-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start)                 |             |
+| [border-block-start-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-color)     |             |
+| [border-block-start-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-style)     |             |
+| [border-block-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-width)     |             |
+| [border-block-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-style)                 |             |
+| [border-block-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-width)                 |             |
+| [border-end-end-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-end-radius)           |             |
+| [border-end-start-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-start-radius)       |             |
+| [border-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline)                           |             |
+| [border-inline-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-color)               |             |
+| [border-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end)                   |             |
+| [border-inline-end-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-color)       |             |
+| [border-inline-end-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-style)       |             |
+| [border-inline-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width)       |             |
+| [border-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start)               |             |
+| [border-inline-start-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-color)   |             |
+| [border-inline-start-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-style)   |             |
+| [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width)   |             |
+| [border-inline-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-style)               |             |
+| [border-inline-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-width)               |             |
+| [border-start-end-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-end-radius)       |             |
+| [border-start-start-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-start-radius)   |             |
+| [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float)                                           | start / end |
+| [inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size)                               |             |
+| [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block)                             |             |
+| [margin-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-end)                     |             |
+| [margin-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start)                 |             |
+| [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline)                           |             |
+| [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end)                   |             |
+| [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start)               |             |
+| [max-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/max-block-size)                         |             |
+| [max-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/max-inline-size)                       |             |
+| [min-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/min-block-size)                         |             |
+| [min-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/min-inline-size)                       |             |
+| [overflow-block](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block)                         |             |
+| [overflow-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-inline)                       |             |
+| [overscroll-behavior-block](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block)   |             |
+| [overscroll-behavior-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-inline) |             |
+| [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block)                           |             |
+| [padding-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-end)                   |             |
+| [padding-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-start)               |             |
+| [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline)                         |             |
+| [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end)                 |             |
+| [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start)             |             |
+| [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)                                 | start / end |
+| [writing-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)                             |             |
 
 </details>
 
@@ -578,13 +581,14 @@ that were discussed
 <details>
   <summary>Scroll</summary>
 
-| Property                                                                                      | Notes |
-|-----------------------------------------------------------------------------------------------|-------|
-| [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)     |       |
-| [overflow-clip-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin) |       |
-| [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)           |       |
-| [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)         |       |
-| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)           |       |
+| Property                                                                                | Notes      |
+|-----------------------------------------------------------------------------------------|------------|
+| [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility) |            |
+| [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) | clip value |
+| [overflow-clip-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin) |            |
+| [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)     |            |
+| [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)   |            |
+| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)     |            |
 
 </details>
 
@@ -625,18 +629,18 @@ that were discussed
 <details>
   <summary>Typography</summary>
 
-| Property                                                                                                      | Notes |
-|---------------------------------------------------------------------------------------------------------------|-------|
-| [ascent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override)   |       |
-| [descent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override) |       |
-| [font-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust)                         |       |
-| [font-synthesis-position](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-position)           |       |
-| [hyphenate-character](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character)                   |       |
-| [hyphenate-limit-chars](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-limit-chars)               |       |
-| [initial-letter](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter)                             |       |
-| [initial-letter-align](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align)                 |       |
-| Text-box trim                                                                                                 |       |
-| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       |       |
+| Property                                                                                                      | Notes            |
+|---------------------------------------------------------------------------------------------------------------|------------------|
+| [ascent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override)   |                  |
+| [descent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override) |                  |
+| [font-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust)                         |                  |
+| [font-synthesis-position](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-position)           |                  |
+| [hyphenate-character](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character)                   |                  |
+| [hyphenate-limit-chars](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-limit-chars)               |                  |
+| [initial-letter](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter)                             |                  |
+| [initial-letter-align](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align)                 |                  |
+| Text-box trim                                                                                                 |                  |
+| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       | balance / pretty |
 
 </details>
 
