@@ -581,14 +581,14 @@ that were discussed
 <details>
   <summary>Scroll</summary>
 
-| Property                                                                                | Notes      |
-|-----------------------------------------------------------------------------------------|------------|
-| [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility) |            |
-| [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) | clip value |
+| Property                                                                                      | Notes      |
+|-----------------------------------------------------------------------------------------------|------------|
+| [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)     |            |
+| [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)                         | clip value |
 | [overflow-clip-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin) |            |
-| [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)     |            |
-| [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)   |            |
-| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)     |            |
+| [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)           |            |
+| [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)         |            |
+| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)           |            |
 
 </details>
 
@@ -734,7 +734,9 @@ that were discussed
 
 | Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
+| [:modal](https://developer.mozilla.org/en-US/docs/Web/CSS/:modal)                 |       |
 | [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within) |       |
+| :top-layer                                                                        |       |
 
 </details>
 
