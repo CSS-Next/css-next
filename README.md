@@ -1,0 +1,1 @@
+To get started, read our [charter](https://github.com/CSS-Next/css-next/blob/main/charter.md) and current [RFC discussion](https://github.com/CSS-Next/css-next/discussions/92) around CSS level categorization.
