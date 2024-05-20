@@ -541,6 +541,16 @@ that were discussed
 </details>
 
 <details>
+  <summary>Misc</summary>
+
+| Property                                                                                    | Notes |
+|---------------------------------------------------------------------------------------------|-------|
+| [Nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting)   |       |
+
+</details>
+
+
+<details>
   <summary>Pseudo-classes</summary>
 
 | Property                                                                                                  | Notes |
