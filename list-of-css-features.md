@@ -10,7 +10,7 @@ that were discussed
 <details>
   <summary>Align</summary>
 
-| Property                                                                            | Notes |
+| Feature                                                                            | Notes |
 |-------------------------------------------------------------------------------------|-------|
 | [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)     |       |
 | [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)         |       |
@@ -30,7 +30,7 @@ that were discussed
 <details>
   <summary>Animation</summary>
 
-| Property                                                                        | Notes       |
+| Feature                                                                        | Notes       |
 |---------------------------------------------------------------------------------|-------------|
 | Animate grid tracks                                                             | CSS feature |
 | [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset)               |             |
@@ -43,7 +43,7 @@ that were discussed
 <details>
   <summary>At-rules</summary>
 
-| Property                                                                                    | Notes |
+| Feature                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
 | [@forced-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)     |       |
 | @media range-syntax                                                                         |       |
@@ -55,7 +55,7 @@ that were discussed
 <details>
   <summary>Blend Modes</summary>
 
-| Property                                                                | Notes |
+| Feature                                                                | Notes |
 |-------------------------------------------------------------------------|-------|
 | [isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation) |       |
 
@@ -64,7 +64,7 @@ that were discussed
 <details>
   <summary>Clipping, shapes & masking</summary>
 
-| Property                                                                                        | Notes |
+| Feature                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [circle()](https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/circle)                 |       |
 | [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)                         |       |
@@ -79,7 +79,7 @@ that were discussed
 <details>
   <summary>Contain</summary>
 
-| Property                                                            | Notes |
+| Feature                                                            | Notes |
 |---------------------------------------------------------------------|-------|
 | [contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) |       |
 
@@ -88,7 +88,7 @@ that were discussed
 <details>
   <summary>Counter</summary>
 
-| Property                                                                                              | Notes |
+| Feature                                                                                              | Notes |
 |-------------------------------------------------------------------------------------------------------|-------|
 | [@counter-style](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style)                     |       |
 | [counter-set](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set)                           |       |
@@ -103,7 +103,7 @@ that were discussed
 <details>
   <summary>Flex</summary>
 
-| Property                                                                          | Notes |
+| Feature                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)                     |       |
 | flex_value#fr                                                                     |       |
@@ -119,7 +119,7 @@ that were discussed
 <details>
   <summary>Functions</summary>
 
-| Property                                                                               | Notes |
+| Feature                                                                               | Notes |
 |----------------------------------------------------------------------------------------|-------|
 | [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)                      |       |
 | [env()](https://developer.mozilla.org/en-US/docs/Web/CSS/env)                          |       |
@@ -136,7 +136,7 @@ that were discussed
 <details>
   <summary>Gradient</summary>
 
-| Property                                                                                     | Notes |
+| Feature                                                                                     | Notes |
 |----------------------------------------------------------------------------------------------|-------|
 | [conic-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient) |       |
 
@@ -145,7 +145,7 @@ that were discussed
 <details>
   <summary>Grid</summary>
 
-| Property                                                                                        | Notes |
+| Feature                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)                                   |       |
 | [grid-area](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area)                         |       |
@@ -168,7 +168,7 @@ that were discussed
 <details>
   <summary>Image / Video</summary>
 
-| Property                                                                               | Notes |
+| Feature                                                                               | Notes |
 |----------------------------------------------------------------------------------------|-------|
 | [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)          |       |
 | [cross-fade()](https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade)            |       |
@@ -181,7 +181,7 @@ that were discussed
 <details>
   <summary>Logical Properties</summary>
 
-| Property                                                                                                  | Notes       |
+| Feature                                                                                                  | Notes       |
 |-----------------------------------------------------------------------------------------------------------|-------------|
 | [block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)                                 |             |
 | [border-block](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block)                             |             |
@@ -242,7 +242,7 @@ that were discussed
 <details>
   <summary>Misc</summary>
 
-| Property                                                                      | Notes |
+| Feature                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
 | [all](https://developer.mozilla.org/en-US/docs/Web/CSS/all)                   |       |
 | caret                                                                         |       |
@@ -258,7 +258,7 @@ that were discussed
 <details>
   <summary>Print</summary>
 
-| Property                                                                                            | Notes |
+| Feature                                                                                            | Notes |
 |-----------------------------------------------------------------------------------------------------|-------|
 | [page-orientation (@page)](https://developer.mozilla.org/en-US/docs/Web/CSS/@page/page-orientation) |       |
 | [print-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust)           |       |
@@ -268,7 +268,7 @@ that were discussed
 <details>
   <summary>Pseudo-classes</summary>
 
-| Property                                                                          | Notes |
+| Feature                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [:current](https://developer.mozilla.org/en-US/docs/Web/CSS/:current)             |       |
 | [:defined](https://developer.mozilla.org/en-US/docs/Web/CSS/:defined)             |       |
@@ -289,7 +289,7 @@ that were discussed
 <details>
   <summary>Pseudo-elements</summary>
 
-| Property                                                                      | Notes |
+| Feature                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
 | [::backdrop](https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop)     |       |
 | [::cue](https://developer.mozilla.org/en-US/docs/Web/CSS/::cue)               |       |
@@ -302,7 +302,7 @@ that were discussed
 <details>
   <summary>Relative units</summary>
 
-| Property                                                                                                       | Notes |
+| Feature                                                                                                       | Notes |
 |----------------------------------------------------------------------------------------------------------------|-------|
 | [length#vb](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
 | [length#vh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
@@ -316,7 +316,7 @@ that were discussed
 <details>
   <summary>Scroll</summary>
 
-| Property                                                                                                    | Notes |
+| Feature                                                                                                    | Notes |
 |-------------------------------------------------------------------------------------------------------------|-------|
 | [overflow-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor)                         |       |
 | [overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)                 |       |
@@ -355,7 +355,7 @@ that were discussed
 <details>
   <summary>Typography</summary>
 
-| Property                                                                                                                  | Notes |
+| Feature                                                                                                                  | Notes |
 |---------------------------------------------------------------------------------------------------------------------------|-------|
 | @annotation                                                                                                               |       |
 | @character-variant                                                                                                        |       |
@@ -417,7 +417,7 @@ that were discussed
 <details>
   <summary>Animation</summary>
 
-| Property                                                                                        | Notes |
+| Feature                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [animation-composition](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition) |       |
 | [offset-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-anchor)                 |       |
@@ -431,7 +431,7 @@ that were discussed
 <details>
   <summary>At-rules</summary>
 
-| Property                                                                                                                        | Notes |
+| Feature                                                                                                                        | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------|-------|
 | @custom-media                                                                                                                   |       |
 | [@layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)                                                               |       |
@@ -447,7 +447,7 @@ that were discussed
 <details>
   <summary>Cascade Layers</summary>
 
-| Property                                                                      | Notes |
+| Feature                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
 | [layer()](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)            |       |
 | [layer() (@import)](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)  |       |
@@ -458,7 +458,7 @@ that were discussed
 <details>
   <summary>Colors & theming</summary>
 
-| Property                                                                                                                                    | Notes |
+| Feature                                                                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                               |       |
 | [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                               |       |
@@ -477,7 +477,7 @@ that were discussed
 <details>
   <summary>Container Queries</summary>
 
-| Property                                                                                                                                                   | Notes |
+| Feature                                                                                                                                                   | Notes |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | [length#cqw, cqi, cqb, cqh, cqmax, cqmin](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units) |       |
 | [contain-intrinsic-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-block-size)                                              |       |
@@ -494,7 +494,7 @@ that were discussed
 <details>
   <summary>Grid</summary>
 
-| Property                                                                            | Notes |
+| Feature                                                                            | Notes |
 |-------------------------------------------------------------------------------------|-------|
 | [Subgrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid) |       |
 
@@ -503,7 +503,7 @@ that were discussed
 <details>
   <summary>Logical Properites</summary>
 
-| Property                                                                                  | Notes |
+| Feature                                                                                  | Notes |
 |-------------------------------------------------------------------------------------------|-------|
 | [inset](https://developer.mozilla.org/en-US/docs/Web/CSS/inset)                           |       |
 | [inset-block](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block)               |       |
@@ -518,7 +518,7 @@ that were discussed
 <details>
   <summary>Math Functions</summary>
 
-| Property                                                          | Notes |
+| Feature                                                          | Notes |
 |-------------------------------------------------------------------|-------|
 | [abs()](https://developer.mozilla.org/en-US/docs/Web/CSS/abs)     |       |
 | [acos()](https://developer.mozilla.org/en-US/docs/Web/CSS/acos)   |       |
@@ -543,7 +543,7 @@ that were discussed
 <details>
   <summary>Misc</summary>
 
-| Property                                                                                    | Notes |
+| Feature                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
 | [Nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting)   |       |
 
@@ -553,7 +553,7 @@ that were discussed
 <details>
   <summary>Pseudo-classes</summary>
 
-| Property                                                                                                  | Notes |
+| Feature                                                                                                  | Notes |
 |-----------------------------------------------------------------------------------------------------------|-------|
 | [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)                                           |       |
 | [:is()](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)                                             |       |
@@ -567,7 +567,7 @@ that were discussed
 <details>
   <summary>Pseudo-elements</summary>
 
-| Property                                                                              | Notes |
+| Feature                                                                              | Notes |
 |---------------------------------------------------------------------------------------|-------|
 | [::grammar-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error)   |       |
 | [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)                 |       |
@@ -578,7 +578,7 @@ that were discussed
 <details>
   <summary>Relative Units</summary>
 
-| Property                                                                                                                                   | Notes |
+| Feature                                                                                                                                   | Notes |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | [Dynamic Viewport Units (dvh, lvh & svh)](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
 | [length#cap](https://developer.mozilla.org/en-US/docs/Web/CSS/length#cap)                                                                  |       |
@@ -591,7 +591,7 @@ that were discussed
 <details>
   <summary>Scroll</summary>
 
-| Property                                                                                      | Notes      |
+| Feature                                                                                      | Notes      |
 |-----------------------------------------------------------------------------------------------|------------|
 | [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)     |            |
 | [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)                         | clip value |
@@ -605,7 +605,7 @@ that were discussed
 <details>
   <summary>Scroll-driven animations</summary>
 
-| Property                                                                                        | Notes |
+| Feature                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [animation-range](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range)             |       |
 | [animation-range-end](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-end)     |       |
@@ -626,7 +626,7 @@ that were discussed
 <details>
   <summary>Transition & Transforms</summary>
 
-| Property                                                                                    | Notes |
+| Feature                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
 | [overlay](https://developer.mozilla.org/en-US/docs/Web/CSS/overlay)                         |       |
 | [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate)                           |       |
@@ -639,7 +639,7 @@ that were discussed
 <details>
   <summary>Typography</summary>
 
-| Property                                                                                                      | Notes            |
+| Feature                                                                                                      | Notes            |
 |---------------------------------------------------------------------------------------------------------------|------------------|
 | [ascent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override)   |                  |
 | [descent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override) |                  |
@@ -658,7 +658,7 @@ that were discussed
 <details>
   <summary>View transitions</summary>
 
-| Property                                                                                                      | Notes |
+| Feature                                                                                                      | Notes |
 |---------------------------------------------------------------------------------------------------------------|-------|
 | [::view-transition](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition)                       |       |
 | [::view-transition-group](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)           |       |
@@ -677,7 +677,7 @@ that were discussed
 <details>
   <summary>Align</summary>
 
-| Property                                                                          | Notes |
+| Feature                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [align-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks)     |       |
 | [justify-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks) |       |
@@ -687,7 +687,7 @@ that were discussed
 <details>
   <summary>Anchoring</summary>
 
-| Property | Notes |
+| Feature | Notes |
 |----------|-------|
 | anchor() |       |
 
@@ -697,7 +697,7 @@ that were discussed
 <details>
   <summary>Aural CSS</summary>
 
-| Property                                                                                              | Notes |
+| Feature                                                                                              | Notes |
 |-------------------------------------------------------------------------------------------------------|-------|
 | [speak-as (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as) |       |
 
@@ -706,7 +706,7 @@ that were discussed
 <details>
   <summary>Color</summary>
 
-| Property                                                                                        | Notes |
+| Feature                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [contrast-color()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast) |       |
 
@@ -715,7 +715,7 @@ that were discussed
 <details>
 <summary>Container Queries</summary>
 
-| Property                                                                                             | Notes |
+| Feature                                                                                             | Notes |
 |------------------------------------------------------------------------------------------------------|-------|
 | [Style queries](https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries) |       |
 
@@ -724,7 +724,7 @@ that were discussed
 <details>
   <summary>Functions</summary>
 
-| Property                                                                | Notes |
+| Feature                                                                | Notes |
 |-------------------------------------------------------------------------|-------|
 | [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/element)   |       |
 | [image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image) |       |
@@ -734,7 +734,7 @@ that were discussed
 <details>
   <summary>Grid</summary>
 
-| Property                                                                                | Notes |
+| Feature                                                                                | Notes |
 |-----------------------------------------------------------------------------------------|-------|
 | [masonry-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow) |       |
 
@@ -743,7 +743,7 @@ that were discussed
 <details>
   <summary>Pseudo-classes</summary>
 
-| Property                                                                          | Notes |
+| Feature                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [:modal](https://developer.mozilla.org/en-US/docs/Web/CSS/:modal)                 |       |
 | [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within) |       |
@@ -754,7 +754,7 @@ that were discussed
 <details>
   <summary>Pseudo-elements</summary>
 
-| Property                                                                        | Notes |
+| Feature                                                                        | Notes |
 |---------------------------------------------------------------------------------|-------|
 | [::target-text](https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text) |       |
 
@@ -762,7 +762,7 @@ that were discussed
 <details>
   <summary>Scroll</summary>
 
-| Property      | Notes |
+| Feature      | Notes |
 |---------------|-------|
 | target-text() |       |
 
@@ -771,7 +771,7 @@ that were discussed
 <details>
   <summary>Text Fragmentation</summary>
 
-| Property                                                            | Notes |
+| Feature                                                            | Notes |
 |---------------------------------------------------------------------|-------|
 | [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans) |       |
 
@@ -780,7 +780,7 @@ that were discussed
 <details>
   <summary>Typography</summary>
 
-| Property                                                                                      | Notes                        |
+| Feature                                                                                      | Notes                        |
 |-----------------------------------------------------------------------------------------------|------------------------------|
 | [line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)             | Currently -webkit-line-clamp |
 | [line-height-step](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step)         |                              |
@@ -794,7 +794,7 @@ that were discussed
 <details>
   <summary>Units</summary>
 
-| Property                                                                   | Notes |
+| Feature                                                                   | Notes |
 |----------------------------------------------------------------------------|-------|
 | [frequency#Hz](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency) |       |
 
