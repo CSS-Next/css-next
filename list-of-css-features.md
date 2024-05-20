@@ -639,7 +639,8 @@ that were discussed
 | [hyphenate-limit-chars](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-limit-chars)               |                  |
 | [initial-letter](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter)                             |                  |
 | [initial-letter-align](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align)                 |                  |
-| Text-box trim                                                                                                 |                  |
+| text-box-trim                                                                                                 |                  |
+| text-box-edge                                                                                                 |                  |
 | [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       | balance / pretty |
 
 </details>
