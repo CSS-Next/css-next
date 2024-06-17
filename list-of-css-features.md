@@ -172,7 +172,7 @@ that were discussed
 |----------------------------------------------------------------------------------------|-------|
 | [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)          |       |
 | [cross-fade()](https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade)            |       |
-| [image-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientatio) |       |
+| [image-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation) |       |
 | [image-resolution](https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution)  |       |
 | [image-set()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)        |       |
 
