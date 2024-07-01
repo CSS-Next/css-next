@@ -162,6 +162,7 @@ that were discussed
 | [grid-template-areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)     |       |
 | [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) |       |
 | [grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)       |       |
+| [Subgrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid) |       |
 
 </details>
 
@@ -491,14 +492,6 @@ that were discussed
 
 </details>
 
-<details>
-  <summary>Grid</summary>
-
-| Feature                                                                            | Notes |
-|-------------------------------------------------------------------------------------|-------|
-| [Subgrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid) |       |
-
-</details>
 
 <details>
   <summary>Logical Properites</summary>
