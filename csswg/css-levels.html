@@ -8,7 +8,7 @@
   <meta content="Bikeshed version a1dabb26c, updated Mon Jun 17 15:00:44 2024 -0700" name="generator">
   <link href="https://drafts.csswg.org/CSS/levels/" rel="canonical">
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
-  <meta content="87692c7e728fe3112ef53c4452158162c7d31d9f" name="revision">
+  <meta content="9a906b7fd53482fd4dbb235decdd972441ac1e6e" name="revision">
   <meta content="dark light" name="color-scheme">
   <link href="https://www.w3.org/StyleSheets/TR/2021/dark.css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
 <style>/* Boilerplate: style-autolinks */
@@ -420,6 +420,8 @@ dfn > a.self-link::before      { content: "#"; }
      <dl>
       <dt>This version:
       <dd><a class="u-url" href="https://drafts.csswg.org/CSS/levels/">https://drafts.csswg.org/CSS/levels/</a>
+      <dt>Previous Versions:
+      <dd><a href="https://www.w3.org/TR/CSS/#css-level" rel="prev">https://www.w3.org/TR/CSS/#css-level</a>
       <dt>Issue Tracking:
       <dd><a href="https://github.com/CSS-Next/css-next/issues/">GitHub</a>
       <dt class="editor">Editors:
@@ -465,22 +467,19 @@ dfn > a.self-link::before      { content: "#"; }
   </nav>
   <main>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
-   <p>Cascading Style Sheets does not have versions in the traditional sense;
-instead it has [levels](https://www.w3.org/TR/CSS/#css-levels). 
-Each level of CSS builds on the previous, refining definitions and adding features. 
-In Oct 27, 2023, the 
-[CSS Working Group resolved to "support the definition of CSS4"](https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332) 
-and offloaded the categorization of CSS properties to a community group called [CSS Next](https://github.com/CSS-Next/css-next).</p>
+   <p>Cascading Style Sheets does not have versions in the traditional sense,
+instead it has <a href="https://www.w3.org/TR/CSS/#css-levels">levels</a>. 
+Each level of CSS builds on the previous module, refining definitions and adding features. 
+In Oct 27, 2023, the <a href="https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332">CSS Working Group resolved to "support the definition of CSS4"</a> and delegated the categorization of CSS properties to the <a href="https://github.com/CSS-Next/css-next">CSS Next Community Group</a>.</p>
    <p>The term "CSS3" has been widely used to encompass various additions and enhancements
 to Cascading Style Sheets (CSS) since around 2010. 
-However, as CSS continues to evolve with new features and specifications, 
-the blanket term "CSS3" has become insufficient and misleading. 
-[This RFC](https://github.com/CSS-Next/css-next/discussions/92) proposes 
-the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
+Originally, the CSSWG defined CSS3 as "everything after CSS2". 
+As CSS continues to evolve with new features and specifications, 
+the blanket term "CSS3" has become insufficient and misleading. <a href="https://github.com/CSS-Next/css-next/discussions/92">This RFC</a> from the CSS Next Community Group 
+proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
 to better organize and facilitate understanding of the evolving CSS landscape. 
 This categorization aims to improve adoption and ease of teaching, while not having a 
-direct impact towards the CSS Working Group (CSSWG) operations or the 
-[Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).</p>
+direct impact towards the CSS Working Group (CSSWG) operations or the <a href="https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md">Baseline initiative</a>.</p>
    <h2 class="heading settled" data-level="2" id="categorization"><span class="secno">2. </span><span class="content">Categorization</span><a class="self-link" href="#categorization"></a></h2>
    <p>Categorization is based on a variety of factors
 with the primary factor being the general timeline that an API was initially specified 
@@ -489,13 +488,13 @@ Additionally, implementer interest and adoption were moderately taken into accou
 in the categorization process.</p>
    <ul>
     <li data-md>
-     <p>**CSS3:** This category was established before this community group began articulating levels and was defined by the CSSWG, and was designed to be open ended. It serves as a historical reference point for CSS advancements up to a certain point.</p>
+     <p><strong>CSS3:</strong> This category was established before this community group began articulating levels and was defined by the CSSWG, and was designed to be open ended. It serves as a historical reference point for CSS advancements up to a certain point.</p>
     <li data-md>
-     <p>**CSS4:** Properties and features introduced in a spec around 2013 - 2018.</p>
+     <p><strong>CSS4:</strong> Properties and features introduced in a spec around 2013 - 2018.</p>
     <li data-md>
-     <p>**CSS5:** Properties and features introduced in a spec around 2019 - 2024.</p>
+     <p><strong>CSS5:</strong> Properties and features introduced in a spec around 2019 - 2024.</p>
     <li data-md>
-     <p>**Future/Next**: This category is a placeholder for properties and features that are currently in development or proposed for future versions of CSS beyond CSS5.</p>
+     <p><strong>Future/Next</strong>: This category is a placeholder for properties and features that are currently in development or proposed for future versions of CSS beyond CSS5.</p>
    </ul>
    <h2 class="heading settled" data-level="3" id="feature-list"><span class="secno">3. </span><span class="content">List of CSS4 and CSS5 features</span><a class="self-link" href="#feature-list"></a></h2>
    <p>This list should be handled as a work in progress.</p>
@@ -504,289 +503,289 @@ in the categorization process.</p>
     <summary>Align</summary>
     <p>| Property                                                                            | Notes |
 |-------------------------------------------------------------------------------------|-------|
-| [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)     |       |
-| [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)         |       |
-| [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)           |       |
-| [gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)                         |       |
-| [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) |       |
-| [justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)     |       |
-| [justify-self](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)       |       |
-| [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order)                     |       |
-| [place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)     |       |
-| [place-items](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)         |       |
-| [place-self](https://developer.mozilla.org/en-US/docs/Web/CSS/place-self)           |       |
-| [row-gap](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)                 |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content">align-content</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">align-items</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self">align-self</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap">gap</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">justify-content</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items">justify-items</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self">justify-self</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order">order</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-content">place-content</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-items">place-items</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-self">place-self</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap">row-gap</a> |       |</p>
    </details>
    <details>
     <summary>Animation</summary>
     <p>| Property                                                                        | Notes       |
 |---------------------------------------------------------------------------------|-------------|
 | Animate grid tracks                                                             | CSS feature |
-| [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset)               |             |
-| [ray()](https://developer.mozilla.org/en-US/docs/Web/CSS/ray)                   |             |
-| [transform-box](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box) |             |
-| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)     |             |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/offset">offset</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ray">ray()</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box">transform-box</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/will-change">will-change</a> |             |</p>
    </details>
    <details>
     <summary>At-rules</summary>
     <p>| Property                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
-| [@forced-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)     |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors">@forced-colors</a> |       |
 | @media range-syntax                                                                         |       |
-| [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)                     |       |
-| [forced-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports">@supports</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust">forced-color-adjust</a> |       |</p>
    </details>
    <details>
     <summary>Blend Modes</summary>
     <p>| Property                                                                | Notes |
 |-------------------------------------------------------------------------|-------|
-| [isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/isolation">isolation</a> |       |</p>
    </details>
    <details>
     <summary>Clipping, shapes &amp; masking</summary>
     <p>| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
-| [circle()](https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/circle)                 |       |
-| [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)                         |       |
-| [ellipse()](https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/ellipse)               |       |
-| [mask-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode)                         |       |
-| [shape-image-threshold](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold) |       |
-| [shape-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-margin)                   |       |
-| [shape-outside](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside)                 |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/circle">circle()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">clip-path</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/ellipse">ellipse()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode">mask-mode</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold">shape-image-threshold</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-margin">shape-margin</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside">shape-outside</a> |       |</p>
    </details>
    <details>
     <summary>Contain</summary>
     <p>| Property                                                            | Notes |
 |---------------------------------------------------------------------|-------|
-| [contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain">contain</a> |       |</p>
    </details>
    <details>
     <summary>Counter</summary>
     <p>| Property                                                                                              | Notes |
 |-------------------------------------------------------------------------------------------------------|-------|
-| [@counter-style](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style)                     |       |
-| [counter-set](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set)                           |       |
-| [fallback (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/fallback) |       |
-| [suffix (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/suffix)     |       |
-| [symbols (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/symbols)   |       |
-| [symbols()](https://developer.mozilla.org/en-US/docs/Web/CSS/symbols)                                 |       |
-| [system (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system)     |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style">@counter-style</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set">counter-set</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/fallback">fallback (@counter-style)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/suffix">suffix (@counter-style)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/symbols">symbols (@counter-style)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/symbols">symbols()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system">system (@counter-style)</a> |       |</p>
    </details>
    <details>
     <summary>Flex</summary>
     <p>| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
-| [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)                     |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">flex</a> |       |
 | flex_value#fr                                                                     |       |
-| [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)         |       |
-| [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) |       |
-| [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow)           |       |
-| [flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)           |       |
-| [flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)       |       |
-| [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)           |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis">flex-basis</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction">flex-direction</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow">flex-flow</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow">flex-grow</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink">flex-shrink</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap">flex-wrap</a> |       |</p>
    </details>
    <details>
     <summary>Functions</summary>
     <p>| Property                                                                               | Notes |
 |----------------------------------------------------------------------------------------|-------|
-| [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)                      |       |
-| [env()](https://developer.mozilla.org/en-US/docs/Web/CSS/env)                          |       |
-| [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)            |       |
-| [fit-content()](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content_function) |       |
-| [max()](https://developer.mozilla.org/en-US/docs/Web/CSS/max)                          |       |
-| [min()](https://developer.mozilla.org/en-US/docs/Web/CSS/min)                          |       |
-| [minmax()](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)                    |       |
-| [repeat()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat)                    |       |
-| [var(), --*](https://developer.mozilla.org/en-US/docs/Web/CSS/var)                     |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">clamp()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/env">env()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content">fit-content</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content_function">fit-content()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max">max()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min">min()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/minmax">minmax()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeat">repeat()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/var">var(), --*</a> |       |</p>
    </details>
    <details>
     <summary>Gradient</summary>
     <p>| Property                                                                                     | Notes |
 |----------------------------------------------------------------------------------------------|-------|
-| [conic-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient">conic-gradient()</a> |       |</p>
    </details>
    <details>
     <summary>Grid</summary>
     <p>| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
-| [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)                                   |       |
-| [grid-area](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area)                         |       |
-| [grid-auto-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns)         |       |
-| [grid-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow)               |       |
-| [grid-auto-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows)               |       |
-| [grid-column](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)                     |       |
-| [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)             |       |
-| [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)         |       |
-| [grid-row](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)                           |       |
-| [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)                   |       |
-| [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)               |       |
-| [grid-template](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template)                 |       |
-| [grid-template-areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)     |       |
-| [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) |       |
-| [grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)       |       |
-| [Subgrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid)             |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">grid</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">grid-area</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns">grid-auto-columns</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow">grid-auto-flow</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows">grid-auto-rows</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column">grid-column</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end">grid-column-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start">grid-column-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row">grid-row</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end">grid-row-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start">grid-row-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template">grid-template</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas">grid-template-areas</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns">grid-template-columns</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows">grid-template-rows</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid">Subgrid</a> |       |</p>
    </details>
    <details>
     <summary>Image / Video</summary>
     <p>| Property                                                                               | Notes |
 |----------------------------------------------------------------------------------------|-------|
-| [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)          |       |
-| [cross-fade()](https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade)            |       |
-| [image-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation) |       |
-| [image-resolution](https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution)  |       |
-| [image-set()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)        |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">aspect-ratio</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade">cross-fade()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation">image-orientation</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution">image-resolution</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set">image-set()</a> |       |</p>
    </details>
    <details>
     <summary>Logical Properties</summary>
     <p>| Property                                                                                                  | Notes       |
 |-----------------------------------------------------------------------------------------------------------|-------------|
-| [block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)                                 |             |
-| [border-block](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block)                             |             |
-| [border-block-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-color)                 |             |
-| [border-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end)                     |             |
-| [border-block-end-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-color)         |             |
-| [border-block-end-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-style)         |             |
-| [border-block-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-width)         |             |
-| [border-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start)                 |             |
-| [border-block-start-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-color)     |             |
-| [border-block-start-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-style)     |             |
-| [border-block-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-width)     |             |
-| [border-block-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-style)                 |             |
-| [border-block-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-width)                 |             |
-| [border-end-end-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-end-radius)           |             |
-| [border-end-start-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-start-radius)       |             |
-| [border-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline)                           |             |
-| [border-inline-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-color)               |             |
-| [border-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end)                   |             |
-| [border-inline-end-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-color)       |             |
-| [border-inline-end-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-style)       |             |
-| [border-inline-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width)       |             |
-| [border-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start)               |             |
-| [border-inline-start-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-color)   |             |
-| [border-inline-start-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-style)   |             |
-| [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width)   |             |
-| [border-inline-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-style)               |             |
-| [border-inline-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-width)               |             |
-| [border-start-end-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-end-radius)       |             |
-| [border-start-start-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-start-radius)   |             |
-| [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float)                                           | start / end |
-| [inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size)                               |             |
-| [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block)                             |             |
-| [margin-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-end)                     |             |
-| [margin-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start)                 |             |
-| [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline)                           |             |
-| [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end)                   |             |
-| [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start)               |             |
-| [max-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/max-block-size)                         |             |
-| [max-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/max-inline-size)                       |             |
-| [min-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/min-block-size)                         |             |
-| [min-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/min-inline-size)                       |             |
-| [overflow-block](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block)                         |             |
-| [overflow-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-inline)                       |             |
-| [overscroll-behavior-block](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block)   |             |
-| [overscroll-behavior-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-inline) |             |
-| [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block)                           |             |
-| [padding-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-end)                   |             |
-| [padding-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-start)               |             |
-| [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline)                         |             |
-| [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end)                 |             |
-| [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start)             |             |
-| [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)                                 | start / end |
-| [writing-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)                             |             |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/block-size">block-size</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block">border-block</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-color">border-block-color</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end">border-block-end</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-color">border-block-end-color</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-style">border-block-end-style</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-width">border-block-end-width</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start">border-block-start</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-color">border-block-start-color</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-style">border-block-start-style</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-width">border-block-start-width</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-style">border-block-style</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-width">border-block-width</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-end-radius">border-end-end-radius</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-start-radius">border-end-start-radius</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline">border-inline</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-color">border-inline-color</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end">border-inline-end</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-color">border-inline-end-color</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-style">border-inline-end-style</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width">border-inline-end-width</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start">border-inline-start</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-color">border-inline-start-color</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-style">border-inline-start-style</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width">border-inline-start-width</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-style">border-inline-style</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-width">border-inline-width</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-end-radius">border-start-end-radius</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-start-radius">border-start-start-radius</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float</a> | start / end |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size">inline-size</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block">margin-block</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-end">margin-block-end</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start">margin-block-start</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline">margin-inline</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end">margin-inline-end</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start">margin-inline-start</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-block-size">max-block-size</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-inline-size">max-inline-size</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-block-size">min-block-size</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-inline-size">min-inline-size</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block">overflow-block</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-inline">overflow-inline</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block">overscroll-behavior-block</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-inline">overscroll-behavior-inline</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block">padding-block</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-end">padding-block-end</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-start">padding-block-start</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline">padding-inline</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end">padding-inline-end</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start">padding-inline-start</a> |             |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">text-align</a> | start / end |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode">writing-mode</a> |             |</p>
    </details>
    <details>
     <summary>Misc</summary>
     <p>| Property                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
-| [all](https://developer.mozilla.org/en-US/docs/Web/CSS/all)                   |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/all">all</a> |       |
 | caret                                                                         |       |
-| [caret-color](https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color)   |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color">caret-color</a> |       |
 | caret-shape                                                                   |       |
-| [touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action) |       |
-| [unset](https://developer.mozilla.org/en-US/docs/Web/CSS/unset)               |       |
-| [user-select](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select)   |       |
-| [revert](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)             |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action">touch-action</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/unset">unset</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-select">user-select</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/revert">revert</a> |       |</p>
    </details>
    <details>
     <summary>Print</summary>
     <p>| Property                                                                                            | Notes |
 |-----------------------------------------------------------------------------------------------------|-------|
-| [page-orientation (@page)](https://developer.mozilla.org/en-US/docs/Web/CSS/@page/page-orientation) |       |
-| [print-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust)           |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@page/page-orientation">page-orientation (@page)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust">print-color-adjust</a> |       |</p>
    </details>
    <details>
     <summary>Pseudo-classes</summary>
     <p>| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
-| [:current](https://developer.mozilla.org/en-US/docs/Web/CSS/:current)             |       |
-| [:defined](https://developer.mozilla.org/en-US/docs/Web/CSS/:defined)             |       |
-| [:dir](https://developer.mozilla.org/en-US/docs/Web/CSS/:dir)                     |       |
-| [:focus-visible](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible) |       |
-| [:focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)   |       |
-| [:fullscreen](https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen)       |       |
-| [:future](https://developer.mozilla.org/en-US/docs/Web/CSS/:future)               |       |
-| [:host-context()](https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context) |       |
-| [:host()](https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function)        |       |
-| [:paused](https://developer.mozilla.org/en-US/docs/Web/CSS/:paused)               |       |
-| [:playing](https://developer.mozilla.org/en-US/docs/Web/CSS/:playing)             |       |
-| [:user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid)   |       |
-| [:user-valid](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid)       |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:current">:current</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined">:defined</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir">:dir</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible">:focus-visible</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within">:focus-within</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen">:fullscreen</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:future">:future</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context">:host-context()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function">:host()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:paused">:paused</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:playing">:playing</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid">:user-invalid</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid">:user-valid</a> |       |</p>
    </details>
    <details>
     <summary>Pseudo-elements</summary>
     <p>| Property                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
-| [::backdrop](https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop)     |       |
-| [::cue](https://developer.mozilla.org/en-US/docs/Web/CSS/::cue)               |       |
-| [::cue-region](https://developer.mozilla.org/en-US/docs/Web/CSS/::cue-region) |       |
-| [::part](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)             |       |
-| [::slotted](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted)       |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop">::backdrop</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::cue">::cue</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::cue-region">::cue-region</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::part">::part</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted">::slotted</a> |       |</p>
    </details>
    <details>
     <summary>Relative units</summary>
     <p>| Property                                                                                                       | Notes |
 |----------------------------------------------------------------------------------------------------------------|-------|
-| [length#vb](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
-| [length#vh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
-| [length#vi](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
-| [length#vmax](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
-| [length#vmin](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
-| [length#vw](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">length#vb</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">length#vh</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">length#vi</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">length#vmax</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">length#vmin</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">length#vw</a> |       |</p>
    </details>
    <details>
     <summary>Scroll</summary>
     <p>| Property                                                                                                    | Notes |
 |-------------------------------------------------------------------------------------------------------------|-------|
-| [overflow-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor)                         |       |
-| [overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)                 |       |
-| [overscroll-behavior-x](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-x)             |       |
-| [overscroll-behavior-y](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-y)             |       |
-| [scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)                         |       |
-| [scroll-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin)                             |       |
-| [scroll-margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block)                 |       |
-| [scroll-margin-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block-end)         |       |
-| [scroll-margin-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block-start)     |       |
-| [scroll-margin-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-bottom)               |       |
-| [scroll-margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline)               |       |
-| [scroll-margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline-end)       |       |
-| [scroll-margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline-start)   |       |
-| [scroll-margin-left](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-left)                   |       |
-| [scroll-margin-right](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-right)                 |       |
-| [scroll-margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top)                     |       |
-| [scroll-padding](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding)                           |       |
-| [scroll-padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block)               |       |
-| [scroll-padding-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block-end)       |       |
-| [scroll-padding-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block-start)   |       |
-| [scroll-padding-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-bottom)             |       |
-| [scroll-padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline)             |       |
-| [scroll-padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline-end)     |       |
-| [scroll-padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline-start) |       |
-| [scroll-padding-left](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-left)                 |       |
-| [scroll-padding-right](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-right)               |       |
-| [scroll-padding-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-top)                   |       |
-| [scroll-snap-align](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align)                     |       |
-| [scroll-snap-stop](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-stop)                       |       |
-| [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type)                       |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor">overflow-anchor</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior">overscroll-behavior</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-x">overscroll-behavior-x</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-y">overscroll-behavior-y</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior">scroll-behavior</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin">scroll-margin</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block">scroll-margin-block</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block-end">scroll-margin-block-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block-start">scroll-margin-block-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-bottom">scroll-margin-bottom</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline">scroll-margin-inline</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline-end">scroll-margin-inline-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline-start">scroll-margin-inline-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-left">scroll-margin-left</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-right">scroll-margin-right</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top">scroll-margin-top</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding">scroll-padding</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block">scroll-padding-block</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block-end">scroll-padding-block-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block-start">scroll-padding-block-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-bottom">scroll-padding-bottom</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline">scroll-padding-inline</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline-end">scroll-padding-inline-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline-start">scroll-padding-inline-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-left">scroll-padding-left</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-right">scroll-padding-right</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-top">scroll-padding-top</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align">scroll-snap-align</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-stop">scroll-snap-stop</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type">scroll-snap-type</a> |       |</p>
    </details>
    <details>
     <summary>Typography</summary>
@@ -794,55 +793,55 @@ in the categorization process.</p>
 |---------------------------------------------------------------------------------------------------------------------------|-------|
 | @annotation                                                                                                               |       |
 | @character-variant                                                                                                        |       |
-| [@font-feature-values](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values)                             |       |
-| [@font-palette-values](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values)                             |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values">@font-feature-values</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values">@font-palette-values</a> |       |
 | @ornaments                                                                                                                |       |
 | @styleset                                                                                                                 |       |
 | @stylistic                                                                                                                |       |
 | @swash                                                                                                                    |       |
-| [-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)                                 |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp">-webkit-line-clamp</a> |       |
 | annotation()                                                                                                              |       |
-| [base-palette (@font-palette-values)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/base-palette) |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/base-palette">base-palette (@font-palette-values)</a> |       |
 | character-variant()                                                                                                       |       |
-| [local()](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)                                                    |       |
-| [font-family (@font-palette-values)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values)               |       |
-| [font-optical-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing)                               |       |
-| [font-palette](https://developer.mozilla.org/en-US/docs/Web/CSS/font-palette)                                             |       |
-| [font-synthesis](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis)                                         |       |
-| [font-synthesis-small-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-small-caps)                   |       |
-| [font-synthesis-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-style)                             |       |
-| [font-synthesis-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-weight)                           |       |
-| [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)                                             |       |
-| [font-variant (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)                                  |       |
-| [font-variant-alternates](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates)                       |       |
-| [font-variant-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)                                   |       |
-| [font-variant-east-asian](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-east-asian)                       |       |
-| [font-variant-emoji](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-emoji)                                 |       |
-| [font-variant-ligatures](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures)                         |       |
-| [font-variant-numeric](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)                             |       |
-| [font-variant-position](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-position)                           |       |
-| [font-variation-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings)                       |       |
-| [font-variation-settings (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)                       |       |
-| [hanging-punctuation](https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation)                               |       |
-| [hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)                                                       |       |
-| [line-gap-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)                             |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">local()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values">font-family (@font-palette-values)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing">font-optical-sizing</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-palette">font-palette</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis">font-synthesis</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-small-caps">font-synthesis-small-caps</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-style">font-synthesis-style</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-weight">font-synthesis-weight</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant">font-variant</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">font-variant (@font-face)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates">font-variant-alternates</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps">font-variant-caps</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-east-asian">font-variant-east-asian</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-emoji">font-variant-emoji</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures">font-variant-ligatures</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric">font-variant-numeric</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-position">font-variant-position</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings">font-variation-settings</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">font-variation-settings (@font-face)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation">hanging-punctuation</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens">hyphens</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">line-gap-override (@font-face)</a> |       |
 | styleset()                                                                                                                |       |
 | stylistic()                                                                                                               |       |
 | swash()                                                                                                                   |       |
-| [text-combine-upright](https://developer.mozilla.org/en-US/docs/Web/CSS/text-combine-upright)                             |       |
-| [text-decoration-color](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)                           |       |
-| [text-decoration-line](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)                             |       |
-| [text-decoration-skip](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip)                             |       |
-| [text-decoration-skip-ink](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink)                     |       |
-| [text-decoration-style](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)                           |       |
-| [text-decoration-thickness](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness)                   |       |
-| [text-emphasis](https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis)                                           |       |
-| [text-emphasis-color](https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-color)                               |       |
-| [text-emphasis-position](https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-position)                         |       |
-| [text-emphasis-style](https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-style)                               |       |
-| [text-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)                                     |       |
-| [text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)                           |       |
-| [text-underline-position](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position)                       |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-combine-upright">text-combine-upright</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color">text-decoration-color</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line">text-decoration-line</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip">text-decoration-skip</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink">text-decoration-skip-ink</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style">text-decoration-style</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness">text-decoration-thickness</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis">text-emphasis</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-color">text-emphasis-color</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-position">text-emphasis-position</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-style">text-emphasis-style</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation">text-orientation</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset">text-underline-offset</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position">text-underline-position</a> |       |
 | ornaments()                                                                                                               |       |</p>
    </details>
    <h2 class="heading settled" data-level="5" id="css-5"><span class="secno">5. </span><span class="content">CSS5</span><a class="self-link" href="#css-5"></a></h2>
@@ -850,193 +849,193 @@ in the categorization process.</p>
     <summary>Animation</summary>
     <p>| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
-| [animation-composition](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition) |       |
-| [offset-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-anchor)                 |       |
-| [offset-distance](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-distance)             |       |
-| [offset-path](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-path)                     |       |
-| [offset-position](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-position)             |       |
-| [offset-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-rotate)                 |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition">animation-composition</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/offset-anchor">offset-anchor</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/offset-distance">offset-distance</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/offset-path">offset-path</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/offset-position">offset-position</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/offset-rotate">offset-rotate</a> |       |</p>
    </details>
    <details>
     <summary>At-rules</summary>
     <p>| Property                                                                                                                        | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------|-------|
 | @custom-media                                                                                                                   |       |
-| [@layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)                                                               |       |
-| [@scope](https://developer.mozilla.org/en-US/docs/Web/CSS/@scope)                                                               |       |
-| [@scope :scope](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope)                                                        |       |
-| [@starting-style](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)                                             |       |
-| [@supports selector()](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)                                              |       |
-| [override-colors (@font-palette-values)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/override-colors) |       |
-| [syntax (@property)](https://developer.mozilla.org/en-US/docs/Web/CSS/@property)                                                |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">@layer</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@scope">@scope</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:scope">@scope :scope</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style">@starting-style</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports">@supports selector()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/override-colors">override-colors (@font-palette-values)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property">syntax (@property)</a> |       |</p>
    </details>
    <details>
     <summary>Cascade Layers</summary>
     <p>| Property                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
-| [layer()](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)            |       |
-| [layer() (@import)](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)  |       |
-| [revert-layer](https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">layer()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">layer() (@import)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer">revert-layer</a> |       |</p>
    </details>
    <details>
     <summary>Colors &amp; theming</summary>
     <p>| Property                                                                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                               |       |
-| [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                               |       |
-| [color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix)                                                       |       |
-| [color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)   |       |
-| [color(from ...) - relative color syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color)                               |       |
-| [Hue interpolation (gradients "in" syntax, "hue longer" syntax)](https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method) |       |
-| [hwb()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb)                                                                   |       |
-| [oklab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab)                                                               |       |
-| [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)                                                               |       |
-| [lab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab)                                                                   |       |
-| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                   |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color">accent-color</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme">color-scheme</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix">color-mix()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color">color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color">color(from ...) - relative color syntax</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method">Hue interpolation (gradients "in" syntax, "hue longer" syntax)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb">hwb()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab">oklab()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch">oklch()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab">lab()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch">lch()</a> |       |</p>
    </details>
    <details>
     <summary>Container Queries</summary>
     <p>| Property                                                                                                                                                   | Notes |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| [length#cqw, cqi, cqb, cqh, cqmax, cqmin](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units) |       |
-| [contain-intrinsic-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-block-size)                                              |       |
-| [contain-intrinsic-height](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-height)                                                      |       |
-| [contain-intrinsic-inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-inline-size)                                            |       |
-| [contain-intrinsic-size](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size)                                                          |       |
-| [contain-intrinsic-width](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-width)                                                        |       |
-| [container](https://developer.mozilla.org/en-US/docs/Web/CSS/container)                                                                                    |       |
-| [container-name](https://developer.mozilla.org/en-US/docs/Web/CSS/container-name)                                                                          |       |
-| [container-type](https://developer.mozilla.org/en-US/docs/Web/CSS/container-type)                                                                          |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units">length#cqw, cqi, cqb, cqh, cqmax, cqmin</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-block-size">contain-intrinsic-block-size</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-height">contain-intrinsic-height</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-inline-size">contain-intrinsic-inline-size</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size">contain-intrinsic-size</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-width">contain-intrinsic-width</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/container">container</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/container-name">container-name</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/container-type">container-type</a> |       |</p>
    </details>
    <details>
     <summary>Logical Properites</summary>
     <p>| Property                                                                                  | Notes |
 |-------------------------------------------------------------------------------------------|-------|
-| [inset](https://developer.mozilla.org/en-US/docs/Web/CSS/inset)                           |       |
-| [inset-block](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block)               |       |
-| [inset-block-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-end)       |       |
-| [inset-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-start)   |       |
-| [inset-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline)             |       |
-| [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end)     |       |
-| [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset">inset</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block">inset-block</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-end">inset-block-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-start">inset-block-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline">inset-inline</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end">inset-inline-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start">inset-inline-start</a> |       |</p>
    </details>
    <details>
     <summary>Math Functions</summary>
     <p>| Property                                                          | Notes |
 |-------------------------------------------------------------------|-------|
-| [abs()](https://developer.mozilla.org/en-US/docs/Web/CSS/abs)     |       |
-| [acos()](https://developer.mozilla.org/en-US/docs/Web/CSS/acos)   |       |
-| [asin()](https://developer.mozilla.org/en-US/docs/Web/CSS/asin)   |       |
-| [atan()](https://developer.mozilla.org/en-US/docs/Web/CSS/atan)   |       |
-| [atan2()](https://developer.mozilla.org/en-US/docs/Web/CSS/atan2) |       |
-| [cos()](https://developer.mozilla.org/en-US/docs/Web/CSS/cos)     |       |
-| [exp()](https://developer.mozilla.org/en-US/docs/Web/CSS/exp)     |       |
-| [hypot()](https://developer.mozilla.org/en-US/docs/Web/CSS/hypot) |       |
-| [log()](https://developer.mozilla.org/en-US/docs/Web/CSS/log)     |       |
-| [mod()](https://developer.mozilla.org/en-US/docs/Web/CSS/mod)     |       |
-| [pow()](https://developer.mozilla.org/en-US/docs/Web/CSS/pow)     |       |
-| [rem()](https://developer.mozilla.org/en-US/docs/Web/CSS/rem)     |       |
-| [round()](https://developer.mozilla.org/en-US/docs/Web/CSS/round) |       |
-| [sin()](https://developer.mozilla.org/en-US/docs/Web/CSS/sin)     |       |
-| [sign()](https://developer.mozilla.org/en-US/docs/Web/CSS/sign)   |       |
-| [sqrt()](https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt)   |       |
-| [tan()](https://developer.mozilla.org/en-US/docs/Web/CSS/tan)     |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/abs">abs()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/acos">acos()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/asin">asin()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/atan">atan()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/atan2">atan2()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cos">cos()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/exp">exp()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hypot">hypot()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/log">log()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mod">mod()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pow">pow()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/rem">rem()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/round">round()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sin">sin()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sign">sign()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt">sqrt()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/tan">tan()</a> |       |</p>
    </details>
    <details>
     <summary>Pseudo-classes</summary>
     <p>| Property                                                                                                  | Notes |
 |-----------------------------------------------------------------------------------------------------------|-------|
-| [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)                                           |       |
-| [:is()](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)                                             |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has">:has()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:is">:is()</a> |       |
 | [:nth-child(An+B [of S]?)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#using_of_selector) |       |
-| [:picture-in-picture](https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture)               |       |
-| [:popover-open](https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open)                           |       |
-| [:where()](https://developer.mozilla.org/en-US/docs/Web/CSS/:where)                                       |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture">:picture-in-picture</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open">:popover-open</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:where">:where()</a> |       |</p>
    </details>
    <details>
     <summary>Pseudo-elements</summary>
     <p>| Property                                                                              | Notes |
 |---------------------------------------------------------------------------------------|-------|
-| [::grammar-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error)   |       |
-| [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)                 |       |
-| [::spelling-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error">::grammar-error</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::marker">::marker</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error">::spelling-error</a> |       |</p>
    </details>
    <details>
     <summary>Relative Units</summary>
     <p>| Property                                                                                                                                   | Notes |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| [Dynamic Viewport Units (dvh, lvh &amp; svh)](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
-| [length#cap](https://developer.mozilla.org/en-US/docs/Web/CSS/length#cap)                                                                  |       |
-| [length#ex, length#rex](https://developer.mozilla.org/en-US/docs/Web/CSS/length#ex)                                                        |       |
-| [length#ic, length#ric](https://developer.mozilla.org/en-US/docs/Web/CSS/length#ic)                                                        |       |
-| [length#lh, length#rlh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#lh)                                                        |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport">Dynamic Viewport Units (dvh, lvh &amp; svh)</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#cap">length#cap</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#ex">length#ex, length#rex</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#ic">length#ic, length#ric</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#lh">length#lh, length#rlh</a> |       |</p>
    </details>
    <details>
     <summary>Scroll</summary>
     <p>| Property                                                                                      | Notes      |
 |-----------------------------------------------------------------------------------------------|------------|
-| [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)     |            |
-| [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)                         | clip value |
-| [overflow-clip-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin) |            |
-| [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)           |            |
-| [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)         |            |
-| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)           |            |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility">content-visibility</a> |            |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow">overflow</a> | clip value |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin">overflow-clip-margin</a> |            |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color">scrollbar-color</a> |            |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter">scrollbar-gutter</a> |            |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width">scrollbar-width</a> |            |</p>
    </details>
    <details>
     <summary>Scroll-driven animations</summary>
     <p>| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
-| [animation-range](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range)             |       |
-| [animation-range-end](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-end)     |       |
-| [animation-range-start](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-start) |       |
-| [animation-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline)       |       |
-| [scroll-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline)             |       |
-| [scroll-timeline-axis](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-axis)   |       |
-| [scroll-timeline-name](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-name)   |       |
-| [scroll()](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/scroll)          |       |
-| [timeline-scope](https://developer.mozilla.org/en-US/docs/Web/CSS/timeline-scope)               |       |
-| [view-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline)                 |       |
-| [view-timeline-axis](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis)       |       |
-| [view-timeline-inset](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset)     |       |
-| [view-timeline-name](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-name)       |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range">animation-range</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-end">animation-range-end</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-start">animation-range-start</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline">animation-timeline</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline">scroll-timeline</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-axis">scroll-timeline-axis</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-name">scroll-timeline-name</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/scroll">scroll()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/timeline-scope">timeline-scope</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline">view-timeline</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis">view-timeline-axis</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset">view-timeline-inset</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-name">view-timeline-name</a> |       |</p>
    </details>
    <details>
     <summary>Transition &amp; Transforms</summary>
     <p>| Property                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
-| [overlay](https://developer.mozilla.org/en-US/docs/Web/CSS/overlay)                         |       |
-| [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate)                           |       |
-| [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale)                             |       |
-| [transition-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior) |       |
-| [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate)                     |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overlay">overlay</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/rotate">rotate</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scale">scale</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior">transition-behavior</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/translate">translate</a> |       |</p>
    </details>
    <details>
     <summary>Typography</summary>
     <p>| Property                                                                                                      | Notes            |
 |---------------------------------------------------------------------------------------------------------------|------------------|
-| [ascent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override)   |                  |
-| [descent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override) |                  |
-| [font-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust)                         |                  |
-| [font-synthesis-position](https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-position)           |                  |
-| [hyphenate-character](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character)                   |                  |
-| [hyphenate-limit-chars](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-limit-chars)               |                  |
-| [initial-letter](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter)                             |                  |
-| [initial-letter-align](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align)                 |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override">ascent-override (@font-face)</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override">descent-override (@font-face)</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust">font-size-adjust</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-position">font-synthesis-position</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character">hyphenate-character</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-limit-chars">hyphenate-limit-chars</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter">initial-letter</a> |                  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align">initial-letter-align</a> |                  |
 | Text-box trim                                                                                                 |                  |
-| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       | balance / pretty |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap">text-wrap</a> | balance / pretty |</p>
    </details>
    <details>
     <summary>View transitions</summary>
     <p>| Property                                                                                                      | Notes |
 |---------------------------------------------------------------------------------------------------------------|-------|
-| [::view-transition](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition)                       |       |
-| [::view-transition-group](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)           |       |
-| [::view-transition-image-pair](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-image-pair) |       |
-| [::view-transition-new](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-new)               |       |
-| [::view-transition-old](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-old)               |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition">::view-transition</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group">::view-transition-group</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-image-pair">::view-transition-image-pair</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-new">::view-transition-new</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-old">::view-transition-old</a> |       |
 | @view-transition                                                                                              |       |
 | view-transition-class                                                                                         |       |
-| [view-transition-name](https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name)                 |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name">view-transition-name</a> |       |
 | view-transition-type                                                                                          |       |</p>
    </details>
    <h2 class="heading settled" data-level="6" id="css-uncategorized"><span class="secno">6. </span><span class="content">Future (Uncategorized, out of scope for CSS4/5)</span><a class="self-link" href="#css-uncategorized"></a></h2>
@@ -1044,8 +1043,8 @@ in the categorization process.</p>
     <summary>Align</summary>
     <p>| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
-| [align-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks)     |       |
-| [justify-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks">align-tracks</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks">justify-tracks</a> |       |</p>
    </details>
    <details>
     <summary>Anchoring</summary>
@@ -1057,46 +1056,46 @@ in the categorization process.</p>
     <summary>Aural CSS</summary>
     <p>| Property                                                                                              | Notes |
 |-------------------------------------------------------------------------------------------------------|-------|
-| [speak-as (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as">speak-as (@counter-style)</a> |       |</p>
    </details>
    <details>
     <summary>Color</summary>
     <p>| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
-| [contrast-color()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast">contrast-color()</a> |       |</p>
    </details>
    <details>
     <summary>Container Queries</summary>
     <p>| Property                                                                                             | Notes |
 |------------------------------------------------------------------------------------------------------|-------|
-| [Style queries](https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries">Style queries</a> |       |</p>
    </details>
    <details>
     <summary>Functions</summary>
     <p>| Property                                                                | Notes |
 |-------------------------------------------------------------------------|-------|
-| [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/element)   |       |
-| [image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/element">element()</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image/image">image()</a> |       |</p>
    </details>
    <details>
     <summary>Grid</summary>
     <p>| Property                                                                                | Notes |
 |-----------------------------------------------------------------------------------------|-------|
-| [masonry-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow">masonry-auto-flow</a> |       |</p>
    </details>
    <details>
     <summary>Pseudo-classes</summary>
     <p>| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
-| [:modal](https://developer.mozilla.org/en-US/docs/Web/CSS/:modal)                 |       |
-| [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within) |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:modal">:modal</a> |       |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within">:target-within</a> |       |
 | :top-layer                                                                        |       |</p>
    </details>
    <details>
     <summary>Pseudo-elements</summary>
     <p>| Property                                                                        | Notes |
 |---------------------------------------------------------------------------------|-------|
-| [::target-text](https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text">::target-text</a> |       |</p>
    </details>
    <details>
     <summary>Scroll</summary>
@@ -1108,24 +1107,24 @@ in the categorization process.</p>
     <summary>Text Fragmentation</summary>
     <p>| Property                                                            | Notes |
 |---------------------------------------------------------------------|-------|
-| [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/orphans">orphans</a> |       |</p>
    </details>
    <details>
     <summary>Typography</summary>
     <p>| Property                                                                                      | Notes                        |
 |-----------------------------------------------------------------------------------------------|------------------------------|
-| [line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)             | Currently -webkit-line-clamp |
-| [line-height-step](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step)         |                              |
-| [margin-trim](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim)                   |                              |
-| [text-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust)         |                              |
-| [white-space-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse) |                              |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp">line-clamp</a> | Currently -webkit-line-clamp |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step">line-height-step</a> |                              |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim">margin-trim</a> |                              |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust">text-size-adjust</a> |                              |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse">white-space-collapse</a> |                              |
 | white-space-trim                                                                              |                              |</p>
    </details>
    <details>
     <summary>Units</summary>
     <p>| Property                                                                   | Notes |
 |----------------------------------------------------------------------------|-------|
-| [frequency#Hz](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency) |       |</p>
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/frequency">frequency#Hz</a> |       |</p>
    </details>
   </main>
   <div data-fill-with="conformance">

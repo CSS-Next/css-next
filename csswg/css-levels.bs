@@ -2,6 +2,7 @@
 Title: CSS Levels
 Shortname: css-levels
 Level: 1
+Previous Version: https://www.w3.org/TR/CSS/#css-level
 Status: w3c/ED
 Group: CSS-Next
 Repository: CSS-Next/css-next
@@ -9,24 +10,26 @@ ED: https://drafts.csswg.org/CSS/levels/
 Editor: Una Kravets, Google, https://una.im, w3cid 115525
 Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
 Abstract: This document outlines where CSS levels have been and where they are going. It categorizes CSS properties into distinct levels, namely CSS4, and CSS5, to better organize and facilitate understanding of the evolving CSS landscape. The primary audience is teachers, learners, and implementers of CSS.
+Markup Shorthands: markdown on
 </pre>
 
 Introduction {#intro}
 =====================
 
-Cascading Style Sheets does not have versions in the traditional sense; 
+Cascading Style Sheets does not have versions in the traditional sense, 
 instead it has [levels](https://www.w3.org/TR/CSS/#css-levels). 
-Each level of CSS builds on the previous, refining definitions and adding features. 
+Each level of CSS builds on the previous module, refining definitions and adding features. 
 In Oct 27, 2023, the 
 [CSS Working Group resolved to "support the definition of CSS4"](https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332) 
-and offloaded the categorization of CSS properties to a community group called [CSS Next](https://github.com/CSS-Next/css-next).
+and delegated the categorization of CSS properties to the [CSS Next Community Group](https://github.com/CSS-Next/css-next).
 
 The term "CSS3" has been widely used to encompass various additions and enhancements 
 to Cascading Style Sheets (CSS) since around 2010. 
-However, as CSS continues to evolve with new features and specifications, 
+Originally, the CSSWG defined CSS3 as "everything after CSS2". 
+As CSS continues to evolve with new features and specifications, 
 the blanket term "CSS3" has become insufficient and misleading. 
-[This RFC](https://github.com/CSS-Next/css-next/discussions/92) proposes 
-the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
+[This RFC](https://github.com/CSS-Next/css-next/discussions/92) from the CSS Next Community Group 
+proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
 to better organize and facilitate understanding of the evolving CSS landscape. 
 This categorization aims to improve adoption and ease of teaching, while not having a 
 direct impact towards the CSS Working Group (CSSWG) operations or the 
@@ -40,7 +43,6 @@ with the primary factor being the general timeline that an API was initially spe
 in the CSS Working Group. 
 Additionally, implementer interest and adoption were moderately taken into account 
 in the categorization process.
-
 
 * **CSS3:** This category was established before this community group began articulating levels and was defined by the CSSWG, and was designed to be open ended. It serves as a historical reference point for CSS advancements up to a certain point.
 * **CSS4:** Properties and features introduced in a spec around 2013 - 2018.
