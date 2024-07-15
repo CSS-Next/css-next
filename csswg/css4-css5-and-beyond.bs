@@ -6,7 +6,8 @@ Status: w3c/UD
 Group: CSS-Next
 Repository: CSS-Next/css-next
 URL: http://example.com/url-this-spec-will-live-at
-Editor: Adam Argyle, Google, argyle@google.com, https://nerdy.dev
+Editor: Una Kravets, Google, https://una.im, w3cid 115525
+Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
 Abstract: An introduction and overview of CSS4, CSS5, and the future of CSS era's
 </pre>
 
