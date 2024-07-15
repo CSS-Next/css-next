@@ -9,6 +9,7 @@ Repository: CSS-Next/css-next
 ED: https://drafts.csswg.org/CSS/levels/
 Editor: Una Kravets, Google, https://una.im, w3cid 115525
 Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
+Editor: Brecht De Ruyte, IO Digital, https://utilitybend.com/
 Abstract: This document outlines where CSS levels have been and where they are going. It categorizes CSS properties into distinct levels, namely CSS4, and CSS5, to better organize and facilitate understanding of the evolving CSS landscape. The primary audience is teachers, learners, and implementers of CSS.
 Markup Shorthands: markdown on
 </pre>
