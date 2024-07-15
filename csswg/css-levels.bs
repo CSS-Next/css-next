@@ -1,498 +1,64 @@
-<!doctype html><html lang="en">
- <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <title>CSS4, CSS5 and Beyond</title>
-  <meta content="w3c/UD" name="w3c-status">
-  <link href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD" rel="stylesheet">
-  <meta content="Bikeshed version a1dabb26c, updated Mon Jun 17 15:00:44 2024 -0700" name="generator">
-  <link href="http://example.com/url-this-spec-will-live-at" rel="canonical">
-  <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
-  <meta content="2d78ebe6ec036a60465c92fbaeef34214052cdcc" name="revision">
-  <meta content="dark light" name="color-scheme">
-  <link href="https://www.w3.org/StyleSheets/TR/2021/dark.css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
-<style>/* Boilerplate: style-autolinks */
-.css.css, .property.property, .descriptor.descriptor {
-    color: var(--a-normal-text);
-    font-size: inherit;
-    font-family: inherit;
-}
-.css::before, .property::before, .descriptor::before {
-    content: "‘";
-}
-.css::after, .property::after, .descriptor::after {
-    content: "’";
-}
-.property, .descriptor {
-    /* Don't wrap property and descriptor names */
-    white-space: nowrap;
-}
-.type { /* CSS value <type> */
-    font-style: italic;
-}
-pre .property::before, pre .property::after {
-    content: "";
-}
-[data-link-type="property"]::before,
-[data-link-type="propdesc"]::before,
-[data-link-type="descriptor"]::before,
-[data-link-type="value"]::before,
-[data-link-type="function"]::before,
-[data-link-type="at-rule"]::before,
-[data-link-type="selector"]::before,
-[data-link-type="maybe"]::before {
-    content: "‘";
-}
-[data-link-type="property"]::after,
-[data-link-type="propdesc"]::after,
-[data-link-type="descriptor"]::after,
-[data-link-type="value"]::after,
-[data-link-type="function"]::after,
-[data-link-type="at-rule"]::after,
-[data-link-type="selector"]::after,
-[data-link-type="maybe"]::after {
-    content: "’";
-}
+<pre class='metadata'>
+Title: CSS Levels
+Shortname: css-levels
+Level: 1
+Status: w3c/ED
+Group: CSS-Next
+Repository: CSS-Next/css-next
+ED: https://drafts.csswg.org/CSS/levels/
+Editor: Una Kravets, Google, https://una.im, w3cid 115525
+Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
+Abstract: This document outlines where CSS levels have been and where they are going. It categorizes CSS properties into distinct levels, namely CSS4, and CSS5, to better organize and facilitate understanding of the evolving CSS landscape. The primary audience is teachers, learners, and implementers of CSS.
+</pre>
 
-[data-link-type].production::before,
-[data-link-type].production::after,
-.prod [data-link-type]::before,
-.prod [data-link-type]::after {
-    content: "";
-}
+Introduction {#intro}
+=====================
 
-[data-link-type=element],
-[data-link-type=element-attr] {
-    font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
-    font-size: .9em;
-}
-[data-link-type=element]::before { content: "<" }
-[data-link-type=element]::after  { content: ">" }
+Cascading Style Sheets does not have versions in the traditional sense; 
+instead it has [levels](https://www.w3.org/TR/CSS/#css-levels). 
+Each level of CSS builds on the previous, refining definitions and adding features. 
+In Oct 27, 2023, the 
+[CSS Working Group resolved to "support the definition of CSS4"](https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332) 
+and offloaded the categorization of CSS properties to a community group called [CSS Next](https://github.com/CSS-Next/css-next).
 
-[data-link-type=biblio] {
-    white-space: pre;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --selflink-text: black;
-        --selflink-bg: silver;
-        --selflink-hover-text: white;
-    }
-}
-</style>
-<style>/* Boilerplate: style-colors */
-/* Any --*-text not paired with a --*-bg is assumed to have a transparent bg */
-:root {
-    color-scheme: light dark;
-
-    --text: black;
-    --bg: white;
-
-    --unofficial-watermark: url(https://www.w3.org/StyleSheets/TR/2016/logos/UD-watermark);
-
-    --logo-bg: #1a5e9a;
-    --logo-active-bg: #c00;
-    --logo-text: white;
-
-    --tocnav-normal-text: #707070;
-    --tocnav-normal-bg: var(--bg);
-    --tocnav-hover-text: var(--tocnav-normal-text);
-    --tocnav-hover-bg: #f8f8f8;
-    --tocnav-active-text: #c00;
-    --tocnav-active-bg: var(--tocnav-normal-bg);
-
-    --tocsidebar-text: var(--text);
-    --tocsidebar-bg: #f7f8f9;
-    --tocsidebar-shadow: rgba(0,0,0,.1);
-    --tocsidebar-heading-text: hsla(203,20%,40%,.7);
-
-    --toclink-text: var(--text);
-    --toclink-underline: #3980b5;
-    --toclink-visited-text: var(--toclink-text);
-    --toclink-visited-underline: #054572;
-
-    --heading-text: #005a9c;
-
-    --hr-text: var(--text);
-
-    --algo-border: #def;
-
-    --del-text: red;
-    --del-bg: transparent;
-    --ins-text: #080;
-    --ins-bg: transparent;
-
-    --a-normal-text: #034575;
-    --a-normal-underline: #bbb;
-    --a-visited-text: var(--a-normal-text);
-    --a-visited-underline: #707070;
-    --a-hover-bg: rgba(75%, 75%, 75%, .25);
-    --a-active-text: #c00;
-    --a-active-underline: #c00;
-
-    --blockquote-border: silver;
-    --blockquote-bg: transparent;
-    --blockquote-text: currentcolor;
-
-    --issue-border: #e05252;
-    --issue-bg: #fbe9e9;
-    --issue-text: var(--text);
-    --issueheading-text: #831616;
-
-    --example-border: #e0cb52;
-    --example-bg: #fcfaee;
-    --example-text: var(--text);
-    --exampleheading-text: #574b0f;
-
-    --note-border: #52e052;
-    --note-bg: #e9fbe9;
-    --note-text: var(--text);
-    --noteheading-text: hsl(120, 70%, 30%);
-    --notesummary-underline: silver;
-
-    --assertion-border: #aaa;
-    --assertion-bg: #eee;
-    --assertion-text: black;
-
-    --advisement-border: orange;
-    --advisement-bg: #fec;
-    --advisement-text: var(--text);
-    --advisementheading-text: #b35f00;
-
-    --warning-border: red;
-    --warning-bg: hsla(40,100%,50%,0.95);
-    --warning-text: var(--text);
-
-    --amendment-border: #330099;
-    --amendment-bg: #F5F0FF;
-    --amendment-text: var(--text);
-    --amendmentheading-text: #220066;
-
-    --def-border: #8ccbf2;
-    --def-bg: #def;
-    --def-text: var(--text);
-    --defrow-border: #bbd7e9;
-
-    --datacell-border: silver;
-
-    --indexinfo-text: #707070;
-
-    --indextable-hover-text: black;
-    --indextable-hover-bg: #f7f8f9;
-
-    --outdatedspec-bg: rgba(0, 0, 0, .5);
-    --outdatedspec-text: black;
-    --outdated-bg: maroon;
-    --outdated-text: white;
-    --outdated-shadow: red;
-
-    --editedrec-bg: darkorange;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: #ddd;
-        --bg: black;
-
-        --unofficial-watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cg fill='%23100808' transform='translate(200 200) rotate(-45) translate(-200 -200)' stroke='%23100808' stroke-width='3'%3E%3Ctext x='50%25' y='220' style='font: bold 70px sans-serif; text-anchor: middle; letter-spacing: 6px;'%3EUNOFFICIAL%3C/text%3E%3Ctext x='50%25' y='305' style='font: bold 70px sans-serif; text-anchor: middle; letter-spacing: 6px;'%3EDRAFT%3C/text%3E%3C/g%3E%3C/svg%3E");
-
-        --logo-bg: #1a5e9a;
-        --logo-active-bg: #c00;
-        --logo-text: white;
-
-        --tocnav-normal-text: #999;
-        --tocnav-normal-bg: var(--bg);
-        --tocnav-hover-text: var(--tocnav-normal-text);
-        --tocnav-hover-bg: #080808;
-        --tocnav-active-text: #f44;
-        --tocnav-active-bg: var(--tocnav-normal-bg);
-
-        --tocsidebar-text: var(--text);
-        --tocsidebar-bg: #080808;
-        --tocsidebar-shadow: rgba(255,255,255,.1);
-        --tocsidebar-heading-text: hsla(203,20%,40%,.7);
-
-        --toclink-text: var(--text);
-        --toclink-underline: #6af;
-        --toclink-visited-text: var(--toclink-text);
-        --toclink-visited-underline: #054572;
-
-        --heading-text: #8af;
-
-        --hr-text: var(--text);
-
-        --algo-border: #456;
-
-        --del-text: #f44;
-        --del-bg: transparent;
-        --ins-text: #4a4;
-        --ins-bg: transparent;
-
-        --a-normal-text: #6af;
-        --a-normal-underline: #555;
-        --a-visited-text: var(--a-normal-text);
-        --a-visited-underline: var(--a-normal-underline);
-        --a-hover-bg: rgba(25%, 25%, 25%, .2);
-        --a-active-text: #f44;
-        --a-active-underline: var(--a-active-text);
-
-        --borderedblock-bg: rgba(255, 255, 255, .05);
-
-        --blockquote-border: silver;
-        --blockquote-bg: var(--borderedblock-bg);
-        --blockquote-text: currentcolor;
-
-        --issue-border: #e05252;
-        --issue-bg: var(--borderedblock-bg);
-        --issue-text: var(--text);
-        --issueheading-text: hsl(0deg, 70%, 70%);
-
-        --example-border: hsl(50deg, 90%, 60%);
-        --example-bg: var(--borderedblock-bg);
-        --example-text: var(--text);
-        --exampleheading-text: hsl(50deg, 70%, 70%);
-
-        --note-border: hsl(120deg, 100%, 35%);
-        --note-bg: var(--borderedblock-bg);
-        --note-text: var(--text);
-        --noteheading-text: hsl(120, 70%, 70%);
-        --notesummary-underline: silver;
-
-        --assertion-border: #444;
-        --assertion-bg: var(--borderedblock-bg);
-        --assertion-text: var(--text);
-
-        --advisement-border: orange;
-        --advisement-bg: #222218;
-        --advisement-text: var(--text);
-        --advisementheading-text: #f84;
-
-        --warning-border: red;
-        --warning-bg: hsla(40,100%,20%,0.95);
-        --warning-text: var(--text);
-
-        --amendment-border: #330099;
-        --amendment-bg: #080010;
-        --amendment-text: var(--text);
-        --amendmentheading-text: #cc00ff;
-
-        --def-border: #8ccbf2;
-        --def-bg: #080818;
-        --def-text: var(--text);
-        --defrow-border: #136;
-
-        --datacell-border: silver;
-
-        --indexinfo-text: #aaa;
-
-        --indextable-hover-text: var(--text);
-        --indextable-hover-bg: #181818;
-
-        --outdatedspec-bg: rgba(255, 255, 255, .5);
-        --outdatedspec-text: black;
-        --outdated-bg: maroon;
-        --outdated-text: white;
-        --outdated-shadow: red;
-
-        --editedrec-bg: darkorange;
-    }
-    /* In case a transparent-bg image doesn't expect to be on a dark bg,
-       which is quite common in practice... */
-    img { background: white; }
-}
-</style>
-<style>/* Boilerplate: style-counters */
-body {
-    counter-reset: example figure issue;
-}
-.issue {
-    counter-increment: issue;
-}
-.issue:not(.no-marker)::before {
-    content: "Issue " counter(issue);
-}
-
-.example {
-    counter-increment: example;
-}
-.example:not(.no-marker)::before {
-    content: "Example " counter(example);
-}
-.invalid.example:not(.no-marker)::before,
-.illegal.example:not(.no-marker)::before {
-    content: "Invalid Example" counter(example);
-}
-
-figcaption {
-    counter-increment: figure;
-}
-figcaption:not(.no-marker)::before {
-    content: "Figure " counter(figure) " ";
-}
-</style>
-<style>/* Boilerplate: style-issues */
-a[href].issue-return {
-    float: right;
-    float: inline-end;
-    color: var(--issueheading-text);
-    font-weight: bold;
-    text-decoration: none;
-}
-</style>
-<style>/* Boilerplate: style-md-lists */
-/* This is a weird hack for me not yet following the commonmark spec
-   regarding paragraph and lists. */
-[data-md] > :first-child {
-    margin-top: 0;
-}
-[data-md] > :last-child {
-    margin-bottom: 0;
-}
-</style>
-<style>/* Boilerplate: style-selflinks */
-:root {
-    --selflink-text: white;
-    --selflink-bg: gray;
-    --selflink-hover-text: black;
-}
-.heading, .issue, .note, .example, li, dt {
-    position: relative;
-}
-a.self-link {
-    position: absolute;
-    top: 0;
-    left: calc(-1 * (3.5rem - 26px));
-    width: calc(3.5rem - 26px);
-    height: 2em;
-    text-align: center;
-    border: none;
-    transition: opacity .2s;
-    opacity: .5;
-}
-a.self-link:hover {
-    opacity: 1;
-}
-.heading > a.self-link {
-    font-size: 83%;
-}
-.example > a.self-link,
-.note > a.self-link,
-.issue > a.self-link {
-    /* These blocks are overflow:auto, so positioning outside
-       doesn't work. */
-    left: auto;
-    right: 0;
-}
-li > a.self-link {
-    left: calc(-1 * (3.5rem - 26px) - 2em);
-}
-dfn > a.self-link {
-    top: auto;
-    left: auto;
-    opacity: 0;
-    width: 1.5em;
-    height: 1.5em;
-    background: var(--selflink-bg);
-    color: var(--selflink-text);
-    font-style: normal;
-    transition: opacity .2s, background-color .2s, color .2s;
-}
-dfn:hover > a.self-link {
-    opacity: 1;
-}
-dfn > a.self-link:hover {
-    color: var(--selflink-hover-text);
-}
-
-a.self-link::before            { content: "¶"; }
-.heading > a.self-link::before { content: "§"; }
-dfn > a.self-link::before      { content: "#"; }
-</style>
- <body class="h-entry">
-  <div class="head">
-   <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"> </a> </p>
-   <h1 class="p-name no-ref" id="title">CSS4, CSS5 and Beyond</h1>
-   <p id="w3c-state"><a href="https://www.w3.org/standards/types#UD">Unofficial Proposal Draft</a>, <time class="dt-updated" datetime="2024-07-15">15 July 2024</time></p>
-   <details open>
-    <summary>More details about this document</summary>
-    <div data-fill-with="spec-metadata">
-     <dl>
-      <dt>This version:
-      <dd><a class="u-url" href="http://example.com/url-this-spec-will-live-at">http://example.com/url-this-spec-will-live-at</a>
-      <dt>Issue Tracking:
-      <dd><a href="https://github.com/CSS-Next/css-next/issues/">GitHub</a>
-      <dt class="editor">Editor:
-      <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url" href="https://nerdy.dev">Adam Argyle</a> (<span class="p-org org">Google</span>) <a class="u-email email" href="mailto:argyle@google.com">argyle@google.com</a>
-     </dl>
-    </div>
-   </details>
-   <div data-fill-with="warning"></div>
-   <p class="copyright" data-fill-with="copyright"><a href="https://www.w3.org/policies/#copyright">Copyright</a> © 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>. <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/copyright/software-license/" rel="license" title="W3C Software and Document License">permissive document license</a> rules apply. </p>
-   <hr title="Separator for header">
-  </div>
-  <div class="p-summary" data-fill-with="abstract">
-   <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>An introduction and overview of CSS4, CSS5, and the future of CSS era’s</p>
-  </div>
-  <h2 class="no-num no-toc no-ref heading settled" id="sotd"><span class="content">Status of this document</span></h2>
-  <div data-fill-with="status">
-   <p></p>
-  </div>
-  <div data-fill-with="at-risk"></div>
-  <nav data-fill-with="table-of-contents" id="toc">
-   <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
-   <ol class="toc" role="directory">
-    <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
-    <li><a href="#categorization"><span class="secno">2</span> <span class="content">Categorization</span></a>
-    <li><a href="#feature-list"><span class="secno">3</span> <span class="content">List of CSS4 and CSS5 features</span></a>
-    <li><a href="#css-4"><span class="secno">4</span> <span class="content">CSS4</span></a>
-    <li><a href="#css-5"><span class="secno">5</span> <span class="content">CSS5</span></a>
-    <li><a href="#css-uncategorized"><span class="secno">6</span> <span class="content">Future (Uncategorized, out of scope for CSS4/5)</span></a>
-    <li>
-     <a href="#w3c-conformance"><span class="secno"></span> <span class="content">Conformance</span></a>
-     <ol class="toc">
-      <li><a href="#w3c-conventions"><span class="secno"></span> <span class="content">Document conventions</span></a>
-     </ol>
-    <li>
-     <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
-     <ol class="toc">
-      <li><a href="#normative"><span class="secno"></span> <span class="content">Normative References</span></a>
-     </ol>
-   </ol>
-  </nav>
-  <main>
-   <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
-   <p>The term "CSS3" has been widely used to encompass various additions and enhancements
-to Cascading Style Sheets (CSS) since around 2010. However, as CSS continues to evolve 
-with new features and specifications, the blanket term "CSS3" has become insufficient 
-and misleading. [This RFC](https://github.com/CSS-Next/css-next/discussions/92) proposes 
+The term "CSS3" has been widely used to encompass various additions and enhancements 
+to Cascading Style Sheets (CSS) since around 2010. 
+However, as CSS continues to evolve with new features and specifications, 
+the blanket term "CSS3" has become insufficient and misleading. 
+[This RFC](https://github.com/CSS-Next/css-next/discussions/92) proposes 
 the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
 to better organize and facilitate understanding of the evolving CSS landscape. 
 This categorization aims to improve adoption and ease of teaching, while not having a 
 direct impact towards the CSS Working Group (CSSWG) operations or the 
-[Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).</p>
-   <h2 class="heading settled" data-level="2" id="categorization"><span class="secno">2. </span><span class="content">Categorization</span><a class="self-link" href="#categorization"></a></h2>
-   <p>Categorization is based on a variety of factors with the primary factor being the
-general timeline that an API was initially specified in the CSS Working Group. 
+[Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).
+
+Categorization {#categorization}
+================================
+
+Categorization is based on a variety of factors 
+with the primary factor being the general timeline that an API was initially specified 
+in the CSS Working Group. 
 Additionally, implementer interest and adoption were moderately taken into account 
-in the categorization process.</p>
-   <ul>
-    <li data-md>
-     <p>**CSS3:** This category was established before this community group began articulating levels and was defined by the CSSWG, and was designed to be open ended. It serves as a historical reference point for CSS advancements up to a certain point.</p>
-    <li data-md>
-     <p>**CSS4:** Properties and features introduced in a spec around 2013 - 2018.</p>
-    <li data-md>
-     <p>**CSS5:** Properties and features introduced in a spec around 2019 - 2024.</p>
-    <li data-md>
-     <p>**Future/Next**: This category is a placeholder for properties and features that are currently in development or proposed for future versions of CSS beyond CSS5.</p>
-   </ul>
-   <h2 class="heading settled" data-level="3" id="feature-list"><span class="secno">3. </span><span class="content">List of CSS4 and CSS5 features</span><a class="self-link" href="#feature-list"></a></h2>
-   <p>This list should be handled as a work in progress.</p>
-   <h2 class="heading settled" data-level="4" id="css-4"><span class="secno">4. </span><span class="content">CSS4</span><a class="self-link" href="#css-4"></a></h2>
-   <details>
-    <summary>Align</summary>
-    <p>| Property                                                                            | Notes |
+in the categorization process.
+
+
+* **CSS3:** This category was established before this community group began articulating levels and was defined by the CSSWG, and was designed to be open ended. It serves as a historical reference point for CSS advancements up to a certain point.
+* **CSS4:** Properties and features introduced in a spec around 2013 - 2018.
+* **CSS5:** Properties and features introduced in a spec around 2019 - 2024.
+* **Future/Next**: This category is a placeholder for properties and features that are currently in development or proposed for future versions of CSS beyond CSS5.
+
+List of CSS4 and CSS5 features {#feature-list}
+==============================================
+
+This list should be handled as a work in progress.
+
+CSS4 {#css-4}
+=============
+
+<details>
+  <summary>Align</summary>
+
+| Property                                                                            | Notes |
 |-------------------------------------------------------------------------------------|-------|
 | [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)     |       |
 | [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)         |       |
@@ -505,36 +71,48 @@ in the categorization process.</p>
 | [place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)     |       |
 | [place-items](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)         |       |
 | [place-self](https://developer.mozilla.org/en-US/docs/Web/CSS/place-self)           |       |
-| [row-gap](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)                 |       |</p>
-   </details>
-   <details>
-    <summary>Animation</summary>
-    <p>| Property                                                                        | Notes       |
+| [row-gap](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)                 |       |
+
+</details>
+
+<details>
+  <summary>Animation</summary>
+
+| Property                                                                        | Notes       |
 |---------------------------------------------------------------------------------|-------------|
 | Animate grid tracks                                                             | CSS feature |
 | [offset](https://developer.mozilla.org/en-US/docs/Web/CSS/offset)               |             |
 | [ray()](https://developer.mozilla.org/en-US/docs/Web/CSS/ray)                   |             |
 | [transform-box](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box) |             |
-| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)     |             |</p>
-   </details>
-   <details>
-    <summary>At-rules</summary>
-    <p>| Property                                                                                    | Notes |
+| [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)     |             |
+
+</details>
+
+<details>
+  <summary>At-rules</summary>
+
+| Property                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
 | [@forced-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)     |       |
 | @media range-syntax                                                                         |       |
 | [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)                     |       |
-| [forced-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust) |       |</p>
-   </details>
-   <details>
-    <summary>Blend Modes</summary>
-    <p>| Property                                                                | Notes |
+| [forced-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust) |       |
+
+</details>
+
+<details>
+  <summary>Blend Modes</summary>
+
+| Property                                                                | Notes |
 |-------------------------------------------------------------------------|-------|
-| [isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation) |       |</p>
-   </details>
-   <details>
-    <summary>Clipping, shapes &amp; masking</summary>
-    <p>| Property                                                                                        | Notes |
+| [isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation) |       |
+
+</details>
+
+<details>
+  <summary>Clipping, shapes & masking</summary>
+
+| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [circle()](https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/circle)                 |       |
 | [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)                         |       |
@@ -542,17 +120,23 @@ in the categorization process.</p>
 | [mask-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode)                         |       |
 | [shape-image-threshold](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold) |       |
 | [shape-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-margin)                   |       |
-| [shape-outside](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside)                 |       |</p>
-   </details>
-   <details>
-    <summary>Contain</summary>
-    <p>| Property                                                            | Notes |
+| [shape-outside](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside)                 |       |
+
+</details>
+
+<details>
+  <summary>Contain</summary>
+
+| Property                                                            | Notes |
 |---------------------------------------------------------------------|-------|
-| [contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) |       |</p>
-   </details>
-   <details>
-    <summary>Counter</summary>
-    <p>| Property                                                                                              | Notes |
+| [contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) |       |
+
+</details>
+
+<details>
+  <summary>Counter</summary>
+
+| Property                                                                                              | Notes |
 |-------------------------------------------------------------------------------------------------------|-------|
 | [@counter-style](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style)                     |       |
 | [counter-set](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set)                           |       |
@@ -560,11 +144,14 @@ in the categorization process.</p>
 | [suffix (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/suffix)     |       |
 | [symbols (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/symbols)   |       |
 | [symbols()](https://developer.mozilla.org/en-US/docs/Web/CSS/symbols)                                 |       |
-| [system (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system)     |       |</p>
-   </details>
-   <details>
-    <summary>Flex</summary>
-    <p>| Property                                                                          | Notes |
+| [system (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system)     |       |
+
+</details>
+
+<details>
+  <summary>Flex</summary>
+
+| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)                     |       |
 | flex_value#fr                                                                     |       |
@@ -573,11 +160,14 @@ in the categorization process.</p>
 | [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow)           |       |
 | [flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)           |       |
 | [flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)       |       |
-| [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)           |       |</p>
-   </details>
-   <details>
-    <summary>Functions</summary>
-    <p>| Property                                                                               | Notes |
+| [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)           |       |
+
+</details>
+
+<details>
+  <summary>Functions</summary>
+
+| Property                                                                               | Notes |
 |----------------------------------------------------------------------------------------|-------|
 | [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)                      |       |
 | [env()](https://developer.mozilla.org/en-US/docs/Web/CSS/env)                          |       |
@@ -587,17 +177,23 @@ in the categorization process.</p>
 | [min()](https://developer.mozilla.org/en-US/docs/Web/CSS/min)                          |       |
 | [minmax()](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)                    |       |
 | [repeat()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat)                    |       |
-| [var(), --*](https://developer.mozilla.org/en-US/docs/Web/CSS/var)                     |       |</p>
-   </details>
-   <details>
-    <summary>Gradient</summary>
-    <p>| Property                                                                                     | Notes |
+| [var(), --*](https://developer.mozilla.org/en-US/docs/Web/CSS/var)                     |       |
+
+</details>
+
+<details>
+  <summary>Gradient</summary>
+
+| Property                                                                                     | Notes |
 |----------------------------------------------------------------------------------------------|-------|
-| [conic-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient) |       |</p>
-   </details>
-   <details>
-    <summary>Grid</summary>
-    <p>| Property                                                                                        | Notes |
+| [conic-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient) |       |
+
+</details>
+
+<details>
+  <summary>Grid</summary>
+
+| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)                                   |       |
 | [grid-area](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area)                         |       |
@@ -614,21 +210,27 @@ in the categorization process.</p>
 | [grid-template-areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)     |       |
 | [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) |       |
 | [grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)       |       |
-| [Subgrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid)             |       |</p>
-   </details>
-   <details>
-    <summary>Image / Video</summary>
-    <p>| Property                                                                               | Notes |
+| [Subgrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid)             |       |
+
+</details>
+
+<details>
+  <summary>Image / Video</summary>
+
+| Property                                                                               | Notes |
 |----------------------------------------------------------------------------------------|-------|
 | [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)          |       |
 | [cross-fade()](https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade)            |       |
 | [image-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation) |       |
 | [image-resolution](https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution)  |       |
-| [image-set()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)        |       |</p>
-   </details>
-   <details>
-    <summary>Logical Properties</summary>
-    <p>| Property                                                                                                  | Notes       |
+| [image-set()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)        |       |
+
+</details>
+
+<details>
+  <summary>Logical Properties</summary>
+
+| Property                                                                                                  | Notes       |
 |-----------------------------------------------------------------------------------------------------------|-------------|
 | [block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)                                 |             |
 | [border-block](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block)                             |             |
@@ -682,11 +284,14 @@ in the categorization process.</p>
 | [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end)                 |             |
 | [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start)             |             |
 | [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)                                 | start / end |
-| [writing-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)                             |             |</p>
-   </details>
-   <details>
-    <summary>Misc</summary>
-    <p>| Property                                                                      | Notes |
+| [writing-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)                             |             |
+
+</details>
+
+<details>
+  <summary>Misc</summary>
+
+| Property                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
 | [all](https://developer.mozilla.org/en-US/docs/Web/CSS/all)                   |       |
 | caret                                                                         |       |
@@ -695,18 +300,24 @@ in the categorization process.</p>
 | [touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action) |       |
 | [unset](https://developer.mozilla.org/en-US/docs/Web/CSS/unset)               |       |
 | [user-select](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select)   |       |
-| [revert](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)             |       |</p>
-   </details>
-   <details>
-    <summary>Print</summary>
-    <p>| Property                                                                                            | Notes |
+| [revert](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)             |       |
+
+</details>
+
+<details>
+  <summary>Print</summary>
+
+| Property                                                                                            | Notes |
 |-----------------------------------------------------------------------------------------------------|-------|
 | [page-orientation (@page)](https://developer.mozilla.org/en-US/docs/Web/CSS/@page/page-orientation) |       |
-| [print-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust)           |       |</p>
-   </details>
-   <details>
-    <summary>Pseudo-classes</summary>
-    <p>| Property                                                                          | Notes |
+| [print-color-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust)           |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-classes</summary>
+
+| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [:current](https://developer.mozilla.org/en-US/docs/Web/CSS/:current)             |       |
 | [:defined](https://developer.mozilla.org/en-US/docs/Web/CSS/:defined)             |       |
@@ -720,32 +331,41 @@ in the categorization process.</p>
 | [:paused](https://developer.mozilla.org/en-US/docs/Web/CSS/:paused)               |       |
 | [:playing](https://developer.mozilla.org/en-US/docs/Web/CSS/:playing)             |       |
 | [:user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid)   |       |
-| [:user-valid](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid)       |       |</p>
-   </details>
-   <details>
-    <summary>Pseudo-elements</summary>
-    <p>| Property                                                                      | Notes |
+| [:user-valid](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid)       |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-elements</summary>
+
+| Property                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
 | [::backdrop](https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop)     |       |
 | [::cue](https://developer.mozilla.org/en-US/docs/Web/CSS/::cue)               |       |
 | [::cue-region](https://developer.mozilla.org/en-US/docs/Web/CSS/::cue-region) |       |
 | [::part](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)             |       |
-| [::slotted](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted)       |       |</p>
-   </details>
-   <details>
-    <summary>Relative units</summary>
-    <p>| Property                                                                                                       | Notes |
+| [::slotted](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted)       |       |
+
+</details>
+
+<details>
+  <summary>Relative units</summary>
+
+| Property                                                                                                       | Notes |
 |----------------------------------------------------------------------------------------------------------------|-------|
 | [length#vb](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
 | [length#vh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
 | [length#vi](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
 | [length#vmax](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
 | [length#vmin](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
-| [length#vw](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |</p>
-   </details>
-   <details>
-    <summary>Scroll</summary>
-    <p>| Property                                                                                                    | Notes |
+| [length#vw](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport)   |       |
+
+</details>
+
+<details>
+  <summary>Scroll</summary>
+
+| Property                                                                                                    | Notes |
 |-------------------------------------------------------------------------------------------------------------|-------|
 | [overflow-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor)                         |       |
 | [overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)                 |       |
@@ -776,11 +396,15 @@ in the categorization process.</p>
 | [scroll-padding-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-top)                   |       |
 | [scroll-snap-align](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align)                     |       |
 | [scroll-snap-stop](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-stop)                       |       |
-| [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type)                       |       |</p>
-   </details>
-   <details>
-    <summary>Typography</summary>
-    <p>| Property                                                                                                                  | Notes |
+| [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type)                       |       |
+
+</details>
+
+
+<details>
+  <summary>Typography</summary>
+
+| Property                                                                                                                  | Notes |
 |---------------------------------------------------------------------------------------------------------------------------|-------|
 | @annotation                                                                                                               |       |
 | @character-variant                                                                                                        |       |
@@ -833,23 +457,31 @@ in the categorization process.</p>
 | [text-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)                                     |       |
 | [text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)                           |       |
 | [text-underline-position](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position)                       |       |
-| ornaments()                                                                                                               |       |</p>
-   </details>
-   <h2 class="heading settled" data-level="5" id="css-5"><span class="secno">5. </span><span class="content">CSS5</span><a class="self-link" href="#css-5"></a></h2>
-   <details>
-    <summary>Animation</summary>
-    <p>| Property                                                                                        | Notes |
+| ornaments()                                                                                                               |       |
+
+</details>
+
+CSS5 {#css-5}
+=============
+
+<details>
+  <summary>Animation</summary>
+
+| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [animation-composition](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition) |       |
 | [offset-anchor](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-anchor)                 |       |
 | [offset-distance](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-distance)             |       |
 | [offset-path](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-path)                     |       |
 | [offset-position](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-position)             |       |
-| [offset-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-rotate)                 |       |</p>
-   </details>
-   <details>
-    <summary>At-rules</summary>
-    <p>| Property                                                                                                                        | Notes |
+| [offset-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/offset-rotate)                 |       |
+
+</details>
+
+<details>
+  <summary>At-rules</summary>
+
+| Property                                                                                                                        | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------|-------|
 | @custom-media                                                                                                                   |       |
 | [@layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)                                                               |       |
@@ -858,19 +490,25 @@ in the categorization process.</p>
 | [@starting-style](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)                                             |       |
 | [@supports selector()](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)                                              |       |
 | [override-colors (@font-palette-values)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/override-colors) |       |
-| [syntax (@property)](https://developer.mozilla.org/en-US/docs/Web/CSS/@property)                                                |       |</p>
-   </details>
-   <details>
-    <summary>Cascade Layers</summary>
-    <p>| Property                                                                      | Notes |
+| [syntax (@property)](https://developer.mozilla.org/en-US/docs/Web/CSS/@property)                                                |       |
+
+</details>
+
+<details>
+  <summary>Cascade Layers</summary>
+
+| Property                                                                      | Notes |
 |-------------------------------------------------------------------------------|-------|
 | [layer()](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)            |       |
 | [layer() (@import)](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)  |       |
-| [revert-layer](https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer) |       |</p>
-   </details>
-   <details>
-    <summary>Colors &amp; theming</summary>
-    <p>| Property                                                                                                                                    | Notes |
+| [revert-layer](https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer) |       |
+
+</details>
+
+<details>
+  <summary>Colors & theming</summary>
+
+| Property                                                                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)                                                               |       |
 | [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)                                                               |       |
@@ -882,11 +520,14 @@ in the categorization process.</p>
 | [oklab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab)                                                               |       |
 | [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)                                                               |       |
 | [lab()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab)                                                                   |       |
-| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                   |       |</p>
-   </details>
-   <details>
-    <summary>Container Queries</summary>
-    <p>| Property                                                                                                                                                   | Notes |
+| [lch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch)                                                                   |       |
+
+</details>
+
+<details>
+  <summary>Container Queries</summary>
+
+| Property                                                                                                                                                   | Notes |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | [length#cqw, cqi, cqb, cqh, cqmax, cqmin](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units) |       |
 | [contain-intrinsic-block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-block-size)                                              |       |
@@ -896,11 +537,14 @@ in the categorization process.</p>
 | [contain-intrinsic-width](https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-width)                                                        |       |
 | [container](https://developer.mozilla.org/en-US/docs/Web/CSS/container)                                                                                    |       |
 | [container-name](https://developer.mozilla.org/en-US/docs/Web/CSS/container-name)                                                                          |       |
-| [container-type](https://developer.mozilla.org/en-US/docs/Web/CSS/container-type)                                                                          |       |</p>
-   </details>
-   <details>
-    <summary>Logical Properites</summary>
-    <p>| Property                                                                                  | Notes |
+| [container-type](https://developer.mozilla.org/en-US/docs/Web/CSS/container-type)                                                                          |       |
+
+</details>
+
+<details>
+  <summary>Logical Properites</summary>
+
+| Property                                                                                  | Notes |
 |-------------------------------------------------------------------------------------------|-------|
 | [inset](https://developer.mozilla.org/en-US/docs/Web/CSS/inset)                           |       |
 | [inset-block](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block)               |       |
@@ -908,11 +552,14 @@ in the categorization process.</p>
 | [inset-block-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-start)   |       |
 | [inset-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline)             |       |
 | [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end)     |       |
-| [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) |       |</p>
-   </details>
-   <details>
-    <summary>Math Functions</summary>
-    <p>| Property                                                          | Notes |
+| [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) |       |
+
+</details>
+
+<details>
+  <summary>Math Functions</summary>
+
+| Property                                                          | Notes |
 |-------------------------------------------------------------------|-------|
 | [abs()](https://developer.mozilla.org/en-US/docs/Web/CSS/abs)     |       |
 | [acos()](https://developer.mozilla.org/en-US/docs/Web/CSS/acos)   |       |
@@ -930,51 +577,66 @@ in the categorization process.</p>
 | [sin()](https://developer.mozilla.org/en-US/docs/Web/CSS/sin)     |       |
 | [sign()](https://developer.mozilla.org/en-US/docs/Web/CSS/sign)   |       |
 | [sqrt()](https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt)   |       |
-| [tan()](https://developer.mozilla.org/en-US/docs/Web/CSS/tan)     |       |</p>
-   </details>
-   <details>
-    <summary>Pseudo-classes</summary>
-    <p>| Property                                                                                                  | Notes |
+| [tan()](https://developer.mozilla.org/en-US/docs/Web/CSS/tan)     |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-classes</summary>
+
+| Property                                                                                                  | Notes |
 |-----------------------------------------------------------------------------------------------------------|-------|
 | [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)                                           |       |
 | [:is()](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)                                             |       |
 | [:nth-child(An+B [of S]?)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#using_of_selector) |       |
 | [:picture-in-picture](https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture)               |       |
 | [:popover-open](https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open)                           |       |
-| [:where()](https://developer.mozilla.org/en-US/docs/Web/CSS/:where)                                       |       |</p>
-   </details>
-   <details>
-    <summary>Pseudo-elements</summary>
-    <p>| Property                                                                              | Notes |
+| [:where()](https://developer.mozilla.org/en-US/docs/Web/CSS/:where)                                       |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-elements</summary>
+
+| Property                                                                              | Notes |
 |---------------------------------------------------------------------------------------|-------|
 | [::grammar-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error)   |       |
 | [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)                 |       |
-| [::spelling-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error) |       |</p>
-   </details>
-   <details>
-    <summary>Relative Units</summary>
-    <p>| Property                                                                                                                                   | Notes |
+| [::spelling-error](https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error) |       |
+
+</details>
+
+<details>
+  <summary>Relative Units</summary>
+
+| Property                                                                                                                                   | Notes |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| [Dynamic Viewport Units (dvh, lvh &amp; svh)](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
+| [Dynamic Viewport Units (dvh, lvh & svh)](https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport) |       |
 | [length#cap](https://developer.mozilla.org/en-US/docs/Web/CSS/length#cap)                                                                  |       |
 | [length#ex, length#rex](https://developer.mozilla.org/en-US/docs/Web/CSS/length#ex)                                                        |       |
 | [length#ic, length#ric](https://developer.mozilla.org/en-US/docs/Web/CSS/length#ic)                                                        |       |
-| [length#lh, length#rlh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#lh)                                                        |       |</p>
-   </details>
-   <details>
-    <summary>Scroll</summary>
-    <p>| Property                                                                                      | Notes      |
+| [length#lh, length#rlh](https://developer.mozilla.org/en-US/docs/Web/CSS/length#lh)                                                        |       |
+
+</details>
+
+<details>
+  <summary>Scroll</summary>
+
+| Property                                                                                      | Notes      |
 |-----------------------------------------------------------------------------------------------|------------|
 | [content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)     |            |
 | [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)                         | clip value |
 | [overflow-clip-margin](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin) |            |
 | [scrollbar-color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color)           |            |
 | [scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)         |            |
-| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)           |            |</p>
-   </details>
-   <details>
-    <summary>Scroll-driven animations</summary>
-    <p>| Property                                                                                        | Notes |
+| [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)           |            |
+
+</details>
+
+<details>
+  <summary>Scroll-driven animations</summary>
+
+| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
 | [animation-range](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range)             |       |
 | [animation-range-end](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-end)     |       |
@@ -988,21 +650,27 @@ in the categorization process.</p>
 | [view-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline)                 |       |
 | [view-timeline-axis](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis)       |       |
 | [view-timeline-inset](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset)     |       |
-| [view-timeline-name](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-name)       |       |</p>
-   </details>
-   <details>
-    <summary>Transition &amp; Transforms</summary>
-    <p>| Property                                                                                    | Notes |
+| [view-timeline-name](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-name)       |       |
+
+</details>
+
+<details>
+  <summary>Transition & Transforms</summary>
+
+| Property                                                                                    | Notes |
 |---------------------------------------------------------------------------------------------|-------|
 | [overlay](https://developer.mozilla.org/en-US/docs/Web/CSS/overlay)                         |       |
 | [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate)                           |       |
 | [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale)                             |       |
 | [transition-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior) |       |
-| [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate)                     |       |</p>
-   </details>
-   <details>
-    <summary>Typography</summary>
-    <p>| Property                                                                                                      | Notes            |
+| [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate)                     |       |
+
+</details>
+
+<details>
+  <summary>Typography</summary>
+
+| Property                                                                                                      | Notes            |
 |---------------------------------------------------------------------------------------------------------------|------------------|
 | [ascent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override)   |                  |
 | [descent-override (@font-face)](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override) |                  |
@@ -1013,11 +681,14 @@ in the categorization process.</p>
 | [initial-letter](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter)                             |                  |
 | [initial-letter-align](https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align)                 |                  |
 | Text-box trim                                                                                                 |                  |
-| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       | balance / pretty |</p>
-   </details>
-   <details>
-    <summary>View transitions</summary>
-    <p>| Property                                                                                                      | Notes |
+| [text-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)                                       | balance / pretty |
+
+</details>
+
+<details>
+  <summary>View transitions</summary>
+
+| Property                                                                                                      | Notes |
 |---------------------------------------------------------------------------------------------------------------|-------|
 | [::view-transition](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition)                       |       |
 | [::view-transition-group](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)           |       |
@@ -1027,128 +698,135 @@ in the categorization process.</p>
 | @view-transition                                                                                              |       |
 | view-transition-class                                                                                         |       |
 | [view-transition-name](https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name)                 |       |
-| view-transition-type                                                                                          |       |</p>
-   </details>
-   <h2 class="heading settled" data-level="6" id="css-uncategorized"><span class="secno">6. </span><span class="content">Future (Uncategorized, out of scope for CSS4/5)</span><a class="self-link" href="#css-uncategorized"></a></h2>
-   <details>
-    <summary>Align</summary>
-    <p>| Property                                                                          | Notes |
+| view-transition-type                                                                                          |       |
+
+</details>
+
+Future (Uncategorized, out of scope for CSS4/5) {#css-uncategorized}
+====================================================================
+
+<details>
+  <summary>Align</summary>
+
+| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [align-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks)     |       |
-| [justify-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks) |       |</p>
-   </details>
-   <details>
-    <summary>Anchoring</summary>
-    <p>| Property | Notes |
+| [justify-tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks) |       |
+
+</details>
+
+<details>
+  <summary>Anchoring</summary>
+
+| Property | Notes |
 |----------|-------|
-| anchor() |       |</p>
-   </details>
-   <details>
-    <summary>Aural CSS</summary>
-    <p>| Property                                                                                              | Notes |
+| anchor() |       |
+
+</details>
+
+
+<details>
+  <summary>Aural CSS</summary>
+
+| Property                                                                                              | Notes |
 |-------------------------------------------------------------------------------------------------------|-------|
-| [speak-as (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as) |       |</p>
-   </details>
-   <details>
-    <summary>Color</summary>
-    <p>| Property                                                                                        | Notes |
+| [speak-as (@counter-style)](https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as) |       |
+
+</details>
+
+<details>
+  <summary>Color</summary>
+
+| Property                                                                                        | Notes |
 |-------------------------------------------------------------------------------------------------|-------|
-| [contrast-color()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast) |       |</p>
-   </details>
-   <details>
-    <summary>Container Queries</summary>
-    <p>| Property                                                                                             | Notes |
+| [contrast-color()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast) |       |
+
+</details>
+
+<details>
+<summary>Container Queries</summary>
+
+| Property                                                                                             | Notes |
 |------------------------------------------------------------------------------------------------------|-------|
-| [Style queries](https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries) |       |</p>
-   </details>
-   <details>
-    <summary>Functions</summary>
-    <p>| Property                                                                | Notes |
+| [Style queries](https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries) |       |
+
+</details>
+
+<details>
+  <summary>Functions</summary>
+
+| Property                                                                | Notes |
 |-------------------------------------------------------------------------|-------|
 | [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/element)   |       |
-| [image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image) |       |</p>
-   </details>
-   <details>
-    <summary>Grid</summary>
-    <p>| Property                                                                                | Notes |
+| [image()](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image) |       |
+
+</details>
+
+<details>
+  <summary>Grid</summary>
+
+| Property                                                                                | Notes |
 |-----------------------------------------------------------------------------------------|-------|
-| [masonry-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow) |       |</p>
-   </details>
-   <details>
-    <summary>Pseudo-classes</summary>
-    <p>| Property                                                                          | Notes |
+| [masonry-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow) |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-classes</summary>
+
+| Property                                                                          | Notes |
 |-----------------------------------------------------------------------------------|-------|
 | [:modal](https://developer.mozilla.org/en-US/docs/Web/CSS/:modal)                 |       |
 | [:target-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within) |       |
-| :top-layer                                                                        |       |</p>
-   </details>
-   <details>
-    <summary>Pseudo-elements</summary>
-    <p>| Property                                                                        | Notes |
+| :top-layer                                                                        |       |
+
+</details>
+
+<details>
+  <summary>Pseudo-elements</summary>
+
+| Property                                                                        | Notes |
 |---------------------------------------------------------------------------------|-------|
-| [::target-text](https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text) |       |</p>
-   </details>
-   <details>
-    <summary>Scroll</summary>
-    <p>| Property      | Notes |
+| [::target-text](https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text) |       |
+
+</details>
+<details>
+  <summary>Scroll</summary>
+
+| Property      | Notes |
 |---------------|-------|
-| target-text() |       |</p>
-   </details>
-   <details>
-    <summary>Text Fragmentation</summary>
-    <p>| Property                                                            | Notes |
+| target-text() |       |
+
+</details>
+
+<details>
+  <summary>Text Fragmentation</summary>
+
+| Property                                                            | Notes |
 |---------------------------------------------------------------------|-------|
-| [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans) |       |</p>
-   </details>
-   <details>
-    <summary>Typography</summary>
-    <p>| Property                                                                                      | Notes                        |
+| [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans) |       |
+
+</details>
+
+<details>
+  <summary>Typography</summary>
+
+| Property                                                                                      | Notes                        |
 |-----------------------------------------------------------------------------------------------|------------------------------|
 | [line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)             | Currently -webkit-line-clamp |
 | [line-height-step](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step)         |                              |
 | [margin-trim](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim)                   |                              |
 | [text-size-adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust)         |                              |
 | [white-space-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse) |                              |
-| white-space-trim                                                                              |                              |</p>
-   </details>
-   <details>
-    <summary>Units</summary>
-    <p>| Property                                                                   | Notes |
+| white-space-trim                                                                              |                              |
+
+</details>
+
+<details>
+  <summary>Units</summary>
+
+| Property                                                                   | Notes |
 |----------------------------------------------------------------------------|-------|
-| [frequency#Hz](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency) |       |</p>
-   </details>
-  </main>
-  <div data-fill-with="conformance">
-   <h2 class="no-ref no-num heading settled" id="w3c-conformance"><span class="content">Conformance</span><a class="self-link" href="#w3c-conformance"></a></h2>
-   <h3 class="no-ref no-num heading settled" id="w3c-conventions"><span class="content">Document conventions</span><a class="self-link" href="#w3c-conventions"></a></h3>
-   <p>Conformance requirements are expressed
-    with a combination of descriptive assertions
-    and RFC 2119 terminology.
-    The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL”
-    in the normative parts of this document
-    are to be interpreted as described in RFC 2119.
-    However, for readability,
-    these words do not appear in all uppercase letters in this specification. </p>
-   <p>All of the text of this specification is normative
-    except sections explicitly marked as non-normative, examples, and notes. <a data-link-type="biblio" href="#biblio-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">[RFC2119]</a> </p>
-   <p>Examples in this specification are introduced with the words “for example”
-    or are set apart from the normative text
-    with <code>class="example"</code>,
-    like this: </p>
-   <div class="example" id="w3c-example">
-    <a class="self-link" href="#w3c-example"></a> 
-    <p>This is an example of an informative example. </p>
-   </div>
-   <p>Informative notes begin with the word “Note”
-    and are set apart from the normative text
-    with <code>class="note"</code>,
-    like this: </p>
-   <p class="note" role="note">Note, this is an informative note.</p>
-  </div>
-  <script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script>
-  <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
-  <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
-  <dl>
-   <dt id="biblio-rfc2119">[RFC2119]
-   <dd>S. Bradner. <a href="https://datatracker.ietf.org/doc/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. March 1997. Best Current Practice. URL: <a href="https://datatracker.ietf.org/doc/html/rfc2119">https://datatracker.ietf.org/doc/html/rfc2119</a>
-  </dl>
+| [frequency#Hz](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency) |       |
+
+</details>
