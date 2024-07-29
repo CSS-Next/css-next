@@ -1,4 +1,4 @@
-**Please see the current [RFC discussion](https://github.com/CSS-Next/css-next/discussions/92) around CSS level categorization.**
+> **Please see the current [RFC discussion](https://github.com/CSS-Next/css-next/discussions/92) around CSS level categorizations as eras.**
 
 # CSS-Next Community Group charter
 
@@ -16,7 +16,7 @@ As part of this charter, the CSS-Next Community Group is focusing its activities
 
 * Research the community’s understanding of modern CSS 
 * Help educate the community about the availability and compatibility of modern CSS features
-* Building a shared understanding of CSS feature evolution since CSS3 and grouping those features into easily-digestible levels (such as CSS4, CSS5, etc.)
+* Building a shared understanding of CSS feature evolution since CSS3 and grouping those features into easily-digestible eras (such as CSS4, CSS5, etc.)
 
 ### Out of Scope
 
