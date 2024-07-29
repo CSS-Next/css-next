@@ -2,13 +2,13 @@
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <title>CSS Levels</title>
+  <title>CSS Eras</title>
   <meta content="w3c/ED" name="w3c-status">
   <link href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED" rel="stylesheet">
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
   <meta content="Bikeshed version 37b7e7e68, updated Fri May 27 15:08:11 2022 -0700" name="generator">
-  <link href="https://drafts.csswg.org/CSS/levels/" rel="canonical">
-  <meta content="eda5d9211e497c4354bf70f6910c193fd365c1b4" name="document-revision">
+  <link href="https://drafts.csswg.org/CSS/eras/" rel="canonical">
+  <meta content="e719512c1a27a594da7df8fbf35b3aaf83d6f5d2" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -405,14 +405,14 @@ dfn > a.self-link::before      { content: "#"; }
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"> </a> </p>
-   <h1 class="p-name no-ref" id="title">CSS Levels</h1>
-   <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">Editor’s Draft</a>, <time class="dt-updated" datetime="2024-07-18">18 July 2024</time></p>
+   <h1 class="p-name no-ref" id="title">CSS Eras</h1>
+   <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">Editor’s Draft</a>, <time class="dt-updated" datetime="2024-07-29">29 July 2024</time></p>
    <details open>
     <summary>More details about this document</summary>
     <div data-fill-with="spec-metadata">
      <dl>
       <dt>This version:
-      <dd><a class="u-url" href="https://drafts.csswg.org/CSS/levels/">https://drafts.csswg.org/CSS/levels/</a>
+      <dd><a class="u-url" href="https://drafts.csswg.org/CSS/eras/">https://drafts.csswg.org/CSS/eras/</a>
       <dt>Previous Versions:
       <dd><a href="https://www.w3.org/TR/CSS/#css-level" rel="prev">https://www.w3.org/TR/CSS/#css-level</a>
       <dt>Issue Tracking:
@@ -433,7 +433,7 @@ dfn > a.self-link::before      { content: "#"; }
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
    <p>This document outlines where CSS levels have been and where they are going.
 
-  It categorizes CSS properties into distinct levels, namely CSS4, and CSS5, to 
+  It categorizes CSS properties into distinct eras, namely CSS4, and CSS5, to 
   better organize and facilitate understanding of the evolving CSS landscape.</p>
   </div>
   <h2 class="no-num no-toc no-ref heading settled" id="sotd"><span class="content">Status of this document</span></h2>
@@ -446,7 +446,7 @@ dfn > a.self-link::before      { content: "#"; }
    <ol class="toc" role="directory">
     <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
     <li>
-     <a href="#categorization"><span class="secno">2</span> <span class="content">Categorization</span></a>
+     <a href="#eras"><span class="secno">2</span> <span class="content">Eras</span></a>
      <ol class="toc">
       <li><a href="#css-4"><span class="secno">2.1</span> <span class="content">CSS4</span></a>
       <li><a href="#css-5"><span class="secno">2.2</span> <span class="content">CSS5</span></a>
@@ -468,7 +468,7 @@ dfn > a.self-link::before      { content: "#"; }
   <main>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
    <p>Cascading Style Sheets does not have versions in the traditional sense,
-instead it has <a href="https://www.w3.org/TR/CSS/#css-levels">levels</a>. 
+instead it had <a href="https://www.w3.org/TR/CSS/#css-levels">levels</a>. 
 Each level of CSS builds on the previous module, refining definitions and adding features. 
 On Oct 27, 2023, the <a href="https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332">CSS Working Group resolved to "support the definition of CSS4"</a> and delegated the categorization of CSS properties to the <a href="https://github.com/CSS-Next/css-next">CSS Next Community Group</a>.</p>
    <p>The term "CSS3" has been widely used to encompass various additions and enhancements
@@ -476,13 +476,12 @@ to Cascading Style Sheets (CSS) since around 2010.
 Originally, the CSSWG defined CSS3 as "everything after CSS2". 
 As CSS continues to evolve with new features and specifications, 
 the blanket term "CSS3" has become insufficient and misleading. <a href="https://github.com/CSS-Next/css-next/discussions/92">This RFC</a> from the CSS Next Community Group 
-proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
-to better organize and facilitate understanding of the evolving CSS landscape.</p>
-   <p>Its been helpful for people to call CSS3, CSS4, and CSS5 as "eras," as this helps
+proposes the categorization of CSS properties into distinct eras; namely CSS3, CSS4, and CSS5.</p>
+   <p>It’s been helpful for people to call CSS3, CSS4, and CSS5 as "eras," as this helps
 comparmentalize the intent of the categorizations.  
 These eras aim to improve adoption and ease of teaching, while not having a 
-direct impact towards the CSS Working Group (CSSWG) operations or the <a href="https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md">Baseline initiative</a>.</p>
-   <h2 class="heading settled" data-level="2" id="categorization"><span class="secno">2. </span><span class="content">Categorization</span><a class="self-link" href="#categorization"></a></h2>
+direct impact on the CSS Working Group (CSSWG) or the <a href="https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md">Baseline initiative</a>.</p>
+   <h2 class="heading settled" data-level="2" id="eras"><span class="secno">2. </span><span class="content">Eras</span><a class="self-link" href="#eras"></a></h2>
    <p>Categorization is based on a variety of factors
 with the primary factor being the general timeline that an API was specified 
 in the CSS Working Group. 
@@ -497,8 +496,7 @@ It serves as a historical reference point for CSS advancements up to a certain p
     <li data-md>
      <p><strong>CSS5</strong> <br> Properties and features introduced in a spec <strong>around 2019 - 2024</strong>.</p>
     <li data-md>
-     <p><strong>Future/Next</strong> <br> A placeholder for properties and features that 
-are currently in development or proposed for future levels of CSS.</p>
+     <p><strong>Future/Next</strong> <br> A placeholder era for draft and future features.</p>
    </ul>
    <h3 class="heading settled" data-level="2.1" id="css-4"><span class="secno">2.1. </span><span class="content">CSS4</span><a class="self-link" href="#css-4"></a></h3>
    <details>

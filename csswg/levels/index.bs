@@ -1,19 +1,19 @@
 <pre class='metadata'>
-Title: CSS Levels
-Shortname: css-levels
+Title: CSS Eras
+Shortname: css-eras
 Level: 1
 Previous Version: https://www.w3.org/TR/CSS/#css-level
 Status: w3c/ED
 Group: CSS-Next
 Repository: CSS-Next/css-next
-ED: https://drafts.csswg.org/CSS/levels/
+ED: https://drafts.csswg.org/CSS/eras/
 Editor: Una Kravets, Google, https://una.im, w3cid 115525
 Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
 Editor: Brecht De Ruyte, https://utilitybend.com
 Editor: Quentin Albert, https://beyond-the-cascade.com
 Abstract: 
   This document outlines where CSS levels have been and where they are going. 
-  It categorizes CSS properties into distinct levels, namely CSS4, and CSS5, to 
+  It categorizes CSS properties into distinct eras, namely CSS4, and CSS5, to 
   better organize and facilitate understanding of the evolving CSS landscape.
 Markup Shorthands: markdown on
 </pre>
@@ -22,7 +22,7 @@ Introduction {#intro}
 =====================
 
 Cascading Style Sheets does not have versions in the traditional sense, 
-instead it has [levels](https://www.w3.org/TR/CSS/#css-levels). 
+instead it had [levels](https://www.w3.org/TR/CSS/#css-levels). 
 Each level of CSS builds on the previous module, refining definitions and adding features. 
 On Oct 27, 2023, the 
 [CSS Working Group resolved to "support the definition of CSS4"](https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332) 
@@ -34,16 +34,15 @@ Originally, the CSSWG defined CSS3 as "everything after CSS2".
 As CSS continues to evolve with new features and specifications, 
 the blanket term "CSS3" has become insufficient and misleading. 
 [This RFC](https://github.com/CSS-Next/css-next/discussions/92) from the CSS Next Community Group 
-proposes the categorization of CSS properties into distinct groups, namely CSS3, CSS4, and CSS5, 
-to better organize and facilitate understanding of the evolving CSS landscape. 
+proposes the categorization of CSS properties into distinct eras; namely CSS3, CSS4, and CSS5. 
 
-Its been helpful for people to call CSS3, CSS4, and CSS5 as "eras," as this helps  
+It's been helpful for people to call CSS3, CSS4, and CSS5 as "eras," as this helps  
 comparmentalize the intent of the categorizations.  
 These eras aim to improve adoption and ease of teaching, while not having a 
-direct impact towards the CSS Working Group (CSSWG) operations or the 
+direct impact on the CSS Working Group (CSSWG) or the 
 [Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).
 
-Categorization {#categorization}
+Eras {#eras}
 ================================
 
 Categorization is based on a variety of factors 
@@ -63,8 +62,7 @@ Additionally, implementer interest and implementer adoption were moderately take
     Properties and features introduced in a spec **around 2019 - 2024**.
 
 * **Future/Next** <br>
-    A placeholder for properties and features that 
-    are currently in development or proposed for future levels of CSS.
+    A placeholder era for draft and future features.
 
 CSS4 {#css-4}
 -------------
