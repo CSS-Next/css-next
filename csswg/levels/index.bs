@@ -53,7 +53,6 @@ Additionally, implementer interest and implementer adoption were moderately take
 * **CSS3** <br>
     [Defined by the CSSWG](https://www.w3.org/TR/CSS/#css-levels) when specs evolved at the 
     same rate, and was designed to be open ended. 
-    It serves as a historical reference point for CSS advancements up to a certain point.
 
 * **CSS4** <br>
     Properties and features introduced in a spec **around 2013 - 2018**.
