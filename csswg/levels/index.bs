@@ -3,7 +3,7 @@ Title: CSS Eras
 Shortname: css-eras
 Level: 1
 Previous Version: https://www.w3.org/TR/CSS/#css-level
-Status: w3c/ED
+Status: CG-DRAFT
 Group: CSS-Next
 Repository: CSS-Next/css-next
 ED: https://drafts.csswg.org/CSS/eras/
@@ -22,7 +22,7 @@ Introduction {#intro}
 =====================
 
 Cascading Style Sheets does not have versions in the traditional sense, 
-instead it had [levels](https://www.w3.org/TR/CSS/#css-levels). 
+instead it has [levels](https://www.w3.org/TR/CSS/#css-levels). 
 Each level of CSS builds on the previous module, refining definitions and adding features. 
 On Oct 27, 2023, the 
 [CSS Working Group resolved to "support the definition of CSS4"](https://github.com/w3c/csswg-drafts/issues/4770#issuecomment-1802342332) 
@@ -30,7 +30,7 @@ and delegated the categorization of CSS properties to the [CSS Next Community Gr
 
 The term "CSS3" has been widely used to encompass various additions and enhancements 
 to Cascading Style Sheets (CSS) since around 2010. 
-Originally, the CSSWG defined CSS3 as "everything after CSS2". 
+The CSSWG defined CSS3 as "everything after CSS2". 
 As CSS continues to evolve with new features and specifications, 
 the blanket term "CSS3" has become insufficient and misleading. 
 [This RFC](https://github.com/CSS-Next/css-next/discussions/92) from the CSS Next Community Group 
