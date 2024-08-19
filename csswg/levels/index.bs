@@ -1,19 +1,19 @@
 <pre class='metadata'>
-Title: CSS Eras
-Shortname: css-eras
+Title: CSS Levels
+Shortname: css-levels
 Level: 1
 Previous Version: https://www.w3.org/TR/CSS/#css-level
 Status: CG-DRAFT
 Group: CSS-Next
 Repository: CSS-Next/css-next
-ED: https://drafts.csswg.org/CSS/eras/
+ED: https://drafts.csswg.org/CSS/levels/
 Editor: Una Kravets, Google, https://una.im, w3cid 115525
 Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
 Editor: Brecht De Ruyte, https://utilitybend.com
 Editor: Quentin Albert, https://beyond-the-cascade.com
 Abstract: 
   This document outlines where CSS levels have been and where they are going. 
-  It categorizes CSS properties into distinct eras, namely CSS4, and CSS5, to 
+  It categorizes CSS properties into distinct levels, namely CSS4, and CSS5, to 
   better organize and facilitate understanding of the evolving CSS landscape.
 Markup Shorthands: markdown on
 </pre>
@@ -42,7 +42,7 @@ These eras aim to improve adoption and ease of teaching, while not having a
 direct impact on the CSS Working Group (CSSWG) or the 
 [Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).
 
-Eras {#eras}
+Categorization {#categorization}
 ================================
 
 Categorization is based on a variety of factors 
