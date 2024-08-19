@@ -34,7 +34,7 @@ The CSSWG defined CSS3 as "everything after CSS2".
 As CSS continues to evolve with new features and specifications, 
 the blanket term "CSS3" has become insufficient and misleading. 
 [This RFC](https://github.com/CSS-Next/css-next/discussions/92) from the CSS Next Community Group 
-proposes the categorization of CSS properties into distinct eras; namely CSS3, CSS4, and CSS5. 
+proposes the categorization of CSS properties into distinct levels; namely CSS3, CSS4, and CSS5. 
 
 It's been helpful for people to call CSS3, CSS4, and CSS5 as "eras," as this helps  
 comparmentalize the intent of the categorizations.  
