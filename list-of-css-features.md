@@ -2,7 +2,7 @@
 
 This list is still a draft and should be handled as a work in progress.
 This list is based on
-the [full list of CSS features](https://docs.google.com/spreadsheets/d/1_zDofLl3nJiNAV2Cn1x-59f4NFE_p-y5_IYjIzKNK6k/edit#gid=0)
+the [full list of CSS features](https://docs.google.com/spreadsheets/d/1CPV_BwVdZb8yOvsx-AYhwuIVRcFZ4o4htqnSCnZUE-k/edit?resourcekey=0-lbyzWof4EXdz-k5SsYoTjA&gid=0#gid=0)
 that were discussed
 
 ## CSS4
