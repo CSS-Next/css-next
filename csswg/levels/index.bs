@@ -50,18 +50,18 @@ with the primary factor being the general timeline that an API was specified
 in the CSS Working Group. 
 Additionally, implementer interest and implementer adoption were moderately taken into account.
 
-* **CSS3** <br>
-    [Defined by the CSSWG](https://www.w3.org/TR/CSS/#css-levels) when specs evolved at the 
-    same rate, and was designed to be open ended. 
+: **CSS3**
+:: [Defined by the CSSWG](https://www.w3.org/TR/CSS/#css-levels) when specs evolved at the
+same rate, and was designed to be open ended.
 
-* **CSS4** <br>
-    Properties and features introduced in a spec **around 2013 - 2018**.
+: **CSS4**
+:: Properties and features introduced in a spec **around 2013 - 2018**.
 
-* **CSS5** <br>
-    Properties and features introduced in a spec **around 2019 - 2024**.
+: **CSS5**
+:: Properties and features introduced in a spec **around 2019 - 2024**.
 
-* **Future/Next** <br>
-    A placeholder era for draft and future features.
+: **Future/Next**
+:: A placeholder era for draft and future features.
 
 CSS4 {#css-4}
 -------------
