@@ -45,10 +45,18 @@ direct impact on the CSS Working Group (CSSWG) or the
 Categorization {#categorization}
 ================================
 
-Categorization is based on a variety of factors 
-with the primary factor being the general timeline that an API was specified 
-in the CSS Working Group. 
-Additionally, implementer interest and implementer adoption were moderately taken into account.
+Feature categorization is based on a variety of factors like when it was proposed, 
+when it was implemented, and when it was stabilized.
+The primary factor being the general timeline that a feature stabalized 
+in the CSS Working Group. The community group inspected each CSS feature's spec, 
+looked at the date of inception and date of stability, and used this information 
+as a corner stone attribute for categorization.
+
+The primary focus is on CSS; not CSS as it is implemented in browsers. 
+When applicable though, implementer interest and browser adoption were taken into account 
+and used to resolve difficult to place features. For a robust categorization of 
+browser support, see the 
+[Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).
 
 : **CSS3**
 :: [Defined by the CSSWG](https://www.w3.org/TR/CSS/#css-levels) when specs evolved at the
@@ -61,7 +69,7 @@ same rate, and was designed to be open ended.
 :: Properties and features introduced in a spec **around 2019 - 2024**.
 
 : **Future/Next**
-:: A placeholder era for draft and future features.
+:: 2025 and beyond; to be determined by the CSS Next CG.
 
 CSS4 {#css-4}
 -------------
