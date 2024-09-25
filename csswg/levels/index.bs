@@ -45,16 +45,16 @@ direct impact on the CSS Working Group (CSSWG) or the
 Categorization {#categorization}
 ================================
 
-Feature categorization is based on a variety of factors like when it was proposed, 
-when it was implemented, and when it was stabilized.
+Feature categorization is based on a variety of factors, such as when it was proposed,
+when it was implemented, and when it stabilized. 
 The primary factor being the general timeline that a feature stabalized 
-in the CSS Working Group. The community group inspected each CSS feature's spec, 
+in the CSS Working Group. The community group inspected each CSS feature's specification, 
 looked at the date of inception and date of stability, and used this information 
-as a corner stone attribute for categorization.
+as a cornerstone attribute for categorization.
 
-The primary focus is on CSS; not CSS as it is implemented in browsers. 
-When applicable though, implementer interest and browser adoption were taken into account 
-and used to resolve difficult to place features. For a robust categorization of 
+The primary focus is on CSS as a language; not CSS and its adoption in browsers. 
+When applicable though, implementer interest and browser adoption are taken into account 
+and used to resolve difficult to place features. For a robust CSS feature according to 
 browser support, see the 
 [Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).
 
