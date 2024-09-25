@@ -30,7 +30,7 @@ and delegated the categorization of CSS properties to the [CSS Next Community Gr
 
 The term "CSS3" has been widely used to encompass various additions and enhancements 
 to Cascading Style Sheets (CSS) since around 2010. 
-The CSSWG defined CSS3 as "everything after CSS2". 
+The CSSWG defined CSS3 as ["everything after CSS2.2"](https://www.w3.org/TR/CSS2/about.html#:~:text=CSS%202.1%20is%20derived%20from,in%20a%20future%20CSS3%20specification.). 
 As CSS continues to evolve with new features and specifications, 
 the blanket term "CSS3" has become insufficient and misleading. 
 [This RFC](https://github.com/CSS-Next/css-next/discussions/92) from the CSS Next Community Group 
