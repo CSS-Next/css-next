@@ -3,9 +3,10 @@ Title: CSS Levels
 Shortname: css-levels
 Level: 1
 Previous Version: https://www.w3.org/TR/CSS/#css-level
-Status: CG-DRAFT
-Group: CSS-Next
-Repository: CSS-Next/css-next
+Status: w3c/CG-DRAFT
+Work Status: exploring
+Group: cssnext
+Repository: https://github.com/CSS-Next/css-next/
 ED: https://drafts.csswg.org/CSS/levels/
 Editor: Una Kravets, Google, https://una.im, w3cid 115525
 Editor: Adam Argyle, Google, https://nerdy.dev, w3cid 112669
@@ -17,6 +18,14 @@ Abstract:
   better organize and facilitate understanding of the evolving CSS landscape.
 Markup Shorthands: markdown on
 </pre>
+
+<style>
+  .logo > img {
+    aspect-ratio: 1;
+    width: auto;
+    background: none;
+  }
+</style>
 
 Introduction {#intro}
 =====================
@@ -59,8 +68,7 @@ browser support, see the
 [Baseline initiative](https://github.com/web-platform-dx/web-features/blob/main/docs/baseline.md).
 
 : **CSS3**
-:: [Defined by the CSSWG](https://www.w3.org/TR/CSS/#css-levels) when specs evolved at the
-same rate, and was designed to be open ended.
+:: [Defined by the CSSWG](https://www.w3.org/TR/CSS/#css-levels) when specs evolved at the same rate, and was designed to be open ended.
 
 : **CSS4**
 :: Properties and features introduced in a spec **around 2013 - 2018**.
