@@ -1,0 +1,2003 @@
+{
+  "css4": {
+    "align": [
+      {
+        "property": "align-content",
+        "description": "Aligns flex container's lines within the flex container when there is extra space on the cross-axis",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content"
+      },
+      {
+        "property": "align-items",
+        "description": "Sets the align-self value on all direct children as a group",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
+      },
+      {
+        "property": "align-self",
+        "description": "Overrides a grid or flex item's align-items value",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-self"
+      },
+      {
+        "property": "gap",
+        "description": "Sets the gaps (gutters) between rows and columns",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
+      },
+      {
+        "property": "justify-content",
+        "description": "Defines how the browser distributes space between and around content items along the main-axis of a flex container",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+      },
+      {
+        "property": "justify-items",
+        "description": "Defines the default justify-self for all items of the box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items"
+      },
+      {
+        "property": "justify-self",
+        "description": "Sets the way a box is justified inside its alignment container along the appropriate axis",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self"
+      },
+      {
+        "property": "order",
+        "description": "Sets the order to lay out an item in a flex or grid container",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/order"
+      },
+      {
+        "property": "place-content",
+        "description": "Sets both the align-content and justify-content properties in a single declaration",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
+      },
+      {
+        "property": "place-items",
+        "description": "Sets both the align-items and justify-items properties in a single declaration",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-items"
+      },
+      {
+        "property": "place-self",
+        "description": "Sets both the align-self and justify-self properties in a single declaration",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-self"
+      },
+      {
+        "property": "row-gap",
+        "description": "Sets the size of the gap between an element's grid rows",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap"
+      }
+    ],
+    "animation": [
+      {
+        "property": "Animate grid tracks",
+        "description": "CSS feature for animating grid track sizes"
+      },
+      {
+        "property": "offset",
+        "description": "Shorthand for animating an element along a defined path",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/offset"
+      },
+      {
+        "property": "ray()",
+        "description": "Defines a ray function for use with the offset-path property",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/ray"
+      },
+      {
+        "property": "transform-box",
+        "description": "Defines the layout box to which the transform and transform-origin properties relate",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box"
+      },
+      {
+        "property": "will-change",
+        "description": "Hints to browsers how an element is expected to change",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/will-change"
+      }
+    ],
+    "at_rules": [
+      {
+        "property": "@forced-colors",
+        "description": "Detects whether the user agent has limited the color palette",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors"
+      },
+      {
+        "property": "@media range-syntax",
+        "description": "Allows for more flexible media query ranges"
+      },
+      {
+        "property": "@supports",
+        "description": "Tests if the browser supports a particular CSS feature",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"
+      },
+      {
+        "property": "forced-color-adjust",
+        "description": "Allows authors to opt particular elements out of forced colors mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust"
+      }
+    ],
+    "blend_modes": [
+      {
+        "property": "isolation",
+        "description": "Defines whether an element must create a new stacking context",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/isolation"
+      }
+    ],
+    "clipping_shapes_masking": [
+      {
+        "property": "circle()",
+        "description": "Defines a circle as a basic shape",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/circle"
+      },
+      {
+        "property": "clip-path",
+        "description": "Creates a clipping region that sets what part of an element should be shown",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path"
+      },
+      {
+        "property": "ellipse()",
+        "description": "Defines an ellipse as a basic shape",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/ellipse"
+      },
+      {
+        "property": "mask-mode",
+        "description": "Specifies how the mask layer image is interpreted",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode"
+      },
+      {
+        "property": "shape-image-threshold",
+        "description": "Defines the alpha channel threshold used to extract a shape from an image",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold"
+      },
+      {
+        "property": "shape-margin",
+        "description": "Adds a margin to a shape-outside",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/shape-margin"
+      },
+      {
+        "property": "shape-outside",
+        "description": "Defines a shape around which adjacent inline content should wrap",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside"
+      }
+    ],
+    "contain": [
+      {
+        "property": "contain",
+        "description": "Indicates that an element and its contents are, as much as possible, independent of the rest of the document tree",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain"
+      }
+    ],
+    "counter": [
+      {
+        "property": "@counter-style",
+        "description": "Defines a custom counter style",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style"
+      },
+      {
+        "property": "counter-set",
+        "description": "Sets a CSS counter to a given value",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set"
+      },
+      {
+        "property": "fallback (@counter-style)",
+        "description": "Specifies a fallback counter style",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/fallback"
+      },
+      {
+        "property": "suffix (@counter-style)",
+        "description": "Specifies content that comes after the marker value",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/suffix"
+      },
+      {
+        "property": "symbols (@counter-style)",
+        "description": "Specifies the symbols used by the marker",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/symbols"
+      },
+      {
+        "property": "symbols()",
+        "description": "Allows defining a custom counter style inline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/symbols"
+      },
+      {
+        "property": "system (@counter-style)",
+        "description": "Defines the algorithm used to construct the counter's representation",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/system"
+      }
+    ],
+    "flex": [
+      {
+        "property": "flex",
+        "description": "Shorthand property for flex-grow, flex-shrink, and flex-basis",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+      },
+      {
+        "property": "flex_value#fr",
+        "description": "Specifies a flexible length"
+      },
+      {
+        "property": "flex-basis",
+        "description": "Specifies the initial main size of a flex item",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
+      },
+      {
+        "property": "flex-direction",
+        "description": "Specifies how flex items are placed in the flex container",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction"
+      },
+      {
+        "property": "flex-flow",
+        "description": "Shorthand property for flex-direction and flex-wrap",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow"
+      },
+      {
+        "property": "flex-grow",
+        "description": "Specifies how much a flex item will grow relative to the rest of the flex items",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow"
+      },
+      {
+        "property": "flex-shrink",
+        "description": "Specifies how much a flex item will shrink relative to the rest of the flex items",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
+      },
+      {
+        "property": "flex-wrap",
+        "description": "Specifies whether flex items are forced onto one line or can wrap onto multiple lines",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap"
+      }
+    ],
+    "functions": [
+      {
+        "property": "clamp()",
+        "description": "Clamps a value between an upper and lower bound",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
+      },
+      {
+        "property": "env()",
+        "description": "Inserts the value of a user agent-defined environment variable",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
+      },
+      {
+        "property": "fit-content",
+        "description": "Sets the size of a box to fit its content",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content"
+      },
+      {
+        "property": "fit-content()",
+        "description": "Clamps a given size to an available size",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content_function"
+      },
+      {
+        "property": "max()",
+        "description": "Returns the largest of a list of values",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/max"
+      },
+      {
+        "property": "min()",
+        "description": "Returns the smallest of a list of values",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/min"
+      },
+      {
+        "property": "minmax()",
+        "description": "Defines a size range greater than or equal to min and less than or equal to max",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/minmax"
+      },
+      {
+        "property": "repeat()",
+        "description": "Represents a repeated fragment of the track list",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/repeat"
+      },
+      {
+        "property": "var(), --*",
+        "description": "Inserts the value of a custom property",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
+      }
+    ],
+    "gradient": [
+      {
+        "property": "conic-gradient()",
+        "description": "Creates a conic gradient",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient"
+      }
+    ],
+    "grid": [
+      {
+        "property": "grid",
+        "description": "Shorthand property for defining grid columns, rows, and areas",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
+      },
+      {
+        "property": "grid-area",
+        "description": "Specifies a grid item's size and location within a grid",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area"
+      },
+      {
+        "property": "grid-auto-columns",
+        "description": "Specifies the size of implicitly-created grid columns",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns"
+      },
+      {
+        "property": "grid-auto-flow",
+        "description": "Controls how the auto-placement algorithm works",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
+      },
+      {
+        "property": "grid-auto-rows",
+        "description": "Specifies the size of implicitly-created grid rows",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows"
+      },
+      {
+        "property": "grid-column",
+        "description": "Shorthand for grid-column-start and grid-column-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column"
+      },
+      {
+        "property": "grid-column-end",
+        "description": "Specifies where a grid item ends",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end"
+      },
+      {
+        "property": "grid-column-start",
+        "description": "Specifies where a grid item begins",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start"
+      },
+      {
+        "property": "grid-row",
+        "description": "Shorthand for grid-row-start and grid-row-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row"
+      },
+      {
+        "property": "grid-row-end",
+        "description": "Specifies where a grid item ends",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end"
+      },
+      {
+        "property": "grid-row-start",
+        "description": "Specifies where a grid item begins",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start"
+      },
+      {
+        "property": "grid-template",
+        "description": "Shorthand for grid-template-rows, grid-template-columns, and grid-template-areas",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template"
+      },
+      {
+        "property": "grid-template-areas",
+        "description": "Specifies named grid areas",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas"
+      },
+      {
+        "property": "grid-template-columns",
+        "description": "Defines the columns of the grid",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
+      },
+      {
+        "property": "grid-template-rows",
+        "description": "Defines the rows of the grid",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
+      },
+      {
+        "property": "Subgrid",
+        "description": "Allows a grid item to create its own grid tracks that align to its parent grid",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid"
+      }
+    ],
+    "image_video": [
+      {
+        "property": "aspect-ratio",
+        "description": "Sets a preferred aspect ratio for the box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio"
+      },
+      {
+        "property": "cross-fade()",
+        "description": "Blends two or more images at a defined transparency",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade"
+      },
+      {
+        "property": "image-orientation",
+        "description": "Specifies a layout-independent rotation to be applied to an image",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation"
+      },
+      {
+        "property": "image-resolution",
+        "description": "Specifies the intrinsic resolution of all raster images used in/on the element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution"
+      },
+      {
+        "property": "image-set()",
+        "description": "Allows the author to provide multiple resolutions of an image",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
+      }
+    ],
+    "logical_properties": [
+      {
+        "property": "block-size",
+        "description": "Defines the horizontal or vertical size of an element's block",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/block-size"
+      },
+      {
+        "property": "border-block",
+        "description": "Shorthand property for border-block-width, border-block-style, and border-block-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block"
+      },
+      {
+        "property": "border-block-color",
+        "description": "Defines the color of the logical block borders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-color"
+      },
+      {
+        "property": "border-block-end",
+        "description": "Shorthand property for border-block-end-width, border-block-end-style, and border-block-end-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end"
+      },
+      {
+        "property": "border-block-end-color",
+        "description": "Defines the color of the logical block-end border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-color"
+      },
+      {
+        "property": "border-block-end-style",
+        "description": "Defines the style of the logical block-end border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-style"
+      },
+      {
+        "property": "border-block-end-width",
+        "description": "Defines the width of the logical block-end border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end-width"
+      },
+      {
+        "property": "border-block-start",
+        "description": "Shorthand property for border-block-start-width, border-block-start-style, and border-block-start-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start"
+      },
+      {
+        "property": "border-block-start-color",
+        "description": "Defines the color of the logical block-start border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-color"
+      },
+      {
+        "property": "border-block-start-style",
+        "description": "Defines the style of the logical block-start border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-style"
+      },
+      {
+        "property": "border-block-start-width",
+        "description": "Defines the width of the logical block-start border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start-width"
+      },
+      {
+        "property": "border-block-style",
+        "description": "Defines the style of the logical block borders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-style"
+      },
+      {
+        "property": "border-block-width",
+        "description": "Defines the width of the logical block borders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-width"
+      },
+      {
+        "property": "border-end-end-radius",
+        "description": "Defines the logical border radius of the end-end corner",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-end-radius"
+      },
+      {
+        "property": "border-end-start-radius",
+        "description": "Defines the logical border radius of the end-start corner",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-start-radius"
+      },
+      {
+        "property": "border-inline",
+        "description": "Shorthand property for border-inline-width, border-inline-style, and border-inline-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline"
+      },
+      {
+        "property": "border-inline-color",
+        "description": "Defines the color of the logical inline borders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-color"
+      },
+      {
+        "property": "border-inline-end",
+        "description": "Shorthand property for border-inline-end-width, border-inline-end-style, and border-inline-end-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end"
+      },
+      {
+        "property": "border-inline-end-color",
+        "description": "Defines the color of the logical inline-end border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-color"
+      },
+      {
+        "property": "border-inline-end-style",
+        "description": "Defines the style of the logical inline-end border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-style"
+      },
+      {
+        "property": "border-inline-end-width",
+        "description": "Defines the width of the logical inline-end border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width"
+      },
+      {
+        "property": "border-inline-start",
+        "description": "Shorthand property for border-inline-start-width, border-inline-start-style, and border-inline-start-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start"
+      },
+      {
+        "property": "border-inline-start-color",
+        "description": "Defines the color of the logical inline-start border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-color"
+      },
+      {
+        "property": "border-inline-start-style",
+        "description": "Defines the style of the logical inline-start border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-style"
+      },
+      {
+        "property": "border-inline-start-width",
+        "description": "Defines the width of the logical inline-start border",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width"
+      },
+      {
+        "property": "border-inline-style",
+        "description": "Defines the style of the logical inline borders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-style"
+      },
+      {
+        "property": "border-inline-width",
+        "description": "Defines the width of the logical inline borders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-width"
+      },
+      {
+        "property": "border-start-end-radius",
+        "description": "Defines the logical border radius of the start-end corner",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-end-radius"
+      },
+      {
+        "property": "border-start-start-radius",
+        "description": "Defines the logical border radius of the start-start corner",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-start-radius"
+      },
+      {
+        "property": "float",
+        "description": "Places an element on the left or right side of its container (start / end values)",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
+      },
+      {
+        "property": "inline-size",
+        "description": "Defines the horizontal or vertical size of an element's block, depending on its writing mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size"
+      },
+      {
+        "property": "margin-block",
+        "description": "Shorthand property for margin-block-start and margin-block-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block"
+      },
+      {
+        "property": "margin-block-end",
+        "description": "Defines the logical block end margin of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-end"
+      },
+      {
+        "property": "margin-block-start",
+        "description": "Defines the logical block start margin of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start"
+      },
+      {
+        "property": "margin-inline",
+        "description": "Shorthand property for margin-inline-start and margin-inline-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline"
+      },
+      {
+        "property": "margin-inline-end",
+        "description": "Defines the logical inline end margin of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end"
+      },
+      {
+        "property": "margin-inline-start",
+        "description": "Defines the logical inline start margin of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start"
+      },
+      {
+        "property": "max-block-size",
+        "description": "Defines the maximum horizontal or vertical size of an element's block, depending on its writing mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-block-size"
+      },
+      {
+        "property": "max-inline-size",
+        "description": "Defines the maximum horizontal or vertical size of an element's block, depending on its writing mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-inline-size"
+      },
+      {
+        "property": "min-block-size",
+        "description": "Defines the minimum horizontal or vertical size of an element's block, depending on its writing mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-block-size"
+      },
+      {
+        "property": "min-inline-size",
+        "description": "Defines the minimum horizontal or vertical size of an element's block, depending on its writing mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-inline-size"
+      },
+      {
+        "property": "overflow-block",
+        "description": "Specifies how to handle content that overflows the block axis of the element's box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
+      },
+      {
+        "property": "overflow-inline",
+        "description": "Specifies how to handle content that overflows the inline axis of the element's box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-inline"
+      },
+      {
+        "property": "overscroll-behavior-block",
+        "description": "Specifies the browser's behavior when the block direction boundary of a scrolling area is reached",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block"
+      },
+      {
+        "property": "overscroll-behavior-inline",
+        "description": "Specifies the browser's behavior when the inline direction boundary of a scrolling area is reached",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-inline"
+      },
+      {
+        "property": "padding-block",
+        "description": "Shorthand property for padding-block-start and padding-block-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block"
+      },
+      {
+        "property": "padding-block-end",
+        "description": "Defines the padding of the logical block end of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-end"
+      },
+      {
+        "property": "padding-block-start",
+        "description": "Defines the padding of the logical block start of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-start"
+      },
+      {
+        "property": "padding-inline",
+        "description": "Shorthand property for padding-inline-start and padding-inline-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline"
+      },
+      {
+        "property": "padding-inline-end",
+        "description": "Defines the padding of the logical inline end of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end"
+      },
+      {
+        "property": "padding-inline-start",
+        "description": "Defines the padding of the logical inline start of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start"
+      },
+      {
+        "property": "text-align",
+        "description": "Specifies the horizontal alignment of text (start / end values)",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align"
+      },
+      {
+        "property": "writing-mode",
+        "description": "Defines whether lines of text are laid out horizontally or vertically",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode"
+      }
+    ],
+    "misc": [
+      {
+        "property": "all",
+        "description": "Resets all properties (except unicode-bidi and direction)",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
+      },
+      {
+        "property": "caret",
+        "description": "Specifies the appearance of the text input cursor"
+      },
+      {
+        "property": "caret-color",
+        "description": "Specifies the color of the text input cursor",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color"
+      },
+      {
+        "property": "caret-shape",
+        "description": "Specifies the shape of the text input cursor"
+      },
+      {
+        "property": "touch-action",
+        "description": "Specifies how a given region can be manipulated by a touchscreen user",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action"
+      },
+      {
+        "property": "unset",
+        "description": "Resets a property to its inherited value if it inherits, or to its initial value if not",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
+      },
+      {
+        "property": "user-select",
+        "description": "Controls whether the user can select text",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select"
+      },
+      {
+        "property": "revert",
+        "description": "Reverts the cascaded value of the property from its current value to the value the property would have had if no changes had been made",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/revert"
+      }
+    ],
+    "print": [
+      {
+        "property": "page-orientation (@page)",
+        "description": "Specifies the orientation of the page box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@page/page-orientation"
+      },
+      {
+        "property": "print-color-adjust",
+        "description": "Specifies how user agents should optimize the presentation of the element when printed",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
+      }
+    ],
+    "pseudo_classes": [
+      {
+        "property": ":current",
+        "description": "Represents the element or ancestor of the element that is currently being displayed",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:current"
+      },
+      {
+        "property": ":defined",
+        "description": "Matches any element that has been defined, including built-in elements and custom elements",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:defined"
+      },
+      {
+        "property": ":dir",
+        "description": "Matches elements based on the directionality of the text contained in them",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
+      },
+      {
+        "property": ":focus-visible",
+        "description": "Matches when an element receives focus and the user agent determines via heuristics that the focus should be made evident on the element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
+      },
+      {
+        "property": ":focus-within",
+        "description": "Matches an element if the element or any of its descendants are focused",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
+      },
+      {
+        "property": ":fullscreen",
+        "description": "Matches every element which is currently in full-screen mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen"
+      },
+      {
+        "property": ":future",
+        "description": "Represents any element that is defined to occur entirely after a :current element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:future"
+      },
+      {
+        "property": ":host-context()",
+        "description": "Matches a shadow host when it or any of its ancestors matches the given selector",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context"
+      },
+      {
+        "property": ":host()",
+        "description": "Matches the shadow host of a shadow DOM containing the CSS it is used inside",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function"
+      },
+      {
+        "property": ":paused",
+        "description": "Represents a media element that is capable of playing when that element is paused",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:paused"
+      },
+      {
+        "property": ":playing",
+        "description": "Represents a media element that is capable of playing when that element is playing",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:playing"
+      },
+      {
+        "property": ":user-invalid",
+        "description": "Represents an element with incorrect input, but only after the user has interacted with it",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid"
+      },
+      {
+        "property": ":user-valid",
+        "description": "Represents an element with correct input, but only after the user has interacted with it",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid"
+      }
+    ],
+    "pseudo_elements": [
+      {
+        "property": "::backdrop",
+        "description": "A box the size of the viewport which is rendered immediately beneath any element being presented in full-screen mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop"
+      },
+      {
+        "property": "::cue",
+        "description": "Matches WebVTT cues within a selected element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::cue"
+      },
+      {
+        "property": "::cue-region",
+        "description": "Matches WebVTT cue regions within a selected element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::cue-region"
+      },
+      {
+        "property": "::part",
+        "description": "Represents any element within a shadow tree that has a matching part attribute",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::part"
+      },
+      {
+        "property": "::slotted",
+        "description": "Matches any content that is inserted into a slot",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted"
+      }
+    ],
+    "relative_units": [
+      {
+        "property": "length#vb",
+        "description": "1% of the size of the initial containing block in the direction of the root element's block axis",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      },
+      {
+        "property": "length#vh",
+        "description": "1% of the viewport's height",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      },
+      {
+        "property": "length#vi",
+        "description": "1% of the size of the initial containing block in the direction of the root element's inline axis",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      },
+      {
+        "property": "length#vmax",
+        "description": "1% of the viewport's larger dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      },
+      {
+        "property": "length#vmin",
+        "description": "1% of the viewport's smaller dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      },
+      {
+        "property": "length#vw",
+        "description": "1% of the viewport's width",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      }
+    ],
+    "scroll": [
+      {
+        "property": "overflow-anchor",
+        "description": "Specifies whether the browser should move the content to avoid the viewport",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-anchor"
+      },
+      {
+        "property": "overscroll-behavior",
+        "description": "Sets what a browser does when reaching the boundary of a scrolling area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
+      },
+      {
+        "property": "overscroll-behavior-x",
+        "description": "Sets the browser's behavior when the horizontal boundary of a scrolling area is reached",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-x"
+      },
+      {
+        "property": "overscroll-behavior-y",
+        "description": "Sets the browser's behavior when the vertical boundary of a scrolling area is reached",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-y"
+      },
+      {
+        "property": "scroll-behavior",
+        "description": "Specifies the scrolling behavior for a scrolling box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior"
+      },
+      {
+        "property": "scroll-margin",
+        "description": "Shorthand property for scroll-margin-top, scroll-margin-right, scroll-margin-bottom, and scroll-margin-left",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin"
+      },
+      {
+        "property": "scroll-margin-block",
+        "description": "Shorthand property for scroll-margin-block-start and scroll-margin-block-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block"
+      },
+      {
+        "property": "scroll-margin-block-end",
+        "description": "Defines the margin of the scroll snap area at the end of the block dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block-end"
+      },
+      {
+        "property": "scroll-margin-block-start",
+        "description": "Defines the margin of the scroll snap area at the start of the block dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-block-start"
+      },
+      {
+        "property": "scroll-margin-bottom",
+        "description": "Defines the bottom margin of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-bottom"
+      },
+      {
+        "property": "scroll-margin-inline",
+        "description": "Shorthand property for scroll-margin-inline-start and scroll-margin-inline-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline"
+      },
+      {
+        "property": "scroll-margin-inline-end",
+        "description": "Defines the margin of the scroll snap area at the end of the inline dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline-end"
+      },
+      {
+        "property": "scroll-margin-inline-start",
+        "description": "Defines the margin of the scroll snap area at the start of the inline dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-inline-start"
+      },
+      {
+        "property": "scroll-margin-left",
+        "description": "Defines the left margin of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-left"
+      },
+      {
+        "property": "scroll-margin-right",
+        "description": "Defines the right margin of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-right"
+      },
+      {
+        "property": "scroll-margin-top",
+        "description": "Defines the top margin of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top"
+      },
+      {
+        "property": "scroll-padding",
+        "description": "Shorthand property for scroll-padding-top, scroll-padding-right, scroll-padding-bottom, and scroll-padding-left",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding"
+      },
+      {
+        "property": "scroll-padding-block",
+        "description": "Shorthand property for scroll-padding-block-start and scroll-padding-block-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block"
+      },
+      {
+        "property": "scroll-padding-block-end",
+        "description": "Defines the padding of the scroll snap area at the end of the block dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block-end"
+      },
+      {
+        "property": "scroll-padding-block-start",
+        "description": "Defines the padding of the scroll snap area at the start of the block dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-block-start"
+      },
+      {
+        "property": "scroll-padding-bottom",
+        "description": "Defines the bottom padding of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-bottom"
+      },
+      {
+        "property": "scroll-padding-inline",
+        "description": "Shorthand property for scroll-padding-inline-start and scroll-padding-inline-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline"
+      },
+      {
+        "property": "scroll-padding-inline-end",
+        "description": "Defines the padding of the scroll snap area at the end of the inline dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline-end"
+      },
+      {
+        "property": "scroll-padding-inline-start",
+        "description": "Defines the padding of the scroll snap area at the start of the inline dimension",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline-start"
+      },
+      {
+        "property": "scroll-padding-left",
+        "description": "Defines the left padding of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-left"
+      },
+      {
+        "property": "scroll-padding-right",
+        "description": "Defines the right padding of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-right"
+      },
+      {
+        "property": "scroll-padding-top",
+        "description": "Defines the top padding of the scroll snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-top"
+      },
+      {
+        "property": "scroll-snap-align",
+        "description": "Specifies the box's snap position as an alignment of its snap area",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align"
+      },
+      {
+        "property": "scroll-snap-stop",
+        "description": "Defines whether the scroll container is allowed to \"pass over\" possible snap positions",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-stop"
+      },
+      {
+        "property": "scroll-snap-type",
+        "description": "Sets how strictly snap points are enforced on the scroll container",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type"
+      }
+    ],
+    "typography": [
+      {
+        "property": "@annotation",
+        "description": "Specifies the glyph annotation for the selected font"
+      },
+      {
+        "property": "@character-variant",
+        "description": "Specifies the character variant for the selected font"
+      },
+      {
+        "property": "@font-feature-values",
+        "description": "Allows authors to use a common name in font-variant-alternate for feature activated differently in OpenType",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values"
+      },
+      {
+        "property": "@font-palette-values",
+        "description": "Defines a palette of colors for a color font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values"
+      },
+      {
+        "property": "@ornaments",
+        "description": "Specifies ornaments for the selected font"
+      },
+      {
+        "property": "@styleset",
+        "description": "Specifies a stylistic set for the selected font"
+      },
+      {
+        "property": "@stylistic",
+        "description": "Specifies a stylistic alternate for the selected font"
+      },
+      {
+        "property": "@swash",
+        "description": "Specifies a swash alternate for the selected font"
+      },
+      {
+        "property": "-webkit-line-clamp",
+        "description": "Allows limiting of the contents of a block container to the specified number of lines",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp"
+      },
+      {
+        "property": "annotation()",
+        "description": "Enables an annotation on the selected font"
+      },
+      {
+        "property": "base-palette (@font-palette-values)",
+        "description": "Specifies the base palette for a color font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/base-palette"
+      },
+      {
+        "property": "character-variant()",
+        "description": "Enables specific character variants in the selected font"
+      },
+      {
+        "property": "local()",
+        "description": "Specifies a locally-installed font to use",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+      },
+      {
+        "property": "font-family (@font-palette-values)",
+        "description": "Specifies the font family for a color font palette",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values"
+      },
+      {
+        "property": "font-optical-sizing",
+        "description": "Controls whether the browser automatically adjusts font outlines to optimize legibility",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing"
+      },
+      {
+        "property": "font-palette",
+        "description": "Allows selection of a font palette defined by @font-palette-values",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-palette"
+      },
+      {
+        "property": "font-synthesis",
+        "description": "Controls which missing typefaces can be synthesized by the browser",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis"
+      },
+      {
+        "property": "font-synthesis-small-caps",
+        "description": "Controls whether small-caps can be synthesized when not present in a font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-small-caps"
+      },
+      {
+        "property": "font-synthesis-style",
+        "description": "Controls whether italic styles can be synthesized when not present in a font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-style"
+      },
+      {
+        "property": "font-synthesis-weight",
+        "description": "Controls whether bold styles can be synthesized when not present in a font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-weight"
+      },
+      {
+        "property": "font-variant",
+        "description": "Shorthand for various font variant properties",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
+      },
+      {
+        "property": "font-variant (@font-face)",
+        "description": "Specifies font variant for @font-face rule",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+      },
+      {
+        "property": "font-variant-alternates",
+        "description": "Controls the usage of alternate glyphs for a font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates"
+      },
+      {
+        "property": "font-variant-caps",
+        "description": "Controls the usage of alternate glyphs for capital letters",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps"
+      },
+      {
+        "property": "font-variant-east-asian",
+        "description": "Controls the usage of alternate glyphs for East Asian scripts",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-east-asian"
+      },
+      {
+        "property": "font-variant-emoji",
+        "description": "Controls which emoji presentation form to use",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-emoji"
+      },
+      {
+        "property": "font-variant-ligatures",
+        "description": "Controls which ligatures and contextual forms are used",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures"
+      },
+      {
+        "property": "font-variant-numeric",
+        "description": "Controls the usage of alternate glyphs for numbers, fractions, and ordinal markers",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric"
+      },
+      {
+        "property": "font-variant-position",
+        "description": "Controls the usage of alternate glyphs for subscript and superscript",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-position"
+      },
+      {
+        "property": "font-variation-settings",
+        "description": "Provides low-level control over variable font characteristics",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings"
+      },
+      {
+        "property": "font-variation-settings (@font-face)",
+        "description": "Specifies font variation settings for @font-face rule",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+      },
+      {
+        "property": "hanging-punctuation",
+        "description": "Specifies whether punctuation marks should hang outside the line box",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation"
+      },
+      {
+        "property": "hyphens",
+        "description": "Specifies how words should be hyphenated",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"
+      },
+      {
+        "property": "line-gap-override (@font-face)",
+        "description": "Specifies line gap metric override for @font-face rule",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+      },
+      {
+        "property": "styleset()",
+        "description": "Enables a stylistic set of glyphs"
+      },
+      {
+        "property": "stylistic()",
+        "description": "Enables a stylistic alternate"
+      },
+      {
+        "property": "swash()",
+        "description": "Enables a swash alternate"
+      },
+      {
+        "property": "text-combine-upright",
+        "description": "Sets the combination of characters into the space of a single character",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-combine-upright"
+      },
+      {
+        "property": "text-decoration-color",
+        "description": "Specifies the color of text decorations",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color"
+      },
+      {
+        "property": "text-decoration-line",
+        "description": "Specifies the type of text decoration",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line"
+      },
+      {
+        "property": "text-decoration-skip",
+        "description": "Specifies what parts of an element's content any text decoration affecting the element must skip over",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip"
+      },
+      {
+        "property": "text-decoration-skip-ink",
+        "description": "Specifies how overlines and underlines are drawn when they pass over glyph ascenders and descenders",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink"
+      },
+      {
+        "property": "text-decoration-style",
+        "description": "Specifies the style of text decoration",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style"
+      },
+      {
+        "property": "text-decoration-thickness",
+        "description": "Specifies the thickness of text decoration",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness"
+      },
+      {
+        "property": "text-emphasis",
+        "description": "Shorthand for text-emphasis-style and text-emphasis-color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis"
+      },
+      {
+        "property": "text-emphasis-color",
+        "description": "Specifies the color of text emphasis marks",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-color"
+      },
+      {
+        "property": "text-emphasis-position",
+        "description": "Specifies the position of text emphasis marks",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-position"
+      },
+      {
+        "property": "text-emphasis-style",
+        "description": "Specifies the appearance of text emphasis marks",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-style"
+      },
+      {
+        "property": "text-orientation",
+        "description": "Specifies the orientation of text in a line",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation"
+      },
+      {
+        "property": "text-underline-offset",
+        "description": "Specifies the offset of underlines",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset"
+      },
+      {
+        "property": "text-underline-position",
+        "description": "Specifies the position of underlines",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position"
+      },
+      {
+        "property": "ornaments()",
+        "description": "Enables ornaments in the selected font"
+      }
+    ]
+  },
+  "css5": {
+    "animation": [
+      {
+        "property": "animation-composition",
+        "description": "Specifies how an animation's keyframes are combined",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition"
+      },
+      {
+        "property": "offset-anchor",
+        "description": "Specifies the anchor point of the element for the offset-path",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-anchor"
+      },
+      {
+        "property": "offset-distance",
+        "description": "Specifies the position along an offset-path",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-distance"
+      },
+      {
+        "property": "offset-path",
+        "description": "Specifies a motion path for an element to follow",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-path"
+      },
+      {
+        "property": "offset-position",
+        "description": "Specifies the initial position of the element along the offset-path",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-position"
+      },
+      {
+        "property": "offset-rotate",
+        "description": "Specifies how an element is rotated as it moves along the offset-path",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-rotate"
+      }
+    ],
+    "at_rules": [
+      {
+        "property": "@custom-media",
+        "description": "Defines custom media queries"
+      },
+      {
+        "property": "@layer",
+        "description": "Declares a cascade layer",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+      },
+      {
+        "property": "@scope",
+        "description": "Allows scoping of styles to a specific part of the document",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@scope"
+      },
+      {
+        "property": "@scope :scope",
+        "description": "Represents the elements that are within the scope of the @scope at-rule",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
+      },
+      {
+        "property": "@starting-style",
+        "description": "Defines the starting styles for a transition",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style"
+      },
+      {
+        "property": "@supports selector()",
+        "description": "Tests if the browser supports a particular CSS selector",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"
+      },
+      {
+        "property": "override-colors (@font-palette-values)",
+        "description": "Overrides specific colors in a font palette",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-palette-values/override-colors"
+      },
+      {
+        "property": "syntax (@property)",
+        "description": "Defines the syntax of a custom property",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@property"
+      }
+    ],
+    "cascade_layers": [
+      {
+        "property": "layer()",
+        "description": "Defines a cascade layer",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+      },
+      {
+        "property": "layer() (@import)",
+        "description": "Imports styles into a specific cascade layer",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+      },
+      {
+        "property": "revert-layer",
+        "description": "Reverts a property value to the value established in a previous cascade layer",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer"
+      }
+    ],
+    "colors_theming": [
+      {
+        "property": "accent-color",
+        "description": "Specifies the accent color for user-interface controls",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color"
+      },
+      {
+        "property": "color-scheme",
+        "description": "Specifies which color schemes the element can comfortably be rendered in",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme"
+      },
+      {
+        "property": "color-mix()",
+        "description": "Mixes two colors",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
+      },
+      {
+        "property": "color() - display-p3, rec2020, a98, prophoto, xyz, xyz-d50, xyz-d65",
+        "description": "Specifies a color in various color spaces",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
+      },
+      {
+        "property": "color(from ...) - relative color syntax",
+        "description": "Specifies a color relative to another color",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
+      },
+      {
+        "property": "Hue interpolation (gradients \"in\" syntax, \"hue longer\" syntax)",
+        "description": "Specifies how hue should be interpolated in gradients",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method"
+      },
+      {
+        "property": "hwb()",
+        "description": "Specifies a color using the Hue-Whiteness-Blackness model",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
+      },
+      {
+        "property": "oklab()",
+        "description": "Specifies a color using the OKLAB color space",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
+      },
+      {
+        "property": "oklch()",
+        "description": "Specifies a color using the OKLCH color space",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch"
+      },
+      {
+        "property": "lab()",
+        "description": "Specifies a color using the CIELAB color space",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
+      },
+      {
+        "property": "lch()",
+        "description": "Specifies a color using the LCH color space",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
+      }
+    ],
+    "container_queries": [
+      {
+        "property": "length#cqw, cqi, cqb, cqh, cqmax, cqmin",
+        "description": "Container query length units",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units"
+      },
+      {
+        "property": "contain-intrinsic-block-size",
+        "description": "Specifies the intrinsic block size of an element's content",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-block-size"
+      },
+      {
+        "property": "contain-intrinsic-height",
+        "description": "Specifies the intrinsic height of an element's content",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-height"
+      },
+      {
+        "property": "contain-intrinsic-inline-size",
+        "description": "Specifies the intrinsic inline size of an element's content",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-inline-size"
+      },
+      {
+        "property": "contain-intrinsic-size",
+        "description": "Specifies the intrinsic size of an element's content",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size"
+      },
+      {
+        "property": "contain-intrinsic-width",
+        "description": "Specifies the intrinsic width of an element's content",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-width"
+      },
+      {
+        "property": "container",
+        "description": "Declares a container for container queries",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/container"
+      },
+      {
+        "property": "container-name",
+        "description": "Specifies a name for a query container",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/container-name"
+      },
+      {
+        "property": "container-type",
+        "description": "Specifies the type of container for container queries",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/container-type"
+      }
+    ],
+    "logical_properties": [
+      {
+        "property": "inset",
+        "description": "Shorthand for the top, right, bottom, and/or left properties",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset"
+      },
+      {
+        "property": "inset-block",
+        "description": "Shorthand for inset-block-start and inset-block-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block"
+      },
+      {
+        "property": "inset-block-end",
+        "description": "Defines the logical block end offset of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-end"
+      },
+      {
+        "property": "inset-block-start",
+        "description": "Defines the logical block start offset of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset-block-start"
+      },
+      {
+        "property": "inset-inline",
+        "description": "Shorthand for inset-inline-start and inset-inline-end",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline"
+      },
+      {
+        "property": "inset-inline-end",
+        "description": "Defines the logical inline end offset of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end"
+      },
+      {
+        "property": "inset-inline-start",
+        "description": "Defines the logical inline start offset of an element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start"
+      }
+    ],
+    "math_functions": [
+      {
+        "property": "abs()",
+        "description": "Returns the absolute value of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/abs"
+      },
+      {
+        "property": "acos()",
+        "description": "Returns the arccosine of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/acos"
+      },
+      {
+        "property": "asin()",
+        "description": "Returns the arcsine of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/asin"
+      },
+      {
+        "property": "atan()",
+        "description": "Returns the arctangent of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/atan"
+      },
+      {
+        "property": "atan2()",
+        "description": "Returns the arctangent of the quotient of its arguments",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/atan2"
+      },
+      {
+        "property": "cos()",
+        "description": "Returns the cosine of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/cos"
+      },
+      {
+        "property": "exp()",
+        "description": "Returns e raised to the power of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
+      },
+      {
+        "property": "hypot()",
+        "description": "Returns the square root of the sum of squares of its arguments",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hypot"
+      },
+      {
+        "property": "log()",
+        "description": "Returns the natural logarithm of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/log"
+      },
+      {
+        "property": "mod()",
+        "description": "Returns the remainder of a division",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mod"
+      },
+      {
+        "property": "pow()",
+        "description": "Returns the base to the exponent power",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/pow"
+      },
+      {
+        "property": "rem()",
+        "description": "Returns the remainder of a division",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/rem"
+      },
+      {
+        "property": "round()",
+        "description": "Rounds a number to the nearest integer",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
+      },
+      {
+        "property": "sin()",
+        "description": "Returns the sine of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
+      },
+      {
+        "property": "sign()",
+        "description": "Returns the sign of a number, indicating whether it is positive, negative, or zero",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
+      },
+      {
+        "property": "sqrt()",
+        "description": "Returns the square root of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt"
+      },
+      {
+        "property": "tan()",
+        "description": "Returns the tangent of a number",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/tan"
+      }
+    ],
+    "pseudo_classes": [
+      {
+        "property": ":has()",
+        "description": "Matches elements that contain at least one element that matches the specified selector",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
+      },
+      {
+        "property": ":is()",
+        "description": "Matches any of the selectors in the selector list",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
+      },
+      {
+        "property": ":nth-child(An+B [of S]?)",
+        "description": "Matches elements based on their position among siblings, with optional filtering",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#using_of_selector"
+      },
+      {
+        "property": ":picture-in-picture",
+        "description": "Matches an element that is currently in picture-in-picture mode",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture"
+      },
+      {
+        "property": ":popover-open",
+        "description": "Matches a popover element that is currently showing",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open"
+      },
+      {
+        "property": ":where()",
+        "description": "Matches elements that match the selector list, but doesn't add specificity",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
+      }
+    ],
+    "pseudo_elements": [
+      {
+        "property": "::grammar-error",
+        "description": "Represents a text segment which the user agent has flagged as grammatically incorrect",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error"
+      },
+      {
+        "property": "::marker",
+        "description": "Represents the marker box of a list item",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::marker"
+      },
+      {
+        "property": "::spelling-error",
+        "description": "Represents a text segment which the user agent has flagged as incorrectly spelled",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error"
+      }
+    ],
+    "relative_units": [
+      {
+        "property": "Dynamic Viewport Units (dvh, lvh & svh)",
+        "description": "Viewport units that account for dynamic viewports (e.g., mobile browsers with collapsible toolbars)",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      },
+      {
+        "property": "length#cap",
+        "description": "Equal to the cap height of the element's font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#cap"
+      },
+      {
+        "property": "length#ex, length#rex",
+        "description": "Represents the x-height of the element's font",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#ex"
+      },
+      {
+        "property": "length#ic, length#ric",
+        "description": "Equal to the used advance measure of the \"水\" (CJK water ideograph, U+6C34) glyph",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#ic"
+      },
+      {
+        "property": "length#lh, length#rlh",
+        "description": "Equal to the line height of the element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#lh"
+      }
+    ],
+    "scroll": [
+      {
+        "property": "content-visibility",
+        "description": "Controls whether or not an element renders its contents at all",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility"
+      },
+      {
+        "property": "overflow",
+        "description": "Specifies how to handle content that overflows the element's box (clip value)",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+      },
+      {
+        "property": "overflow-clip-margin",
+        "description": "Specifies how far outside its bounds an element with `overflow: clip` may paint before being clipped",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin"
+      },
+      {
+        "property": "scrollbar-color",
+        "description": "Sets the color of the scrollbar track and thumb",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color"
+      },
+      {
+        "property": "scrollbar-gutter",
+        "description": "Controls the behavior of the scrollbar gutter",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter"
+      },
+      {
+        "property": "scrollbar-width",
+        "description": "Sets the width of the scrollbar",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width"
+      }
+    ],
+    "scroll_driven_animations": [
+      {
+        "property": "animation-range",
+        "description": "Specifies the range for a scroll-driven animation",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range"
+      },
+      {
+        "property": "animation-range-end",
+        "description": "Specifies the end of the range for a scroll-driven animation",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-end"
+      },
+      {
+        "property": "animation-range-start",
+        "description": "Specifies the start of the range for a scroll-driven animation",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-start"
+      },
+      {
+        "property": "animation-timeline",
+        "description": "Specifies the timeline for an animation",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline"
+      },
+      {
+        "property": "scroll-timeline",
+        "description": "Defines a scroll timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline"
+      },
+      {
+        "property": "scroll-timeline-axis",
+        "description": "Specifies the axis of the scroll timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-axis"
+      },
+      {
+        "property": "scroll-timeline-name",
+        "description": "Specifies the name of the scroll timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-name"
+      },
+      {
+        "property": "scroll()",
+        "description": "Creates a scroll progress timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/scroll"
+      },
+      {
+        "property": "timeline-scope",
+        "description": "Sets the timeline scope for descendant elements",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/timeline-scope"
+      },
+      {
+        "property": "view-timeline",
+        "description": "Defines a view timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline"
+      },
+      {
+        "property": "view-timeline-axis",
+        "description": "Specifies the axis of the view timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis"
+      },
+      {
+        "property": "view-timeline-inset",
+        "description": "Specifies the inset for the view timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset"
+      },
+      {
+        "property": "view-timeline-name",
+        "description": "Specifies the name of the view timeline",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-name"
+      }
+    ],
+    "transition_transforms": [
+      {
+        "property": "overlay",
+        "description": "Defines how an element's overlay is displayed",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overlay"
+      },
+      {
+        "property": "rotate",
+        "description": "Specifies rotation transforms",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/rotate"
+      },
+      {
+        "property": "scale",
+        "description": "Specifies scaling transforms",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scale"
+      },
+      {
+        "property": "transition-behavior",
+        "description": "Specifies the behavior of transitions",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior"
+      },
+      {
+        "property": "translate",
+        "description": "Specifies translation transforms",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/translate"
+      }
+    ],
+    "typography": [
+      {
+        "property": "ascent-override (@font-face)",
+        "description": "Overrides the font's ascent metric",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override"
+      },
+      {
+        "property": "descent-override (@font-face)",
+        "description": "Overrides the font's descent metric",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override"
+      },
+      {
+        "property": "font-size-adjust",
+        "description": "Specifies that font size should be chosen based on the height of lowercase letters",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust"
+      },
+      {
+        "property": "font-synthesis-position",
+        "description": "Controls the synthesis of superscript and subscript glyphs",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis-position"
+      },
+      {
+        "property": "hyphenate-character",
+        "description": "Specifies the character (or string) to be used for line breaks resulting from hyphenation",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character"
+      },
+      {
+        "property": "hyphenate-limit-chars",
+        "description": "Specifies the minimum number of characters in a hyphenated word",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-limit-chars"
+      },
+      {
+        "property": "initial-letter",
+        "description": "Specifies styling for dropped, raised, and sunken initial letters",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter"
+      },
+      {
+        "property": "initial-letter-align",
+        "description": "Specifies the alignment of initial letters within a paragraph",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align"
+      },
+      {
+        "property": "Text-box trim",
+        "description": "Controls the trimming of text boxes"
+      },
+      {
+        "property": "text-wrap",
+        "description": "Specifies line breaking rules for text (balance / pretty)",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap"
+      }
+    ],
+    "view_transitions": [
+      {
+        "property": "::view-transition",
+        "description": "Represents the root of a view transition pseudo-element tree",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition"
+      },
+      {
+        "property": "::view-transition-group",
+        "description": "Represents a group of elements that transition as a unit",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group"
+      },
+      {
+        "property": "::view-transition-image-pair",
+        "description": "Represents the parent element of the old and new views during a transition",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-image-pair"
+      },
+      {
+        "property": "::view-transition-new",
+        "description": "Represents the new view during a transition",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-new"
+      },
+      {
+        "property": "::view-transition-old",
+        "description": "Represents the old view during a transition",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-old"
+      },
+      {
+        "property": "@view-transition",
+        "description": "Defines styles for view transitions"
+      },
+      {
+        "property": "view-transition-class",
+        "description": "Specifies the class of a view transition"
+      },
+      {
+        "property": "view-transition-name",
+        "description": "Specifies the name of a view transition",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name"
+      },
+      {
+        "property": "view-transition-type",
+        "description": "Specifies the type of a view transition"
+      }
+    ]
+  },
+  "future": {
+    "align": [
+      {
+        "property": "align-tracks",
+        "description": "Specifies the alignment of tracks in a masonry grid",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks"
+      },
+      {
+        "property": "justify-tracks",
+        "description": "Specifies the alignment of tracks in a masonry grid along the inline axis",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks"
+      }
+    ],
+    "anchoring": [
+      {
+        "property": "anchor()",
+        "description": "Anchors an element to another element"
+      }
+    ],
+    "aural_css": [
+      {
+        "property": "speak-as (@counter-style)",
+        "description": "Specifies how a counter should be announced by speech synthesizers",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style/speak-as"
+      }
+    ],
+    "color": [
+      {
+        "property": "contrast-color()",
+        "description": "Selects the color with the highest contrast from a list of colors",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast"
+      }
+    ],
+    "container_queries": [
+      {
+        "property": "Style queries",
+        "description": "Allows querying the computed values of an element's properties",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@container#container_style_queries"
+      }
+    ],
+    "functions": [
+      {
+        "property": "element()",
+        "description": "Defines an `<image>` value generated from an arbitrary HTML element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/element"
+      },
+      {
+        "property": "image()",
+        "description": "Defines an `<image>` in a similar fashion to the `url()` function, but with added functionality",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image"
+      }
+    ],
+    "grid": [
+      {
+        "property": "masonry-auto-flow",
+        "description": "Specifies how items flow in a masonry layout",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow"
+      }
+    ],
+    "pseudo_classes": [
+      {
+        "property": ":modal",
+        "description": "Matches elements that are in a modal state",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:modal"
+      },
+      {
+        "property": ":target-within",
+        "description": "Represents an element that is a target element or contains an element that is a target",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:target-within"
+      },
+      {
+        "property": ":top-layer",
+        "description": "Matches elements that are in the top layer"
+      }
+    ],
+    "pseudo_elements": [
+      {
+        "property": "::target-text",
+        "description": "Represents the text that has been scrolled to if the browser supports scroll-to-text fragments",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text"
+      }
+    ],
+    "scroll": [
+      {
+        "property": "target-text()",
+        "description": "A function that allows targeting specific text within an element"
+      }
+    ],
+    "text_fragmentation": [
+      {
+        "property": "orphans",
+        "description": "Specifies the minimum number of lines in a block container that must be left at the bottom of a page",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/orphans"
+      }
+    ],
+    "typography": [
+      {
+        "property": "line-clamp",
+        "description": "Allows limiting of the contents of a block container to the specified number of lines",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp"
+      },
+      {
+        "property": "line-height-step",
+        "description": "Sets the step unit for line height",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step"
+      },
+      {
+        "property": "margin-trim",
+        "description": "Specifies whether margin collapsing is applied to the start and end edges of the element",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim"
+      },
+      {
+        "property": "text-size-adjust",
+        "description": "Controls the text inflation algorithm used on some smartphones and tablets",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust"
+      },
+      {
+        "property": "white-space-collapse",
+        "description": "Specifies how white space inside an element is collapsed",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse"
+      },
+      {
+        "property": "white-space-trim",
+        "description": "Specifies trimming of white space inside an element"
+      }
+    ],
+    "units": [
+      {
+        "property": "frequency#Hz",
+        "description": "Represents a frequency in hertz",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/frequency"
+      }
+    ]
+  }
+}
